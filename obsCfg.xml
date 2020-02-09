@@ -1,0 +1,16 @@
+<Document>
+	<GateWay>ims</GateWay>
+	<AstIP>10.168.0.113</AstIP>
+  <tenant>
+    <id> 111111 </id>
+    <ak> 123456 </ak>
+    <sk> 123456 </sk>
+    <key_word> 告警 </key_word>
+  </tenant>
+  <tenant>
+    <id> 222222  </id>
+    <ak> 1234567 </ak>
+    <sk> 1234567 </sk>
+    <key_word> 告警  </key_word>
+  </tenant>      
+</Document>

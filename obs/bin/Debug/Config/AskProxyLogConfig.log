@@ -1,0 +1,102 @@
+# This is an example configuration file for the Oreka orkaudio capture service logging
+# Copy this to logging.properties and modify according to needs
+# for more information on the apache log4cxx (and log4j) logging system, see:
+#	http://logging.apache.org/log4cxx/manual/Introduction.html
+
+# main logfile
+log4j.appender.main=org.apache.log4j.RollingFileAppender
+log4j.appender.main.File=./log/main.log
+log4j.appender.main.MaxFileSize=5MB
+log4j.appender.main.MaxBackupIndex=10
+log4j.appender.main.layout=org.apache.log4j.PatternLayout 
+log4j.appender.main.layout.ConversionPattern=%d{ISO8601}   %m%n
+
+# ReportLog logfile
+log4j.appender.ReportLog=org.apache.log4j.RollingFileAppender
+log4j.appender.ReportLog.File=./log/ReportLog.log
+log4j.appender.ReportLog.MaxFileSize=5MB
+log4j.appender.ReportLog.MaxBackupIndex=10
+log4j.appender.ReportLog.layout=org.apache.log4j.PatternLayout 
+log4j.appender.ReportLog.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+# PBXDATALOG logfile
+log4j.appender.PBXDATALOG=org.apache.log4j.RollingFileAppender
+log4j.appender.PBXDATALOG.File=./log/PBXDATALOG.log
+log4j.appender.PBXDATALOG.MaxFileSize=5MB
+log4j.appender.PBXDATALOG.MaxBackupIndex=10
+log4j.appender.PBXDATALOG.layout=org.apache.log4j.PatternLayout 
+log4j.appender.PBXDATALOG.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+# AskProxy logfile
+log4j.appender.AskProxy=org.apache.log4j.RollingFileAppender
+log4j.appender.AskProxy.File=./log/AskProxy.log
+log4j.appender.AskProxy.MaxFileSize=5MB
+log4j.appender.AskProxy.MaxBackupIndex=10
+log4j.appender.AskProxy.layout=org.apache.log4j.PatternLayout 
+log4j.appender.AskProxy.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+# keepalive logfile
+log4j.appender.keepalive=org.apache.log4j.RollingFileAppender
+log4j.appender.keepalive.File=./log/keepalive.log
+log4j.appender.keepalive.MaxFileSize=5MB
+log4j.appender.keepalive.MaxBackupIndex=10
+log4j.appender.keepalive.layout=org.apache.log4j.PatternLayout 
+log4j.appender.keepalive.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+# AgentAMI logfile
+log4j.appender.AgentAMI=org.apache.log4j.RollingFileAppender
+log4j.appender.AgentAMI.File=./log/AgentAMI.log
+log4j.appender.AgentAMI.MaxFileSize=5MB
+log4j.appender.AgentAMI.MaxBackupIndex=10
+log4j.appender.AgentAMI.layout=org.apache.log4j.PatternLayout 
+log4j.appender.AgentAMI.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+# SkillSnap logfile
+log4j.appender.SkillSnap=org.apache.log4j.RollingFileAppender
+log4j.appender.SkillSnap.File=./log/SkillSnap.log
+log4j.appender.SkillSnap.MaxFileSize=5MB
+log4j.appender.SkillSnap.MaxBackupIndex=10
+log4j.appender.SkillSnap.layout=org.apache.log4j.PatternLayout 
+log4j.appender.SkillSnap.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+
+# CheckAgentLog logfile
+log4j.appender.CheckAgentLog=org.apache.log4j.RollingFileAppender
+log4j.appender.CheckAgentLog.File=./log/CheckAgentLog.log
+log4j.appender.CheckAgentLog.MaxFileSize=5MB
+log4j.appender.CheckAgentLog.MaxBackupIndex=10
+log4j.appender.CheckAgentLog.layout=org.apache.log4j.PatternLayout 
+log4j.appender.CheckAgentLog.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+
+#AgentLockLog logfile
+log4j.appender.AgentLockLog=org.apache.log4j.RollingFileAppender
+log4j.appender.AgentLockLog.File=./log/AgentLockLog.log
+log4j.appender.AgentLockLog.MaxFileSize=5MB
+log4j.appender.AgentLockLog.MaxBackupIndex=10
+log4j.appender.AgentLockLog.layout=org.apache.log4j.PatternLayout 
+log4j.appender.AgentLockLog.layout.ConversionPattern=%d{ISO8601} %5p %c{1}:%L - %m%n
+
+
+log4j.rootLogger=main
+log4j.logger.ReportLog = INFO,ReportLog
+log4j.logger.PBXDATALOG = INFO,PBXDATALOG
+log4j.logger.AskProxy = INFO,AskProxy
+log4j.logger.keepalive = INFO,keepalive
+log4j.logger.AgentAMI = INFO,AgentAMI
+log4j.logger.SkillSnap = INFO,SkillSnap
+log4j.logger.CheckAgentLog = INFO,CheckAgentLog
+log4j.logger.AgentLockLog = INFO,AgentLockLog
+
+
+
+# Uncomment one or more of the following to get more detailed logging
+#log4j.logger.rtpringbuffer=DEBUG
+#log4j.logger.packet=DEBUG
+#log4j.logger.packet.rtp=DEBUG
+#log4j.logger.packet.skinny=DEBUG
+#log4j.logger.packet.sip=DEBUG
+#log4j.logger.rtpsessions=DEBUG
+#log4j.logger.rtpsession=DEBUG
+#log4j.logger.sipextraction=DEBUG
+

@@ -1,0 +1,386 @@
+#include "WS.h"
+#include "./AskMsg/XmlMarkup.h"
+#include "./logclass/log.h"
+#include "UntiTool.h"
+#include "AskProxyDlg.h"
+
+CWS::CWS(CAskProxyDlg* pDlg)
+    :m_pDlg(pDlg)
+{
+
+}
+
+CWS::~CWS()
+{
+
+}
+
+BOOL CWS::SendRequestSipExtInfo(const std::string &sMsg, std::string& sTeantId)
+{
+    std::string strResultXMLData;
+    if(!CHttp::request(sMsg, m_pDlg->m_strOverTime, strResultXMLData))
+    {
+        m_pDlg->m_Log.Log("ERROR_LOG-> %s Request",sMsg.c_str());
+		m_pDlg->m_Log.Log("ERROR_LOG-> Response %s",strResultXMLData.c_str());
+        return FALSE;
+    }
+
+    m_pDlg->m_Log.Log("FLOW_LOG-> %s Request",sMsg.c_str());
+    m_pDlg->m_Log.Log("FLOW_LOG-> Response %s",strResultXMLData.c_str());
+
+    std::string sRet;
+
+    if(strResultXMLData=="")
+    {
+        CMarkup xml;
+	    xml.SetDoc(strResultXMLData);
+		xml.FindElem("soap:Envelope");
+		xml.IntoElem();
+		   xml.FindElem("soap:Body");
+		   xml.IntoElem();
+		      xml.FindElem("ns1:getSipExtInfoResponse");
+			  xml.IntoElem();
+			     xml.FindElem("return");
+				 sRet = xml.GetElemContent();
+			 xml.OutOfElem();
+		  xml.OutOfElem();
+		xml.OutOfElem();
+    }
+
+    CUntiTool tool;
+
+	tool.ParaXML(sRet,"tenantId",sTeantId);
+
+    return TRUE;
+}
+
+BOOL CWS::SendRequestAgentInfo(const std::string &sMsg, std::string& sSkill, std::string& sTeantId)
+{
+    std::string strResultXMLData;
+    if(!CHttp::request(sMsg, m_pDlg->m_strOverTime, strResultXMLData))
+    {
+        m_pDlg->m_Log.Log("ERROR_LOG-> %s Request",sMsg.c_str());
+		m_pDlg->m_Log.Log("ERROR_LOG-> Response %s",strResultXMLData.c_str());
+        return FALSE;
+    }
+
+    m_pDlg->m_Log.Log("FLOW_LOG-> %s Request",sMsg.c_str());
+    m_pDlg->m_Log.Log("FLOW_LOG-> Response %s",strResultXMLData.c_str());
+
+    std::string sRet;
+
+    if(strResultXMLData != "")
+	{
+		CMarkup xml;
+	    xml.SetDoc(strResultXMLData);
+		xml.FindElem("soap:Envelope");
+		xml.IntoElem();
+		   xml.FindElem("soap:Body");
+		   xml.IntoElem();
+		      xml.FindElem("ns1:getAgentSipSkillResponse");
+			  xml.IntoElem();
+			     xml.FindElem("return");
+				 sRet = xml.GetElemContent();
+			 xml.OutOfElem();
+		  xml.OutOfElem();
+		xml.OutOfElem();
+	}
+
+	CUntiTool tool;
+	tool.ParaXML(sRet,"sipSkillName",sSkill);
+	tool.ParaXML(sRet,"tenantId",sTeantId);
+
+	return TRUE;
+}
+
+BOOL CWS::SendRequestAgentPwd(const std::string &sMsg, std::string& pwd, std::string &tenantId, std::map<std::string, std::string> &mpSkillAndPenalty)
+{
+    std::string strResultXMLData;
+    if(!CHttp::request(sMsg, m_pDlg->m_strOverTime, strResultXMLData))
+    {
+        m_pDlg->m_Log.Log("ERROR_LOG-> %s Request",sMsg.c_str());
+		m_pDlg->m_Log.Log("ERROR_LOG-> Response %s",strResultXMLData.c_str());
+        return FALSE;
+    }
+
+    m_pDlg->m_Log.Log("FLOW_LOG-> %s Request",sMsg.c_str());
+    m_pDlg->m_Log.Log("FLOW_LOG-> Response %s",strResultXMLData.c_str());
+
+    std::string sRet;
+
+    if(strResultXMLData != "")
+	{
+		CMarkup xml;
+		xml.SetDoc(strResultXMLData);
+		xml.FindElem("soap:Envelope");
+        xml.IntoElem();
+            xml.FindElem("soap:Body");
+            xml.IntoElem();
+                xml.FindElem("ns1:getAgentInfoResponse");
+                xml.IntoElem();
+                    xml.FindElem("return");
+                    sRet = xml.GetElemContent();
+                xml.OutOfElem();
+            xml.OutOfElem();
+        xml.OutOfElem();
+	}
+
+    size_t index = sRet.find("&lt;");
+    while(index!=std::string::npos)
+    {
+        sRet.replace(index, strlen("&lt;"), "<");
+        index = sRet.find("&lt;");
+    }
+
+    index = sRet.find("&gt;");
+    while(index!=std::string::npos)
+    {
+        sRet.replace(index, strlen("&gt;"), ">");
+        index = sRet.find("&gt;");
+    }
+
+    CMarkup data;
+	data.SetDoc(sRet);
+	BOOL bRet;
+	bRet = data.FindElem("data");
+	if (bRet)
+	{
+		data.IntoElem();
+	}
+	else
+	{
+		return bRet;
+	}
+
+	bRet = data.FindElem("tenantId");
+	if (bRet)
+	{
+		tenantId = data.GetElemContent();
+	}
+	else
+	{
+		return bRet;
+	}
+
+
+	bRet = data.FindElem("password");
+	if (bRet)
+	{
+		pwd = data.GetElemContent();
+	}
+	else
+	{
+		return bRet;
+	}
+
+
+	bRet = data.FindElem("skills");
+	if (bRet)
+	{
+		data.IntoElem();
+	}
+	else
+	{
+		return bRet;
+	}
+
+	std::string strSkillAndPenalty;
+	int begin, end;
+	while(data.FindElem("skill"))
+	{
+		strSkillAndPenalty = data.GetElemContent();
+		begin = 0;
+		end = strSkillAndPenalty.find(";");
+		std::string skill = strSkillAndPenalty.substr(begin, end-begin);
+		begin = strSkillAndPenalty.find("=")+1;
+		end = strSkillAndPenalty.length();
+		std::string penalty = strSkillAndPenalty.substr(begin, end-begin);
+		mpSkillAndPenalty[skill] = penalty;
+	}
+
+	return bRet;
+}
+
+BOOL CWS::SendRequestAgentStationInfo(const std::string &sMsg)
+{
+    std::string strResultXMLData;
+    if(!CHttp::request(sMsg, m_pDlg->m_strOverTime, strResultXMLData))
+    {
+        m_pDlg->m_Log.Log("ERROR_LOG-> %s Request",sMsg.c_str());
+		m_pDlg->m_Log.Log("ERROR_LOG-> Response %s",strResultXMLData.c_str());
+        return FALSE;
+    }
+
+    m_pDlg->m_Log.Log("FLOW_LOG-> %s Request",sMsg.c_str());
+    m_pDlg->m_Log.Log("FLOW_LOG-> Response %s",strResultXMLData.c_str());
+
+    std::string sRet;
+
+    if(strResultXMLData != "")
+	{
+		CMarkup xml;
+		xml.SetDoc(strResultXMLData);
+		xml.FindElem("soap:Envelope");
+		xml.IntoElem();
+		xml.FindElem("soap:Body");
+		xml.IntoElem();
+		      xml.FindElem("ns1:checkAgentLoginResponse");
+			  xml.IntoElem();
+			  xml.FindElem("return");
+			  sRet = xml.GetElemContent();
+			  xml.OutOfElem();
+			  xml.OutOfElem();
+			  xml.OutOfElem();
+	}
+
+	if(sRet=="false")
+		return FALSE;
+
+	return TRUE;
+}
+
+BOOL CWS::SendRequestTeantIdCallerInfo(const std::string &sMsg, std::string& sConfigCaller, std::string& sConfigpstnAgentPrefix)
+{
+    std::string strResultXMLData;
+    if(!CHttp::request(sMsg, m_pDlg->m_strOverTime, strResultXMLData))
+    {
+        m_pDlg->m_Log.Log("ERROR_LOG-> %s Request",sMsg.c_str());
+		m_pDlg->m_Log.Log("ERROR_LOG-> Response %s",strResultXMLData.c_str());
+        return FALSE;
+    }
+
+    m_pDlg->m_Log.Log("FLOW_LOG-> %s Request",sMsg.c_str());
+    m_pDlg->m_Log.Log("FLOW_LOG-> Response %s",strResultXMLData.c_str());
+
+    std::string sRet;
+
+    if(strResultXMLData != "")
+	{
+		CMarkup xml;
+		xml.SetDoc(strResultXMLData);
+		xml.FindElem("soap:Envelope");
+		xml.IntoElem();
+		xml.FindElem("soap:Body");
+		xml.IntoElem();
+		      xml.FindElem("ns1:getTenantInfoResponse");
+			  xml.IntoElem();
+			  xml.FindElem("return");
+			  sRet = xml.GetElemContent();
+			  xml.OutOfElem();
+			  xml.OutOfElem();
+			  xml.OutOfElem();
+	}
+
+	CUntiTool tool;
+	tool.ParaXML(sRet,"dialAgentCallerNumber",sConfigCaller);
+	tool.ParaXML(sRet,"pstnAgentPrefix",sConfigpstnAgentPrefix);
+	return TRUE;
+}
+
+BOOL CWS::SendRequestPBXInfo(const std::string &sMsg)
+{
+    std::string strResultXMLData;
+    if(!CHttp::request(sMsg, m_pDlg->m_strOverTime, strResultXMLData))
+    {
+        m_pDlg->m_Log.Log("ERROR_LOG-> %s Request",sMsg.c_str());
+		m_pDlg->m_Log.Log("ERROR_LOG-> Response %s",strResultXMLData.c_str());
+        return FALSE;
+    }
+
+    m_pDlg->m_Log.Log("FLOW_LOG-> %s Request",sMsg.c_str());
+    m_pDlg->m_Log.Log("FLOW_LOG-> Response %s",strResultXMLData.c_str());
+
+    std::string sRet;
+
+    if(strResultXMLData != "")
+	{
+		CMarkup xml;
+		xml.SetDoc(strResultXMLData);
+		xml.FindElem("soap:Envelope");
+		xml.IntoElem();
+		xml.FindElem("soap:Body");
+		xml.IntoElem();
+		xml.FindElem("ns1:getMachineSkillResponse");
+		xml.IntoElem();
+		xml.FindElem("return");
+//		CString sRet;
+		sRet = xml.GetElemContent();
+//		CString Ret = UTF8ToGBK(sRet);
+
+		std::string sReturn;
+		CUntiTool tool;
+
+		std::string sStartKey = "&lt;sipSkill&gt;";
+		std::string sEndKey = "&lt;/sipSkill&gt;";
+		int nsEndKey=sEndKey.length();
+		int nEnd=0;
+		while (1)
+		{
+			int nStart=sRet.find(sStartKey,nEnd);
+			if (nStart==-1)
+			{
+				break;
+			}
+			nEnd=sRet.find(sEndKey,nEnd+nsEndKey);
+			if (nEnd==-1)
+			{
+				break;
+			}
+			int nSecondStart = nStart+sStartKey.length();
+			sReturn = sRet.substr(nSecondStart,nEnd-nSecondStart);
+
+			std::string ssipSkillName;
+			tool.ParaXML(sReturn,"sipSkillName",ssipSkillName);
+			std::string stenantId;
+			tool.ParaXML(sReturn,"tenantId",stenantId);
+			PBXInfo* pPBXInfo = new PBXInfo;
+			pPBXInfo->ssipSkillName=ssipSkillName;
+			pPBXInfo->stenantId=stenantId;
+			m_pDlg->m_PBXInfoCritical.acquire();
+			m_pDlg->m_PBXInfoList.push_back(pPBXInfo);
+			m_pDlg->m_PBXInfoCritical.release();
+			m_pDlg->m_Log.Log("FLOW_LOG-> 技能组=%s 租户=%s",ssipSkillName.c_str(), stenantId.c_str());
+		}
+		xml.OutOfElem();
+		xml.OutOfElem();
+		xml.OutOfElem();
+	}
+	return TRUE;
+}
+
+BOOL CWS::SendRequestStationType(const std::string &sMsg, std::string& sStationType)
+{
+    std::string strResultXMLData;
+    if(!CHttp::request(sMsg, m_pDlg->m_strOverTime, strResultXMLData))
+    {
+        m_pDlg->m_Log.Log("ERROR_LOG-> %s Request",sMsg.c_str());
+		m_pDlg->m_Log.Log("ERROR_LOG-> Response %s",strResultXMLData.c_str());
+        return FALSE;
+    }
+
+    m_pDlg->m_Log.Log("FLOW_LOG-> %s Request",sMsg.c_str());
+    m_pDlg->m_Log.Log("FLOW_LOG-> Response %s",strResultXMLData.c_str());
+
+    std::string sRet;
+
+    if(strResultXMLData != "")
+	{
+		CMarkup xml;
+		xml.SetDoc(strResultXMLData);
+		xml.FindElem("soap:Envelope");
+		xml.IntoElem();
+		xml.FindElem("soap:Body");
+		xml.IntoElem();
+		      xml.FindElem("ns1:getSysNumTypeResponse");
+			  xml.IntoElem();
+			  xml.FindElem("return");
+			  sRet = xml.GetElemContent();
+			  xml.OutOfElem();
+			  xml.OutOfElem();
+			  xml.OutOfElem();
+	}
+
+	CUntiTool tool;
+	tool.ParaXML(sRet,"type",sStationType);
+	return TRUE;
+}

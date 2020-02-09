@@ -1,0 +1,15 @@
+.PHONY:clean
+CC=g++
+OUTDIR=./output
+CFLAGS=-Wall -g
+BIN=xjobs
+SRC=$(wildcard *.cpp)
+OBJS=$(patsubst %.cpp,${OUTDIR}/%.o,$(SRC)
+
+#obs.o log.o logManager.o MarkUp.o obsCfg.o Userconn.o HandleUserMsgThread.o GeneralUtils.o Phone.o GenCMD.o UntiTool.o SocketManager.o RegAskMsg.o HandleAskPBX.o
+$(BIN):$(OBJS)
+	${CC} ${CFLAGS} $^ -o $@  -llog4cxx -lpthread -luuid -lACE
+${OUTDIR}/%.o:%.cpp
+	$(CC) ${CFLAGS} -c $< -o $@
+clean:
+	rm  -rf $(OBJS) $(BIN)

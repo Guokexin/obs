@@ -1,0 +1,2177 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A2COLE	StdString.h	1088;"	d
+A2CT	StdString.h	1075;"	d
+A2CW	StdString.h	1068;"	d
+A2OLE	StdString.h	1084;"	d
+A2T	StdString.h	1071;"	d
+AGENTOP_H	AgentOp.h	2;"	d
+AGENTSTATEMSG_H	AskMsg/AgentStateMsg.h	6;"	d
+AGENT_CALL_STATUS	Agent.h	/^} AGENT_CALL_STATUS;$/;"	t	typeref:enum:__anon1
+AGENT_H	Agent.h	2;"	d
+AGENT_INIT_STATE	Agent.h	/^}AGENT_INIT_STATE;$/;"	t	typeref:enum:__anon2
+ASKPROXYDLG_H	AskProxyDlg.h	2;"	d
+ASKPROXY_H	AskProxy.h	2;"	d
+ASSERT	StdString.h	619;"	d
+ASSERT	StdString.h	641;"	d
+AS_Active	Agent.h	/^		AS_Active,					\/\/活动状态, 此时座席与客户之间通话已经建立$/;"	e	enum:__anon1
+AS_Alerting	Agent.h	/^		AS_Alerting,				\/\/客户震铃状态$/;"	e	enum:__anon1
+AS_Conferencing	Agent.h	/^		AS_Conferencing,			\/\/会议状态$/;"	e	enum:__anon1
+AS_Consulting	Agent.h	/^		AS_Consulting,				\/\/咨询状态\/\/not used$/;"	e	enum:__anon1
+AS_Dial	Agent.h	/^		AS_Dial,					\/\/外拨号状态$/;"	e	enum:__anon1
+AS_DialAgent	Agent.h	/^		AS_DialAgent,				\/\/内拨号状态\/\/not used$/;"	e	enum:__anon1
+AS_Hangup	Agent.h	/^		AS_Hangup,                  \/\/挂断状态$/;"	e	enum:__anon1
+AS_Hold	Agent.h	/^		AS_Hold,					\/\/呼叫保持状态$/;"	e	enum:__anon1
+AS_HoldUp	Agent.h	/^		AS_HoldUp,					\/\/拦截状态 只表明监听方的状态\/\/not used$/;"	e	enum:__anon1
+AS_Idle	Agent.h	/^		AS_Idle,					\/\/空闲状态$/;"	e	enum:__anon1
+AS_Login	Agent.h	/^		AS_Login,					\/\/登录状态$/;"	e	enum:__anon1
+AS_Manage	Agent.h	/^		AS_Manage,					\/\/管理状态\/\/not used$/;"	e	enum:__anon1
+AS_Monitor	Agent.h	/^		AS_Monitor,					\/\/监听状态 只表明监听方的状态\/\/not used$/;"	e	enum:__anon1
+AS_Notlogin	Agent.h	/^		AS_Notlogin,				\/\/未登录状态$/;"	e	enum:__anon1
+AS_Notready	Agent.h	/^		AS_Notready,				\/\/未就绪状态$/;"	e	enum:__anon1
+AS_Observe	Agent.h	/^		AS_Observe,					\/\/强插状态 相当于会议\/\/not used$/;"	e	enum:__anon1
+AS_Preview	Agent.h	/^		AS_Preview,					\/\/预览式外拨\/\/not used$/;"	e	enum:__anon1
+AS_Transfer	Agent.h	/^		AS_Transfer					\/\/转接状态-报表需要的假状态$/;"	e	enum:__anon1
+AS_Unknown	Agent.h	/^	AS_Unknown = 0,				\/\/登录失败$/;"	e	enum:__anon1
+AS_Wrap	Agent.h	/^		AS_Wrap,					\/\/后处理状态 此时不分配电话$/;"	e	enum:__anon1
+AToUTF8	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::AToUTF8( MCD_CSTR pszANSI )$/;"	f	class:CMarkup
+AddAttrib	AskMsg/XmlMarkup.h	/^	bool AddAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue ) { return x_SetAttrib(m_iPos,szAttrib,szValue); };$/;"	f	class:CMarkup
+AddAttrib	AskMsg/XmlMarkup.h	/^	bool AddAttrib( MCD_CSTR szAttrib, int nValue ) { return x_SetAttrib(m_iPos,szAttrib,nValue); };$/;"	f	class:CMarkup
+AddChildAttrib	AskMsg/XmlMarkup.h	/^	bool AddChildAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue ) { return x_SetAttrib(m_iPosChild,szAttrib,szValue); };$/;"	f	class:CMarkup
+AddChildAttrib	AskMsg/XmlMarkup.h	/^	bool AddChildAttrib( MCD_CSTR szAttrib, int nValue ) { return x_SetAttrib(m_iPosChild,szAttrib,nValue); };$/;"	f	class:CMarkup
+AddChildElem	AskMsg/XmlMarkup.h	/^	bool AddChildElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags|MNF_CHILD); };$/;"	f	class:CMarkup
+AddChildElem	AskMsg/XmlMarkup.h	/^	bool AddChildElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags|MNF_CHILD); };$/;"	f	class:CMarkup
+AddChildSubDoc	AskMsg/XmlMarkup.h	/^	bool AddChildSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,MNF_CHILD); };$/;"	f	class:CMarkup
+AddElem	AskMsg/XmlMarkup.h	/^	bool AddElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags); };$/;"	f	class:CMarkup
+AddElem	AskMsg/XmlMarkup.h	/^	bool AddElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags); };$/;"	f	class:CMarkup
+AddElemToResult	AgentOp.cpp	/^std::string CAgentOp::AddElemToResult(const std::string &sMsg, const std::string &selem_name, const std::string &selem_value)$/;"	f	class:CAgentOp
+AddNode	AskMsg/XmlMarkup.h	/^	bool AddNode( int nType, MCD_CSTR szText ) { return x_AddNode(nType,szText,0); };$/;"	f	class:CMarkup
+AddRef	Agent.cpp	/^int CAgent::AddRef()$/;"	f	class:CAgent
+AddSubDoc	AskMsg/XmlMarkup.h	/^	bool AddSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,0); };$/;"	f	class:CMarkup
+AdjustStartTagLen	AskMsg/XmlMarkup.cpp	/^	void AdjustStartTagLen( int n ) { nStartTagLen += n; };$/;"	f	struct:ElemPos
+AgentInfo	AskMsg/askmsgdef.h	/^struct AgentInfo$/;"	s
+AgentIsLogin	AskProxyDlg.cpp	/^BOOL CAskProxyDlg::AgentIsLogin(const std::string &sagentid, std::string& sStation)$/;"	f	class:CAskProxyDlg
+AgentMsg	AskProxyDlg.h	/^	AgentMsg():sMsg(""),s(-1)$/;"	f	struct:AgentMsg
+AgentMsg	AskProxyDlg.h	/^struct AgentMsg$/;"	s
+AgentState	Agent.h	/^	AGENT_CALL_STATUS AgentState;$/;"	m	class:CAgent
+AgentinitState	Agent.h	/^	AGENT_INIT_STATE  AgentinitState;$/;"	m	class:CAgent
+Alloc	AskMsg/XmlMarkup.cpp	/^	void Alloc( int nNewSize ) { TagPos* pLNew = new TagPos[nNewSize]; Copy(pLNew); nSize=nNewSize; };$/;"	f	struct:ElemStack
+AllocSysString	StdString.h	/^		BSTR AllocSysString() const$/;"	f	class:CStdStr
+AnsiToOem	StdString.h	/^	void AnsiToOem()$/;"	f	class:CStdStr
+AppendFormat	StdString.h	/^	void AppendFormat(const CT* szFmt, ...)$/;"	f	class:CStdStr
+AppendFormatV	StdString.h	/^	void AppendFormatV(const CT* szFmt, va_list argList)$/;"	f	class:CStdStr
+AttribPredicateMatch	AskMsg/XmlMarkup.cpp	/^bool PathPos::AttribPredicateMatch( TokenPos& token )$/;"	f	class:PathPos
+BOOL	AskProxy.h	/^typedef int BOOL;$/;"	t
+BOOL	AskProxyDlg.h	/^typedef int BOOL;$/;"	t
+BOOL	owntype.h	/^typedef int BOOL;$/;"	t
+BUFSIZE_1ST	StdString.h	3138;"	d
+BUFSIZE_2ND	StdString.h	3139;"	d
+BUSYEVT_H	AskMsg/BusyEvt.h	6;"	d
+BUSY_STATE	Agent.h	/^	BUSY_STATE,$/;"	e	enum:__anon2
+BomTable	AskMsg/XmlMarkup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	v	typeref:struct:BomTableStruct
+BomTableStruct	AskMsg/XmlMarkup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	s	file:
+BubbleSort	GeneralUtils.cpp	/^void CGeneralUtils::BubbleSort(std::vector<std::string>& mysortArray, int count, bool ascend)$/;"	f	class:CGeneralUtils
+Buffer	StdString.h	/^	CT*  Buffer()			 { return GetBuf(); }	\/\/ backwards compatability$/;"	f	class:CStdStr
+BufferRel	StdString.h	/^	void BufferRel()		 { RelBuf(); }			\/\/ backwards compatability$/;"	f	class:CStdStr
+BufferSet	StdString.h	/^	CT*  BufferSet(int nLen) { return SetBuf(nLen);}\/\/ backwards compatability$/;"	f	class:CStdStr
+CActionID	UntiTool.h	/^struct CActionID$/;"	s
+CAgent	Agent.cpp	/^CAgent::CAgent()$/;"	f	class:CAgent
+CAgent	Agent.h	/^class CAgent$/;"	c
+CAgentLock	Agent.cpp	/^class CAgentLock$/;"	c	file:
+CAgentMsgList	AskProxyDlg.h	/^typedef std::list<AgentMsg*> CAgentMsgList;$/;"	t
+CAgentOp	AgentOp.cpp	/^CAgentOp::CAgentOp()$/;"	f	class:CAgentOp
+CAgentOp	AgentOp.h	/^class CAgentOp$/;"	c
+CAgentStateMsg	AskMsg/AgentStateMsg.cpp	/^CAgentStateMsg::CAgentStateMsg()$/;"	f	class:CAgentStateMsg
+CAgentStateMsg	AskMsg/AgentStateMsg.h	/^class CAgentStateMsg$/;"	c
+CAskProxyDlg	AskProxyDlg.cpp	/^CAskProxyDlg::CAskProxyDlg()$/;"	f	class:CAskProxyDlg
+CAskProxyDlg	AskProxyDlg.h	/^class CAskProxyDlg$/;"	c
+CBusyEvt	AskMsg/BusyEvt.cpp	/^CBusyEvt::CBusyEvt()$/;"	f	class:CBusyEvt
+CBusyEvt	AskMsg/BusyEvt.h	/^class CBusyEvt$/;"	c
+CChannelStateMsg	AskMsg/ChannelStateMsg.cpp	/^CChannelStateMsg::CChannelStateMsg()$/;"	f	class:CChannelStateMsg
+CChannelStateMsg	AskMsg/ChannelStateMsg.h	/^class CChannelStateMsg$/;"	c
+CCheckAgent	CheckAgent.cpp	/^CCheckAgent::CCheckAgent()$/;"	f	class:CCheckAgent
+CCheckAgent	CheckAgent.h	/^class CCheckAgent$/;"	c
+CCompletePort	CompletePort.cpp	/^CCompletePort::CCompletePort()$/;"	f	class:CCompletePort
+CCompletePort	CompletePort.h	/^class CCompletePort$/;"	c
+CConfEvt	AskMsg/ConfEvt.cpp	/^CConfEvt::CConfEvt()$/;"	f	class:CConfEvt
+CConfEvt	AskMsg/ConfEvt.h	/^class CConfEvt$/;"	c
+CConsultCancelEvt	AskMsg/ConsultCancelEvt.cpp	/^CConsultCancelEvt::CConsultCancelEvt()$/;"	f	class:CConsultCancelEvt
+CConsultCancelEvt	AskMsg/ConsultCancelEvt.h	/^class CConsultCancelEvt$/;"	c
+CConsultEvt	AskMsg/ConsultEvt.cpp	/^CConsultEvt::CConsultEvt()$/;"	f	class:CConsultEvt
+CConsultEvt	AskMsg/ConsultEvt.h	/^class CConsultEvt$/;"	c
+CConsultTransEvt	AskMsg/ConsultTransEvt.cpp	/^CConsultTransEvt::CConsultTransEvt()$/;"	f	class:CConsultTransEvt
+CConsultTransEvt	AskMsg/ConsultTransEvt.h	/^class CConsultTransEvt$/;"	c
+CEnforceLogOutEvt	AskMsg/EnforceLogOutEvt.cpp	/^CEnforceLogOutEvt::CEnforceLogOutEvt()$/;"	f	class:CEnforceLogOutEvt
+CEnforceLogOutEvt	AskMsg/EnforceLogOutEvt.h	/^class CEnforceLogOutEvt$/;"	c
+CEstablishEvt	AskMsg/EstablishEvt.cpp	/^CEstablishEvt::CEstablishEvt()$/;"	f	class:CEstablishEvt
+CEstablishEvt	AskMsg/EstablishEvt.h	/^class CEstablishEvt$/;"	c
+CGenCMD	GenCMD.cpp	/^CGenCMD::CGenCMD()$/;"	f	class:CGenCMD
+CGenCMD	GenCMD.h	/^class CGenCMD$/;"	c
+CGeneralUtils	GeneralUtils.cpp	/^CGeneralUtils::CGeneralUtils()$/;"	f	class:CGeneralUtils
+CGeneralUtils	GeneralUtils.h	/^class  CGeneralUtils$/;"	c
+CGetPopDataEvt	AskMsg/GetPopDataEvt.cpp	/^CGetPopDataEvt::CGetPopDataEvt()$/;"	f	class:CGetPopDataEvt
+CGetPopDataEvt	AskMsg/GetPopDataEvt.h	/^class CGetPopDataEvt$/;"	c
+CHANNELSTATEMSG_H	AskMsg/ChannelStateMsg.h	6;"	d
+CHECKAGENT_H	CheckAgent.h	2;"	d
+CHandSoftPhoneThread	HandSoftPhoneThread.cpp	/^CHandSoftPhoneThread::CHandSoftPhoneThread()$/;"	f	class:CHandSoftPhoneThread
+CHandSoftPhoneThread	HandSoftPhoneThread.h	/^class CHandSoftPhoneThread$/;"	c
+CHandleAskPBX	HandleAskPBX  (2013-5-7).cpp	/^CHandleAskPBX::CHandleAskPBX()$/;"	f	class:CHandleAskPBX
+CHandleAskPBX	HandleAskPBX.cpp	/^CHandleAskPBX::CHandleAskPBX()$/;"	f	class:CHandleAskPBX
+CHandleAskPBX	HandleAskPBX.h	/^class CHandleAskPBX$/;"	c
+CHandleWS	HandleWS.cpp	/^CHandleWS::CHandleWS()$/;"	f	class:CHandleWS
+CHandleWS	HandleWS.h	/^class CHandleWS$/;"	c
+CHandleWebResponse	HandleWebResponse.cpp	/^CHandleWebResponse::CHandleWebResponse()$/;"	f	class:CHandleWebResponse
+CHandleWebResponse	HandleWebResponse.h	/^class CHandleWebResponse$/;"	c
+CHangupEvt	AskMsg/HangupEvt.cpp	/^CHangupEvt::CHangupEvt()$/;"	f	class:CHangupEvt
+CHangupEvt	AskMsg/HangupEvt.h	/^class CHangupEvt$/;"	c
+CHeadMsg	AskMsg/HeadMsg.cpp	/^CHeadMsg::CHeadMsg()$/;"	f	class:CHeadMsg
+CHeadMsg	AskMsg/HeadMsg.h	/^class CHeadMsg$/;"	c
+CHoldEvt	AskMsg/HoldEvt.cpp	/^CHoldEvt::CHoldEvt()$/;"	f	class:CHoldEvt
+CHoldEvt	AskMsg/HoldEvt.h	/^class CHoldEvt$/;"	c
+CHoldupCallEvt	AskMsg/HoldupCallEvt.cpp	/^CHoldupCallEvt::CHoldupCallEvt()$/;"	f	class:CHoldupCallEvt
+CHoldupCallEvt	AskMsg/HoldupCallEvt.h	/^class CHoldupCallEvt$/;"	c
+CHttp	socket/http.h	/^class CHttp$/;"	c
+CIdleEvt	AskMsg/IdleEvt.cpp	/^CIdleEvt::CIdleEvt()$/;"	f	class:CIdleEvt
+CIdleEvt	AskMsg/IdleEvt.h	/^class CIdleEvt$/;"	c
+CLog	logclass/log.cpp	/^CLog::CLog()$/;"	f	class:CLog
+CLog	logclass/log.cpp	/^CLog::CLog(const char *name)$/;"	f	class:CLog
+CLog	logclass/log.h	/^class CLog$/;"	c
+CLoginEvt	AskMsg/LoginEvt.cpp	/^CLoginEvt::CLoginEvt()$/;"	f	class:CLoginEvt
+CLoginEvt	AskMsg/LoginEvt.h	/^class CLoginEvt$/;"	c
+CLogoutEvt	AskMsg/LogoutEvt.cpp	/^CLogoutEvt::CLogoutEvt()$/;"	f	class:CLogoutEvt
+CLogoutEvt	AskMsg/LogoutEvt.h	/^class CLogoutEvt$/;"	c
+CMakeCallEvt	AskMsg/MakeCallEvt.cpp	/^CMakeCallEvt::CMakeCallEvt()$/;"	f	class:CMakeCallEvt
+CMakeCallEvt	AskMsg/MakeCallEvt.h	/^class CMakeCallEvt$/;"	c
+CMarkup	AskMsg/XmlMarkup.h	/^	CMarkup( MCD_CSTR szDoc ) { x_InitMarkup(); SetDoc( szDoc ); };$/;"	f	class:CMarkup
+CMarkup	AskMsg/XmlMarkup.h	/^	CMarkup( const CMarkup& markup ) { x_InitMarkup(); *this = markup; };$/;"	f	class:CMarkup
+CMarkup	AskMsg/XmlMarkup.h	/^	CMarkup( int nFlags ) { x_InitMarkup(); SetDoc( NULL ); m_nDocFlags = nFlags; };$/;"	f	class:CMarkup
+CMarkup	AskMsg/XmlMarkup.h	/^	CMarkup() { x_InitMarkup(); SetDoc( NULL ); };$/;"	f	class:CMarkup
+CMarkup	AskMsg/XmlMarkup.h	/^class CMarkup$/;"	c
+CMonitorEvt	AskMsg/MonitorEvt.cpp	/^CMonitorEvt::CMonitorEvt()$/;"	f	class:CMonitorEvt
+CMonitorEvt	AskMsg/MonitorEvt.h	/^class CMonitorEvt$/;"	c
+CMsgQueue	MsgQueue.cpp	/^CMsgQueue::CMsgQueue()$/;"	f	class:CMsgQueue
+CMsgQueue	MsgQueue.h	/^class CMsgQueue$/;"	c
+COMPLETEPORT_H	CompletePort.h	2;"	d
+CONFEVT_H	AskMsg/ConfEvt.h	6;"	d
+CONN_ACTIVE	Agent.h	/^    CONN_ACTIVE,$/;"	e	enum:CONN_ID_STATE
+CONN_CHAN	Agent.h	/^  CONN_CHAN()$/;"	f	class:CONN_CHAN
+CONN_CHAN	Agent.h	/^class   CONN_CHAN$/;"	c
+CONN_CONFERENCE	Agent.h	/^    CONN_CONFERENCE$/;"	e	enum:CONN_ID_STATE
+CONN_HOLD	Agent.h	/^    CONN_HOLD,$/;"	e	enum:CONN_ID_STATE
+CONN_ID_STATE	Agent.h	/^enum CONN_ID_STATE$/;"	g
+CONSULTCANCELEVT_H	AskMsg/ConsultCancelEvt.h	6;"	d
+CONSULTEVT_H	AskMsg/ConsultEvt.h	6;"	d
+CONSULTTRANSEVT_H	AskMsg/ConsultTransEvt.h	6;"	d
+CObserverEvt	AskMsg/ObserverEvt.cpp	/^CObserverEvt::CObserverEvt()$/;"	f	class:CObserverEvt
+CObserverEvt	AskMsg/ObserverEvt.h	/^class CObserverEvt$/;"	c
+CPBXInfoList	AskProxyDlg.h	/^typedef std::list<PBXInfo*> CPBXInfoList;$/;"	t
+CPhone	Phone.cpp	/^CPhone::CPhone()$/;"	f	class:CPhone
+CPhone	Phone.h	/^class CPhone$/;"	c
+CQueueCallInfo	QueueStatic.h	/^class CQueueCallInfo$/;"	c
+CQueueEvt	AskMsg/QueueEvt.cpp	/^CQueueEvt::CQueueEvt()$/;"	f	class:CQueueEvt
+CQueueEvt	AskMsg/QueueEvt.h	/^class CQueueEvt$/;"	c
+CRecordEvt	AskMsg/RecordEvt.cpp	/^CRecordEvt::CRecordEvt()$/;"	f	class:CRecordEvt
+CRecordEvt	AskMsg/RecordEvt.h	/^class CRecordEvt$/;"	c
+CRegAskMsg	AskMsg/RegAskMsg.cpp	/^CRegAskMsg::CRegAskMsg()$/;"	f	class:CRegAskMsg
+CRegAskMsg	AskMsg/RegAskMsg.h	/^class CRegAskMsg$/;"	c
+CResponseMsg	ResponseMsg.cpp	/^CResponseMsg::CResponseMsg()$/;"	f	class:CResponseMsg
+CResponseMsg	ResponseMsg.h	/^class CResponseMsg$/;"	c
+CRingEvt	AskMsg/RingEvt.cpp	/^CRingEvt::CRingEvt()$/;"	f	class:CRingEvt
+CRingEvt	AskMsg/RingEvt.h	/^class CRingEvt$/;"	c
+CSendDtmfEvt	AskMsg/SendDtmfEvt.cpp	/^CSendDtmfEvt::CSendDtmfEvt()$/;"	f	class:CSendDtmfEvt
+CSendDtmfEvt	AskMsg/SendDtmfEvt.h	/^class CSendDtmfEvt$/;"	c
+CSettingData	SettingData.h	/^	CSettingData(){$/;"	f	class:CSettingData
+CSettingData	SettingData.h	/^class CSettingData$/;"	c
+CSingleTransEvt	AskMsg/SingleTransEvt.cpp	/^CSingleTransEvt::CSingleTransEvt()$/;"	f	class:CSingleTransEvt
+CSingleTransEvt	AskMsg/SingleTransEvt.h	/^class CSingleTransEvt$/;"	c
+CSocketManager	socket/SocketManager  (复件).cpp	/^CSocketManager::CSocketManager()$/;"	f	class:CSocketManager
+CSocketManager	socket/SocketManager (复件).h	/^class CSocketManager$/;"	c
+CSocketManager	socket/SocketManager.cpp	/^CSocketManager::CSocketManager()$/;"	f	class:CSocketManager
+CSocketManager	socket/SocketManager.h	/^class CSocketManager : public ACE_Event_Handler$/;"	c
+CSoftPhoneMsg	SoftPhoneMsg.cpp	/^CSoftPhoneMsg::CSoftPhoneMsg()$/;"	f	class:CSoftPhoneMsg
+CSoftPhoneMsg	SoftPhoneMsg.h	/^class CSoftPhoneMsg$/;"	c
+CStdStr	StdString.h	/^		CStdStr(const _bstr_t& bstr)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr()$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(MYCITER first, MYCITER last)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(MYSIZE nSize, MYVAL ch, const MYALLOC& al=MYALLOC())$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(PCMYSTR pT, MYSIZE n) : MYBASE(pT, n)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(PCSTR pA)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(PCUSTR pU)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(PCWSTR pW)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(const MYTYPE& str) : MYBASE(SSREF(str))$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(const std::string& str)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^	CStdStr(const std::wstring& str)$/;"	f	class:CStdStr
+CStdStr	StdString.h	/^class CStdStr : public std::basic_string<CT>$/;"	c
+CStdString	StdString.h	/^	typedef CStdStringA				CStdString;$/;"	t
+CStdString	StdString.h	/^	typedef CStdStringW				CStdString;$/;"	t
+CStdStringA	StdString.h	/^typedef CStdStr<char>		CStdStringA;	\/\/ a better std::string$/;"	t
+CStdStringO	StdString.h	/^typedef CStdStr<OLECHAR>	CStdStringO;	\/\/ almost always CStdStringW$/;"	t
+CStdStringW	StdString.h	/^typedef CStdStr<wchar_t>	CStdStringW;	\/\/ a better std::wstring$/;"	t
+CUnHoldEvt	AskMsg/UnHoldEvt.cpp	/^CUnHoldEvt::CUnHoldEvt()$/;"	f	class:CUnHoldEvt
+CUnHoldEvt	AskMsg/UnHoldEvt.h	/^class CUnHoldEvt$/;"	c
+CUntiTool	UntiTool.cpp	/^CUntiTool::CUntiTool()$/;"	f	class:CUntiTool
+CUntiTool	UntiTool.h	/^class CUntiTool$/;"	c
+CUserConn	UserConn/Userconn.cpp	/^CUserConn::CUserConn()$/;"	f	class:CUserConn
+CUserConn	UserConn/Userconn.h	/^class CUserConn$/;"	c
+CWSQueue	MsgQueue.h	/^typedef std::list<WS_Q*> CWSQueue;$/;"	t
+CWrapupEvt	AskMsg/WrapupEvt.cpp	/^CWrapupEvt::CWrapupEvt()$/;"	f	class:CWrapupEvt
+CWrapupEvt	AskMsg/WrapupEvt.h	/^class CWrapupEvt$/;"	c
+CalcSlot	AskMsg/XmlMarkup.cpp	/^int ElemStack::CalcSlot( MCD_PCSZ pName, int n, bool bIC )$/;"	f	class:ElemStack
+CanConvert	AskMsg/XmlMarkup.cpp	/^bool TextEncoding::CanConvert( MCD_CSTR pszToEncoding, MCD_CSTR pszFromEncoding )$/;"	f	class:TextEncoding
+ChanS	Agent.h	/^struct ChanS$/;"	s
+CheckAgentFun	CheckAgent.cpp	/^LPVOID CCheckAgent::CheckAgentFun(LPVOID lpvoid)$/;"	f	class:CCheckAgent
+CheckValidString	GeneralUtils.cpp	/^BOOL CGeneralUtils::CheckValidString(const std::string &str)$/;"	f	class:CGeneralUtils
+Clear	AskMsg/XmlMarkup.cpp	/^	void Clear() { m_nL=0; m_nR=-1; m_nNext=0; };$/;"	f	struct:TokenPos
+Clear	AskMsg/XmlMarkup.cpp	/^	void Clear() { m_nSegs=0; m_nSize=0; m_pSegs=NULL; };$/;"	f	struct:ElemPosTree
+Clear	MsgQueue.cpp	/^BOOL CMsgQueue::Clear()$/;"	f	class:CMsgQueue
+ClearVirtualParent	AskMsg/XmlMarkup.cpp	/^	void ClearVirtualParent() { memset(this,0,sizeof(ElemPos)); };$/;"	f	struct:ElemPos
+Close	AskMsg/XmlMarkup.cpp	/^bool CMarkup::Close()$/;"	f	class:CMarkup
+CloseConn	HandSoftPhoneThread.cpp	/^void CHandSoftPhoneThread::CloseConn(const std::string &strMsg, int s)$/;"	f	class:CHandSoftPhoneThread
+CloseSocketManager	socket/SocketManager.cpp	/^void CSocketManager::CloseSocketManager()$/;"	f	class:CSocketManager
+CmdQueue	AskMsg/QueueEvt.cpp	/^std::string CQueueEvt::CmdQueue()$/;"	f	class:CQueueEvt
+Collate	StdString.h	/^	int Collate(PCMYSTR szThat) const$/;"	f	class:CStdStr
+CollateNoCase	StdString.h	/^	int CollateNoCase(PCMYSTR szThat) const$/;"	f	class:CStdStr
+Compare	StdString.h	/^	int Compare(PCMYSTR szThat) const$/;"	f	class:CStdStr
+CompareNoCase	StdString.h	/^	int CompareNoCase(PCMYSTR szThat)	const$/;"	f	class:CStdStr
+Confercece_1	Agent.cpp	/^BOOL CAgent::Confercece_1()$/;"	f	class:CAgent
+Conference	Agent.cpp	/^BOOL CAgent::Conference()$/;"	f	class:CAgent
+ConnectTo	socket/SocketManager  (复件).cpp	/^bool CSocketManager::ConnectTo(const std::string &strDestination, const std::string &strServiceName, int nType)$/;"	f	class:CSocketManager
+ConnectTo	socket/SocketManager.cpp	/^bool CSocketManager::ConnectTo(const std::string &strDestination, const std::string &strServiceName, int nType)$/;"	f	class:CSocketManager
+Consult	Agent.cpp	/^BOOL CAgent::Consult()$/;"	f	class:CAgent
+ConsultCancel	Agent.cpp	/^BOOL CAgent::ConsultCancel()$/;"	f	class:CAgent
+ConsultCancel_1	Agent.cpp	/^BOOL CAgent::ConsultCancel_1()$/;"	f	class:CAgent
+ConsultTrans	Agent.cpp	/^BOOL CAgent::ConsultTrans()$/;"	f	class:CAgent
+ConsultTrans_1	Agent.cpp	/^BOOL CAgent::ConsultTrans_1()$/;"	f	class:CAgent
+ContentLen	AskMsg/XmlMarkup.cpp	/^	int ContentLen() const { return nLength - StartTagLen() - EndTagLen(); };$/;"	f	struct:ElemPos
+Copy	AskMsg/XmlMarkup.cpp	/^	void Copy( TagPos* pLNew ) { for(int n=0;n<nSize;++n) pLNew[n]=pL[n]; if (pL) delete [] pL; pL=pLNew; };$/;"	f	struct:ElemStack
+CopyElemPosTree	AskMsg/XmlMarkup.cpp	/^void ElemPosTree::CopyElemPosTree( ElemPosTree* pOtherTree, int n )$/;"	f	class:ElemPosTree
+CopySavedPosMaps	AskMsg/XmlMarkup.cpp	/^void SavedPosMapArray::CopySavedPosMaps( SavedPosMapArray* pOtherMaps )$/;"	f	class:SavedPosMapArray
+Current	AskMsg/XmlMarkup.cpp	/^	TagPos& Current() { return pL[iTop]; };$/;"	f	struct:ElemStack
+DWORD	AskProxy.h	/^typedef unsigned int DWORD;$/;"	t
+DWORD	StdString.h	/^    typedef unsigned long           DWORD;$/;"	t
+DWORD	owntype.h	/^typedef unsigned int DWORD;$/;"	t
+DecodeBase64	AskMsg/XmlMarkup.cpp	/^int CMarkup::DecodeBase64($/;"	f	class:CMarkup
+DecodeCharUTF16	AskMsg/XmlMarkup.cpp	/^int CMarkup::DecodeCharUTF16( const unsigned short*& pwszUTF16, const unsigned short* pszUTF16End\/*=NULL*\/ )$/;"	f	class:CMarkup
+DecodeCharUTF8	AskMsg/XmlMarkup.cpp	/^int CMarkup::DecodeCharUTF8( const char*& pszUTF8, const char* pszUTF8End\/*=NULL*\/ )$/;"	f	class:CMarkup
+DecodeString	UntiTool.cpp	/^void CUntiTool::DecodeString(const std::string &source, std::vector<std::string> &dest, char division)$/;"	f	class:CUntiTool
+Delete	StdString.h	/^	int Delete(int nIdx, int nCount=1)$/;"	f	class:CStdStr
+DeleteAllErrorMsg	socket/SocketManager  (复件).cpp	/^void CSocketManager::DeleteAllErrorMsg()$/;"	f	class:CSocketManager
+DeleteAllErrorMsg	socket/SocketManager.cpp	/^void CSocketManager::DeleteAllErrorMsg()$/;"	f	class:CSocketManager
+DetectUTF8	AskMsg/XmlMarkup.cpp	/^bool CMarkup::DetectUTF8( const char* pText, int nTextLen, int* pnNonASCII\/*=NULL*\/, bool* bErrorAtEnd\/*=NULL*\/ )$/;"	f	class:CMarkup
+DispatchAskPBX	HandleAskPBX  (2013-5-7).cpp	/^void* CHandleAskPBX::DispatchAskPBX(LPVOID lpvoid)$/;"	f	class:CHandleAskPBX
+DispatchAskPBX	HandleAskPBX.cpp	/^void* CHandleAskPBX::DispatchAskPBX(LPVOID lpvoid)$/;"	f	class:CHandleAskPBX
+ELEM	AskMsg/XmlMarkup.cpp	1020;"	d	file:
+ENFORCELOGOUTEVT_H	AskMsg/EnforceLogOutEvt.h	6;"	d
+ESTABLISHEVT_H	AskMsg/EstablishEvt.h	6;"	d
+ElemPos	AskMsg/XmlMarkup.cpp	/^	ElemPos( const ElemPos& pos ) { *this = pos; };$/;"	f	struct:ElemPos
+ElemPos	AskMsg/XmlMarkup.cpp	/^	ElemPos() {};$/;"	f	struct:ElemPos
+ElemPos	AskMsg/XmlMarkup.cpp	/^struct ElemPos$/;"	s	file:
+ElemPosTree	AskMsg/XmlMarkup.cpp	/^	ElemPosTree() { Clear(); };$/;"	f	struct:ElemPosTree
+ElemPosTree	AskMsg/XmlMarkup.cpp	/^struct ElemPosTree$/;"	s	file:
+ElemStack	AskMsg/XmlMarkup.cpp	/^	ElemStack() { iTop=0; iUsed=0; iPar=0; nLevel=0; nSize=0; pL=NULL; Alloc(7); pL[0].Init(); InitTable(); };$/;"	f	struct:ElemStack
+ElemStack	AskMsg/XmlMarkup.cpp	/^struct ElemStack$/;"	s	file:
+Empty	StdString.h	/^	void Empty()$/;"	f	class:CStdStr
+EnAskMsg	AskMsg/EstablishEvt.cpp	/^std::string    CEstablishEvt::EnAskMsg()$/;"	f	class:CEstablishEvt
+EnEvt	AskMsg/AgentStateMsg.cpp	/^std::string CAgentStateMsg::EnEvt(const std::string &sState)$/;"	f	class:CAgentStateMsg
+EnEvt	AskMsg/ChannelStateMsg.cpp	/^std::string CChannelStateMsg::EnEvt(const std::string &sState)$/;"	f	class:CChannelStateMsg
+EnSoftPhoneMsg	AskMsg/BusyEvt.cpp	/^std::string CBusyEvt::EnSoftPhoneMsg()$/;"	f	class:CBusyEvt
+EnSoftPhoneMsg	AskMsg/ConfEvt.cpp	/^std::string CConfEvt::EnSoftPhoneMsg()$/;"	f	class:CConfEvt
+EnSoftPhoneMsg	AskMsg/ConsultEvt.cpp	/^std::string    CConsultEvt::EnSoftPhoneMsg()$/;"	f	class:CConsultEvt
+EnSoftPhoneMsg	AskMsg/EnforceLogOutEvt.cpp	/^std::string    CEnforceLogOutEvt::EnSoftPhoneMsg()$/;"	f	class:CEnforceLogOutEvt
+EnSoftPhoneMsg	AskMsg/GetPopDataEvt.cpp	/^std::string CGetPopDataEvt::EnSoftPhoneMsg()$/;"	f	class:CGetPopDataEvt
+EnSoftPhoneMsg	AskMsg/HangupEvt.cpp	/^std::string CHangupEvt::EnSoftPhoneMsg()$/;"	f	class:CHangupEvt
+EnSoftPhoneMsg	AskMsg/HoldEvt.cpp	/^std::string    CHoldEvt::EnSoftPhoneMsg()$/;"	f	class:CHoldEvt
+EnSoftPhoneMsg	AskMsg/HoldupCallEvt.cpp	/^std::string CHoldupCallEvt::EnSoftPhoneMsg()$/;"	f	class:CHoldupCallEvt
+EnSoftPhoneMsg	AskMsg/IdleEvt.cpp	/^std::string CIdleEvt::EnSoftPhoneMsg()$/;"	f	class:CIdleEvt
+EnSoftPhoneMsg	AskMsg/LoginEvt.cpp	/^std::string CLoginEvt::EnSoftPhoneMsg()$/;"	f	class:CLoginEvt
+EnSoftPhoneMsg	AskMsg/LogoutEvt.cpp	/^std::string CLogoutEvt::EnSoftPhoneMsg()$/;"	f	class:CLogoutEvt
+EnSoftPhoneMsg	AskMsg/MakeCallEvt.cpp	/^std::string CMakeCallEvt::EnSoftPhoneMsg()$/;"	f	class:CMakeCallEvt
+EnSoftPhoneMsg	AskMsg/MonitorEvt.cpp	/^std::string CMonitorEvt::EnSoftPhoneMsg()$/;"	f	class:CMonitorEvt
+EnSoftPhoneMsg	AskMsg/ObserverEvt.cpp	/^std::string CObserverEvt::EnSoftPhoneMsg()$/;"	f	class:CObserverEvt
+EnSoftPhoneMsg	AskMsg/RecordEvt.cpp	/^std::string CRecordEvt::EnSoftPhoneMsg()$/;"	f	class:CRecordEvt
+EnSoftPhoneMsg	AskMsg/RingEvt.cpp	/^std::string    CRingEvt::EnSoftPhoneMsg()$/;"	f	class:CRingEvt
+EnSoftPhoneMsg	AskMsg/SendDtmfEvt.cpp	/^std::string CSendDtmfEvt::EnSoftPhoneMsg()$/;"	f	class:CSendDtmfEvt
+EnSoftPhoneMsg	AskMsg/WrapupEvt.cpp	/^std::string CWrapupEvt::EnSoftPhoneMsg()$/;"	f	class:CWrapupEvt
+EnSoftPhoneMsg	SoftPhoneMsg.cpp	/^std::string CSoftPhoneMsg::EnSoftPhoneMsg()$/;"	f	class:CSoftPhoneMsg
+EncodeBase64	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::EncodeBase64($/;"	f	class:CMarkup
+EncodeCharUTF16	AskMsg/XmlMarkup.cpp	/^void CMarkup::EncodeCharUTF16( int nUChar, unsigned short* pwszUTF16, int& nUTF16Len )$/;"	f	class:CMarkup
+EncodeCharUTF8	AskMsg/XmlMarkup.cpp	/^void CMarkup::EncodeCharUTF8( int nUChar, char* pszUTF8, int& nUTF8Len )$/;"	f	class:CMarkup
+EncodeResp	ResponseMsg.cpp	/^std::string  CResponseMsg::EncodeResp()$/;"	f	class:CResponseMsg
+EncodingNameTable	AskMsg/XmlMarkup.cpp	/^MCD_PCSZ EncodingNameTable[155] =$/;"	v
+End	GenCMD.cpp	/^void CGenCMD::End(const std::string &sAction, const std::string &sActionID)$/;"	f	class:CGenCMD
+EndTagLen	AskMsg/XmlMarkup.cpp	/^	int EndTagLen() const { return nEndTagLen; };$/;"	f	struct:ElemPos
+EnforceLogOut	Agent.cpp	/^BOOL CAgent::EnforceLogOut(const std::string &sDnis, const std::string &sAgentId)$/;"	f	class:CAgent
+Equals	StdString.h	/^	bool Equals(const CT* pT, bool bUseCase=false) const$/;"	f	class:CStdStr
+EscapeText	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::EscapeText( MCD_CSTR szText, int nFlags )$/;"	f	class:CMarkup
+FALSE	AskProxy.h	10;"	d
+FALSE	owntype.h	5;"	d
+FINDNODEBAD	AskMsg/XmlMarkup.cpp	2313;"	d	file:
+FINDNODETYPE	AskMsg/XmlMarkup.cpp	2311;"	d	file:
+FINDNODETYPENAME	AskMsg/XmlMarkup.cpp	2312;"	d	file:
+FMT_BLOCK_SIZE	StdString.h	3137;"	d
+FileAtTop	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileAtTop()$/;"	f	class:FilePos
+FileCheckRaggedEnd	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileCheckRaggedEnd( void* pBuffer )$/;"	f	class:FilePos
+FileClose	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileClose()$/;"	f	class:FilePos
+FileErrorAddResult	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileErrorAddResult()$/;"	f	class:FilePos
+FileFlush	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileFlush( MCD_STR& strBuffer, int nWriteStrLen\/*=-1*\/, bool bFflush\/*=false*\/ )$/;"	f	class:FilePos
+FileGatherEnd	AskMsg/XmlMarkup.cpp	/^int FilePos::FileGatherEnd( MCD_STR& strMarkup )$/;"	f	class:FilePos
+FileGatherStart	AskMsg/XmlMarkup.cpp	/^void FilePos::FileGatherStart( int nStart )$/;"	f	class:FilePos
+FileOpen	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileOpen( MCD_CSTR_FILENAME szFileName )$/;"	f	class:FilePos
+FilePos	AskMsg/XmlMarkup.cpp	/^	FilePos()$/;"	f	struct:FilePos
+FilePos	AskMsg/XmlMarkup.cpp	/^struct FilePos$/;"	s	file:
+FileRead	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileRead( void* pBuffer )$/;"	f	class:FilePos
+FileReadNextBuffer	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileReadNextBuffer()$/;"	f	class:FilePos
+FileReadText	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileReadText( MCD_STR& strDoc )$/;"	f	class:FilePos
+FileSpecifyEncoding	AskMsg/XmlMarkup.cpp	/^void FilePos::FileSpecifyEncoding( MCD_STR* pstrEncoding )$/;"	f	class:FilePos
+FileWrite	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileWrite( void* pBuffer, const void* pConstBuffer \/*=NULL*\/ )$/;"	f	class:FilePos
+FileWriteText	AskMsg/XmlMarkup.cpp	/^bool FilePos::FileWriteText( const MCD_STR& strDoc, int nWriteStrLen\/*=-1*\/ )$/;"	f	class:FilePos
+Find	StdString.h	/^	int Find(CT ch) const$/;"	f	class:CStdStr
+Find	StdString.h	/^	int Find(CT ch, int nStart) const$/;"	f	class:CStdStr
+Find	StdString.h	/^	int Find(PCMYSTR szSub) const$/;"	f	class:CStdStr
+Find	StdString.h	/^	int Find(PCMYSTR szSub, int nStart) const$/;"	f	class:CStdStr
+FindAny	AskMsg/XmlMarkup.cpp	/^	bool FindAny()$/;"	f	struct:TokenPos
+FindAttrib	AskMsg/XmlMarkup.cpp	/^bool TokenPos::FindAttrib( MCD_PCSZ pAttrib, int n\/*=0*\/ )$/;"	f	class:TokenPos
+FindChildElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::FindChildElem( MCD_CSTR szName )$/;"	f	class:CMarkup
+FindElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::FindElem(MCD_CSTR szName)$/;"	f	class:CMarkup
+FindGetData	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::FindGetData( MCD_CSTR szName )$/;"	f	class:CMarkup
+FindName	AskMsg/XmlMarkup.cpp	/^	bool FindName()$/;"	f	struct:TokenPos
+FindNode	AskMsg/XmlMarkup.cpp	/^int CMarkup::FindNode( int nType )$/;"	f	class:CMarkup
+FindOneOf	StdString.h	/^	int FindOneOf(PCMYSTR szCharSet) const$/;"	f	class:CStdStr
+FindPrevChildElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::FindPrevChildElem( MCD_CSTR szName)$/;"	f	class:CMarkup
+FindPrevElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::FindPrevElem( MCD_CSTR szName )$/;"	f	class:CMarkup
+FindRaggedEnd	AskMsg/XmlMarkup.cpp	/^bool TextEncoding::FindRaggedEnd( int& nTruncBeforeBytes )$/;"	f	class:TextEncoding
+FindSetData	AskMsg/XmlMarkup.cpp	/^bool CMarkup::FindSetData( MCD_CSTR szName, MCD_CSTR szData, int nFlags )$/;"	f	class:CMarkup
+Flush	AskMsg/XmlMarkup.cpp	/^bool CMarkup::Flush()$/;"	f	class:CMarkup
+Fmt	StdString.h	/^	void Fmt(const CT* szFmt, ...)$/;"	f	class:CStdStr
+FmtArg	StdString.h	/^    explicit FmtArg(const ARG& arg) : a_(arg) {}$/;"	f	struct:FmtArg
+FmtArg	StdString.h	/^    explicit FmtArg(const CStdStringA& arg) : a_(arg) {}$/;"	f	struct:FmtArg
+FmtArg	StdString.h	/^    explicit FmtArg(const CStdStringW& arg) : a_(arg) {}$/;"	f	struct:FmtArg
+FmtArg	StdString.h	/^    explicit FmtArg(const std::string& arg) : a_(arg) {}$/;"	f	struct:FmtArg
+FmtArg	StdString.h	/^    explicit FmtArg(const std::wstring& arg) : a_(arg) {}$/;"	f	struct:FmtArg
+FmtArg	StdString.h	/^struct FmtArg$/;"	s
+FmtArg	StdString.h	/^struct FmtArg<CStdStringA>$/;"	s
+FmtArg	StdString.h	/^struct FmtArg<CStdStringW>$/;"	s
+FmtArg	StdString.h	/^struct FmtArg<std::string>$/;"	s
+FmtArg	StdString.h	/^struct FmtArg<std::wstring>$/;"	s
+Format	StdString.h	/^	void Format(UINT nId, ...)$/;"	f	class:CStdStr
+Format	StdString.h	/^	void Format(const CT* szFmt, ...)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(UINT nId)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(UINT nId, const A1& v)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(UINT nId, const A1& v1, const A2& v2)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(UINT nId, const A1& v1, const A2& v2, const A3& v3)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(UINT nId, const A1& v1, const A2& v2, const A3& v3,$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(const CT* szFmt)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(const CT* szFmt, const A1& v)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(const CT* szFmt, const A1& v1, const A2& v2)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(const CT* szFmt, const A1& v1, const A2& v2, const A3& v3)$/;"	f	class:CStdStr
+Format	StdString.h	/^    void Format(const CT* szFmt, const A1& v1, const A2& v2, const A3& v3,$/;"	f	class:CStdStr
+FormatMessage	StdString.h	/^	void FormatMessage(PCMYSTR szFormat, ...) throw(std::exception)$/;"	f	class:CStdStr
+FormatMessage	StdString.h	/^	void FormatMessage(UINT nFormatId, ...) throw(std::exception)$/;"	f	class:CStdStr
+FormatV	StdString.h	/^	void FormatV(const CT* szFormat, va_list argList)$/;"	f	class:CStdStr
+ForwardUntil	AskMsg/XmlMarkup.cpp	/^	void ForwardUntil( MCD_PCSZ szStopChars ) { while ( m_pDocText[m_nNext] && ! MCD_PSZCHR(szStopChars,m_pDocText[m_nNext]) ) m_nNext += MCD_CLEN(&m_pDocText[m_nNext]); }$/;"	f	struct:TokenPos
+FreeExtra	StdString.h	/^	void			FreeExtra()$/;"	f	class:CStdStr
+GENCMD_H	GenCMD.h	2;"	d
+GENERALUTILS_H	GeneralUtils.h	2;"	d
+GETPOPDATAEVT_H	AskMsg/GetPopDataEvt.h	6;"	d
+Gen	GenCMD.cpp	/^void CGenCMD::Gen(const std::string &Key, const std::string &Value)$/;"	f	class:CGenCMD
+GenActionID	GenCMD.cpp	/^std::string CGenCMD::GenActionID()$/;"	f	class:CGenCMD
+GenUCID	UntiTool.cpp	/^std::string CUntiTool::GenUCID()$/;"	f	class:CUntiTool
+GetActionID	GenCMD.cpp	/^std::string   CGenCMD::GetActionID()$/;"	f	class:CGenCMD
+GetAgentFromChan	AskProxyDlg.cpp	/^CAgent* CAskProxyDlg::GetAgentFromChan(const std::string &sChan)$/;"	f	class:CAskProxyDlg
+GetAgentFromStation	AskProxyDlg.cpp	/^CAgent* CAskProxyDlg::GetAgentFromStation(const std::string &sStation)$/;"	f	class:CAskProxyDlg
+GetAgentInfoFromHoldVal	UntiTool.cpp	/^BOOL CUntiTool::GetAgentInfoFromHoldVal(const std::string &sEvt, std::string& sStation, std::string& sAction, std::string &Val)$/;"	f	class:CUntiTool
+GetAllocLength	StdString.h	/^	int GetAllocLength()$/;"	f	class:CStdStr
+GetApp	AskProxy.cpp	/^CAskProxyDlg* GetApp()$/;"	f
+GetAt	StdString.h	/^	CT GetAt(int nIdx) const$/;"	f	class:CStdStr
+GetAttrib	AskMsg/XmlMarkup.h	/^	MCD_STR GetAttrib( MCD_CSTR szAttrib ) const { return x_GetAttrib(m_iPos,szAttrib); };$/;"	f	class:CMarkup
+GetAttribName	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::GetAttribName( int n ) const$/;"	f	class:CMarkup
+GetBuf	StdString.h	/^	CT* GetBuf(int nMinLen=-1)$/;"	f	class:CStdStr
+GetBuffer	StdString.h	/^	CT* GetBuffer(int nMinLen=-1)$/;"	f	class:CStdStr
+GetBufferSetLength	StdString.h	/^	CT* GetBufferSetLength(int nLen)$/;"	f	class:CStdStr
+GetChar	AskMsg/XmlMarkup.cpp	/^	MCD_CHAR GetChar() { return p[i]; };$/;"	f	struct:PathPos
+GetChildAttrib	AskMsg/XmlMarkup.h	/^	MCD_STR GetChildAttrib( MCD_CSTR szAttrib ) const { return x_GetAttrib(m_iPosChild,szAttrib); };$/;"	f	class:CMarkup
+GetChildData	AskMsg/XmlMarkup.h	/^	MCD_STR GetChildData() { return x_GetData(m_iPosChild); };$/;"	f	class:CMarkup
+GetChildSubDoc	AskMsg/XmlMarkup.h	/^	MCD_STR GetChildSubDoc() { return x_GetSubDoc(m_iPosChild); };$/;"	f	class:CMarkup
+GetChildTagName	AskMsg/XmlMarkup.h	/^	MCD_STR GetChildTagName() const { return x_GetTagName(m_iPosChild); };$/;"	f	class:CMarkup
+GetCmd	GenCMD.cpp	/^std::string CGenCMD::GetCmd()$/;"	f	class:CGenCMD
+GetCurrTime	UntiTool.cpp	/^std::string CUntiTool::GetCurrTime()$/;"	f	class:CUntiTool
+GetCurrTimeDate	UntiTool.cpp	/^ACE_Date_Time CUntiTool::GetCurrTimeDate()$/;"	f	class:CUntiTool
+GetCurrTimeHMS	UntiTool.cpp	/^std::string CUntiTool::GetCurrTimeHMS(const ACE_Date_Time *rh)$/;"	f	class:CUntiTool
+GetData	AskMsg/XmlMarkup.h	/^	MCD_STR GetData() { return x_GetData(m_iPos); };$/;"	f	class:CMarkup
+GetDeclaredEncoding	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::GetDeclaredEncoding( MCD_CSTR szDoc )$/;"	f	class:CMarkup
+GetDnisFromDialString	UntiTool.cpp	/^std::string CUntiTool::GetDnisFromDialString(const std::string &sDialString)$/;"	f	class:CUntiTool
+GetDoc	AskMsg/XmlMarkup.h	/^	const MCD_STR& GetDoc() const { return m_strDoc; };$/;"	f	class:CMarkup
+GetDocElemCount	AskMsg/XmlMarkup.cpp	/^int CMarkup::GetDocElemCount() const$/;"	f	class:CMarkup
+GetDocFlags	AskMsg/XmlMarkup.h	/^	int GetDocFlags() const { return m_nDocFlags; };$/;"	f	class:CMarkup
+GetElemContent	AskMsg/XmlMarkup.h	/^	MCD_STR GetElemContent() const { return x_GetElemContent(m_iPos); };$/;"	f	class:CMarkup
+GetElemIndex	AskMsg/XmlMarkup.cpp	/^int CMarkup::GetElemIndex() const$/;"	f	class:CMarkup
+GetElemLevel	AskMsg/XmlMarkup.cpp	/^int CMarkup::GetElemLevel() const$/;"	f	class:CMarkup
+GetElemPath	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::GetElemPath() const$/;"	f	class:CMarkup
+GetEncodingCodePage	AskMsg/XmlMarkup.cpp	/^int CMarkup::GetEncodingCodePage( MCD_CSTR pszEncoding )$/;"	f	class:CMarkup
+GetError	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::GetError() const$/;"	f	class:CMarkup
+GetErrorMsgFromList	socket/SocketManager  (复件).cpp	/^bool CSocketManager::GetErrorMsgFromList(std::string &errStr, int &errNum, _errortype &errType)$/;"	f	class:CSocketManager
+GetErrorMsgFromList	socket/SocketManager.cpp	/^bool CSocketManager::GetErrorMsgFromList(std::string &errStr, int &errNum, _errortype &errType)$/;"	f	class:CSocketManager
+GetErrorMsgStart	socket/SocketManager  (复件).cpp	/^void CSocketManager::GetErrorMsgStart()$/;"	f	class:CSocketManager
+GetErrorMsgStart	socket/SocketManager.cpp	/^void CSocketManager::GetErrorMsgStart()$/;"	f	class:CSocketManager
+GetInstance	Agent.cpp	/^    static CLog& GetInstance()$/;"	f	class:CAgentLock
+GetLength	StdString.h	/^	int GetLength() const$/;"	f	class:CStdStr
+GetMap	AskMsg/XmlMarkup.cpp	/^bool SavedPosMapArray::GetMap( SavedPosMap*& pMap, int nMap, int nMapSize \/*=7*\/ )$/;"	f	class:SavedPosMapArray
+GetNodeType	AskMsg/XmlMarkup.h	/^	int GetNodeType() { return m_nNodeType; };$/;"	f	class:CMarkup
+GetNumAndInc	AskMsg/XmlMarkup.cpp	/^	int GetNumAndInc() { int n=0; while (p[i]>='0'&&p[i]<='9') n=n*10+(int)p[i++]-(int)'0'; return n; };$/;"	f	struct:PathPos
+GetPathAttribName	AskMsg/XmlMarkup.cpp	/^	MCD_PCSZ GetPathAttribName() { if (iPathAttribName) return &p[iPathAttribName]; return NULL; };$/;"	f	struct:PathPos
+GetPopData	Agent.cpp	/^std::string CAgent::GetPopData()$/;"	f	class:CAgent
+GetPtr	AskMsg/XmlMarkup.cpp	/^	MCD_PCSZ GetPtr() { return &p[i]; };$/;"	f	struct:PathPos
+GetRefElemPosAt	AskMsg/XmlMarkup.cpp	/^	ElemPos& GetRefElemPosAt(int i) const { return m_pSegs[i>>PA_SEGBITS][i&PA_SEGMASK]; };$/;"	f	struct:ElemPosTree
+GetRefTagPosAt	AskMsg/XmlMarkup.cpp	/^	TagPos& GetRefTagPosAt( int i ) { return pL[i]; };$/;"	f	struct:ElemStack
+GetResourceHandle	StdString.h	/^		static HMODULE GetResourceHandle()$/;"	f	class:CStdStr
+GetResult	AskMsg/XmlMarkup.h	/^	const MCD_STR& GetResult() const { return m_strResult; };$/;"	f	class:CMarkup
+GetSize	AskMsg/XmlMarkup.cpp	/^	int GetSize() const { return m_nSize; };$/;"	f	struct:ElemPosTree
+GetStateionFromDialString	UntiTool.cpp	/^std::string CUntiTool::GetStateionFromDialString(const std::string &sDialString)$/;"	f	class:CUntiTool
+GetStationFromAction	UntiTool.cpp	/^BOOL CUntiTool::GetStationFromAction(const std::string &sEvt, std::string& sValName, std::string& sStation)$/;"	f	class:CUntiTool
+GetStationFromChannel	UntiTool.cpp	/^std::string CUntiTool::GetStationFromChannel(const std::string &sChan)$/;"	f	class:CUntiTool
+GetStationFromMemberName	UntiTool.cpp	/^std::string CUntiTool::GetStationFromMemberName(const std::string &sDoc)$/;"	f	class:CUntiTool
+GetStatusNameFromCode	HandleAskPBX  (2013-5-7).cpp	/^std::string CHandleAskPBX::GetStatusNameFromCode(int callStatus)$/;"	f	class:CHandleAskPBX
+GetStatusNameFromCode	HandleAskPBX.cpp	/^std::string CHandleAskPBX::GetStatusNameFromCode(int callStatus)$/;"	f	class:CHandleAskPBX
+GetStringValue	GeneralUtils.cpp	/^BOOL CGeneralUtils::GetStringValue(const std::string &szInString, const char* szKey, char* szValue)$/;"	f	class:CGeneralUtils
+GetSubDoc	AskMsg/XmlMarkup.h	/^	MCD_STR GetSubDoc() { return x_GetSubDoc(m_iPos); };$/;"	f	class:CMarkup
+GetTagName	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::GetTagName() const$/;"	f	class:CMarkup
+GetTokenPtr	AskMsg/XmlMarkup.cpp	/^	MCD_PCSZ GetTokenPtr() const { return &m_pDocText[m_nL]; };$/;"	f	struct:TokenPos
+GetTokenText	AskMsg/XmlMarkup.cpp	/^	MCD_STR GetTokenText() const { return MCD_STR( GetTokenPtr(), Length() ); };$/;"	f	struct:TokenPos
+GetTypeAndInc	AskMsg/XmlMarkup.cpp	/^	int GetTypeAndInc() { i=-1; if (p) { if (p[0]=='\/') { if (p[1]=='\/') i=2; else i=1; } else if (p[0]) i=0; } nPathType=i+1; return nPathType; };$/;"	f	struct:PathPos
+GetUCIDFromPBX	Agent.cpp	/^std::string CAgent::GetUCIDFromPBX()$/;"	f	class:CAgent
+GetValAndInc	AskMsg/XmlMarkup.cpp	/^	MCD_PCSZ GetValAndInc() { ++i; MCD_CHAR cEnd=']'; if (p[i]=='\\''||p[i]=='\\"') cEnd=p[i++]; int iVal=i; IncWord(cEnd); nLen=i-iVal; if (cEnd!=']') ++i; return &p[iVal]; };$/;"	f	struct:PathPos
+GetValOrWordLen	AskMsg/XmlMarkup.cpp	/^	int GetValOrWordLen() { return nLen; };$/;"	f	struct:PathPos
+GetWordAndInc	AskMsg/XmlMarkup.cpp	/^	MCD_PCSZ GetWordAndInc() { int iWord=i; IncWord(); nLen=i-iWord; return &p[iWord]; };$/;"	f	struct:PathPos
+GotoElemIndex	AskMsg/XmlMarkup.cpp	/^void CMarkup::GotoElemIndex( int nIndex )$/;"	f	class:CMarkup
+GrowElemPosTree	AskMsg/XmlMarkup.cpp	/^void ElemPosTree::GrowElemPosTree( int nNewSize )$/;"	f	class:ElemPosTree
+HANDLEASKPBX_H	HandleAskPBX.h	2;"	d
+HANDLEWEBRESPONSE_H	HandleWebResponse.h	2;"	d
+HANDLEWS_H	HandleWS.h	2;"	d
+HANDSOFTPHONETHREAD_H	HandSoftPhoneThread.h	2;"	d
+HANGUPEVT_H	AskMsg/HangupEvt.h	6;"	d
+HEADMSG_H	AskMsg/HeadMsg.h	6;"	d
+HOLDUPCALLEVT_H	AskMsg/HoldupCallEvt.h	6;"	d
+HOLEEVT_H	AskMsg/HoldEvt.h	6;"	d
+HTTP_H	socket/http.h	2;"	d
+HandQueueMemberStatusEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandQueueMemberStatusEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandQueueMemberStatusEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandQueueMemberStatusEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleAgentAnswer	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentAnswer(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentBusy	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentBusy(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentCompleteWrapup	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentCompleteWrapup(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentConsult	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentConsult(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentConsultCancel	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentConsultCancel(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentConsultConference	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentConsultConference(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentConsultTrans	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentConsultTrans(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentEnforceBusy	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentEnforceBusy(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentEnforceHangup	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentEnforceHangup(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentEnforceIdle	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentEnforceIdle(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentEnforceLogOut	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentEnforceLogOut(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentHangup	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentHangup(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentHold	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentHold(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentHoldupCall	HandSoftPhoneThread.cpp	/^BOOL CHandSoftPhoneThread::HandleAgentHoldupCall(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentIdle	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentIdle(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentLogOut	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentLogOut(const std::string &strMsg,int sock)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentLogin	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentLogin(const std::string &strMsg,int sock)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentMakeCall	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentMakeCall(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentMonitor	HandSoftPhoneThread.cpp	/^BOOL CHandSoftPhoneThread::HandleAgentMonitor(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentObserverCall	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentObserverCall(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentSendDTMF	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentSendDTMF(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentSingleConference	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentSingleConference(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentSingleTrans	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentSingleTrans(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentUnHold	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentUnHold(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAgentWrapup	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::HandleAgentWrapup(const std::string &strMsg,int s)$/;"	f	class:CHandSoftPhoneThread
+HandleAskPBX	HandleAskPBX  (2013-5-7).cpp	/^void* CHandleAskPBX::HandleAskPBX(LPVOID lpvoid)$/;"	f	class:CHandleAskPBX
+HandleAskPBX	HandleAskPBX.cpp	/^void* CHandleAskPBX::HandleAskPBX(LPVOID lpvoid)$/;"	f	class:CHandleAskPBX
+HandleConfEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleConfEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleConfEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleConfEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleDialEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleDialEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleDialEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleDialEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleDispatchSoftPhoneMsg	HandSoftPhoneThread.cpp	/^LPVOID CHandSoftPhoneThread::HandleDispatchSoftPhoneMsg(LPVOID lpvoid)$/;"	f	class:CHandSoftPhoneThread
+HandleEstablishEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleEstablishEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleEstablishEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleEstablishEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleGetPopData	HandSoftPhoneThread.cpp	/^BOOL CHandSoftPhoneThread::HandleGetPopData(const std::string &strMsg,int sock)$/;"	f	class:CHandSoftPhoneThread
+HandleHangupEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleHangupEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleHangupEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleHangupEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleIVRLogout	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleIVRLogout(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleJoinEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleJoinEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleJoinEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleJoinEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleLeaveEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleLeaveEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleLeaveEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleLeaveEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleLoginEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleLoginEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleLoginEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleLoginEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleLogoutEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleLogoutEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleLogoutEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleLogoutEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleNewstateEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleNewstateEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleNewstateEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleNewstateEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleOriginateResponseEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleOriginateResponseEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleOriginateResponseEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleOriginateResponseEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleQueueMemberPausedEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleQueueMemberPausedEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleQueueMemberPausedEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleQueueMemberPausedEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleQueueStaticEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleQueueStaticEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleQueueStaticEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleQueueStaticEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleResponse	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleResponse(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleResponse	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleResponse(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+HandleSoftPhoneMsg	HandSoftPhoneThread.cpp	/^LPVOID  CHandSoftPhoneThread::HandleSoftPhoneMsg(LPVOID lpvoid)$/;"	f	class:CHandSoftPhoneThread
+HandleUCIDEvt	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleUCIDEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleUCIDEvt	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleUCIDEvt(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleUpdateSocket	HandSoftPhoneThread.cpp	/^BOOL CHandSoftPhoneThread::HandleUpdateSocket(int s)$/;"	f	class:CHandSoftPhoneThread
+HandleUserEvent	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::HandleUserEvent(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleUserEvent	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::HandleUserEvent(const std::string &sEvt)$/;"	f	class:CHandleAskPBX
+HandleWebReponse	HandleWebResponse.cpp	/^void* CHandleWebResponse::HandleWebReponse(void *lpvoid)$/;"	f	class:CHandleWebResponse
+Hangup	Agent.cpp	/^BOOL CAgent::Hangup()$/;"	f	class:CAgent
+HasAttrib	AskMsg/XmlMarkup.cpp	/^bool CMarkup::HasAttrib( MCD_CSTR szAttrib ) const$/;"	f	class:CMarkup
+HasChildAttrib	AskMsg/XmlMarkup.cpp	/^bool CMarkup::HasChildAttrib( MCD_CSTR szAttrib ) const$/;"	f	class:CMarkup
+Hold	Agent.cpp	/^BOOL CAgent::Hold()$/;"	f	class:CAgent
+HoldupCall	Agent.cpp	/^BOOL CAgent::HoldupCall()$/;"	f	class:CAgent
+IConv	AskMsg/XmlMarkup.cpp	/^int TextEncoding::IConv( void* pTo, int nToCharSize, int nFromCharSize )$/;"	f	class:TextEncoding
+IConvName	AskMsg/XmlMarkup.cpp	/^const char* TextEncoding::IConvName( char* szEncoding, MCD_CSTR pszEncoding )$/;"	f	class:TextEncoding
+IDLEEVT_H	AskMsg/IdleEvt.h	6;"	d
+IDLE_STATE	Agent.h	/^	IDLE_STATE,$/;"	e	enum:__anon2
+Inc	AskMsg/XmlMarkup.cpp	/^	void Inc( int n ) { i+=n; };$/;"	f	struct:PathPos
+IncChar	AskMsg/XmlMarkup.cpp	/^	void IncChar() { ++i; };$/;"	f	struct:PathPos
+IncCount	AskMsg/XmlMarkup.cpp	/^	void IncCount() { if (nCount) ++nCount; };$/;"	f	struct:TagPos
+IncWord	AskMsg/XmlMarkup.cpp	/^	void IncWord( MCD_CHAR c ) { while (p[i]&&p[i]!=c) i+=MCD_CLEN(&p[i]); };$/;"	f	struct:PathPos
+IncWord	AskMsg/XmlMarkup.cpp	/^	void IncWord() { while (p[i]&&!MCD_PSZCHR(MCD_T(" =\/[]"),p[i])) i+=MCD_CLEN(&p[i]); };$/;"	f	struct:PathPos
+Init	AskMsg/XmlMarkup.cpp	/^	void Init( int i=0, int n=1 ) { nCount=1; nTagNames=n; iNext=i; iPrev=0; nSlot=-1; iSlotPrev=0; iSlotNext=0; };$/;"	f	struct:TagPos
+Init	CompletePort.cpp	/^bool CCompletePort::Init(CAskProxyDlg *dlg)$/;"	f	class:CCompletePort
+Init	logclass/log.cpp	/^void CLog::Init(const char *name)$/;"	f	class:CLog
+InitTable	AskMsg/XmlMarkup.cpp	/^	void InitTable() { memset(anTable,0,sizeof(int)*LS_TABLESIZE); };$/;"	f	struct:ElemStack
+Insert	StdString.h	/^	int Insert(int nIdx, CT ch)$/;"	f	class:CStdStr
+Insert	StdString.h	/^	int Insert(int nIdx, PCMYSTR sz)$/;"	f	class:CStdStr
+InsertChildElem	AskMsg/XmlMarkup.h	/^	bool InsertChildElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags|MNF_INSERT|MNF_CHILD); };$/;"	f	class:CMarkup
+InsertChildElem	AskMsg/XmlMarkup.h	/^	bool InsertChildElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags|MNF_INSERT|MNF_CHILD); };$/;"	f	class:CMarkup
+InsertChildSubDoc	AskMsg/XmlMarkup.h	/^	bool InsertChildSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,MNF_CHILD|MNF_INSERT); };$/;"	f	class:CMarkup
+InsertElem	AskMsg/XmlMarkup.h	/^	bool InsertElem( MCD_CSTR szName, MCD_CSTR szData=NULL, int nFlags=0 ) { return x_AddElem(szName,szData,nFlags|MNF_INSERT); };$/;"	f	class:CMarkup
+InsertElem	AskMsg/XmlMarkup.h	/^	bool InsertElem( MCD_CSTR szName, int nValue, int nFlags=0 ) { return x_AddElem(szName,nValue,nFlags|MNF_INSERT); };$/;"	f	class:CMarkup
+InsertNode	AskMsg/XmlMarkup.h	/^	bool InsertNode( int nType, MCD_CSTR szText ) { return x_AddNode(nType,szText,MNF_INSERT); };$/;"	f	class:CMarkup
+InsertSubDoc	AskMsg/XmlMarkup.h	/^	bool InsertSubDoc( MCD_CSTR szSubDoc ) { return x_AddSubDoc(szSubDoc,MNF_INSERT); };$/;"	f	class:CMarkup
+IntoElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::IntoElem()$/;"	f	class:CMarkup
+IntoLevel	AskMsg/XmlMarkup.cpp	/^	void IntoLevel() { iPar = iTop; ++nLevel; };$/;"	f	struct:ElemStack
+IsAbsolutePath	AskMsg/XmlMarkup.cpp	/^	bool IsAbsolutePath() { return nPathType == 2; };$/;"	f	struct:PathPos
+IsAnywherePath	AskMsg/XmlMarkup.cpp	/^	bool IsAnywherePath() { return nPathType == 3; };$/;"	f	struct:PathPos
+IsAtPathEnd	AskMsg/XmlMarkup.cpp	/^	bool IsAtPathEnd() { return ((!p[i])||(iPathAttribName&&i+2>=iPathAttribName))?true:false; };$/;"	f	struct:PathPos
+IsEmpty	MsgQueue.cpp	/^BOOL CMsgQueue::IsEmpty()$/;"	f	class:CMsgQueue
+IsEmpty	StdString.h	/^	bool IsEmpty() const$/;"	f	class:CStdStr
+IsEmptyElement	AskMsg/XmlMarkup.cpp	/^	bool IsEmptyElement() { return (StartTagLen()==nLength)?true:false; };$/;"	f	struct:ElemPos
+IsFullSills	Agent.cpp	/^int  CAgent::IsFullSills()$/;"	f	class:CAgent
+IsOutSkills	Agent.cpp	/^int CAgent::IsOutSkills()$/;"	f	class:CAgent
+IsPath	AskMsg/XmlMarkup.cpp	/^	bool IsPath() { return nPathType > 0; };$/;"	f	struct:PathPos
+IsUnparsed	AskMsg/XmlMarkup.cpp	/^	bool IsUnparsed() { return EndTagLen() == 1; };$/;"	f	struct:ElemPos
+IsWellFormed	AskMsg/XmlMarkup.cpp	/^bool CMarkup::IsWellFormed()$/;"	f	class:CMarkup
+LOGINEVT_H	AskMsg/LoginEvt.h	5;"	d
+LOGOUTEVT_H	AskMsg/LogoutEvt.h	6;"	d
+LOG_H	logclass/log.h	2;"	d
+LPCVOID	StdString.h	/^    typedef void *                  LPCVOID;$/;"	t
+LPVOID	owntype.h	/^typedef void     *LPVOID;$/;"	t
+LS_TABLESIZE	AskMsg/XmlMarkup.cpp	/^	enum { LS_TABLESIZE = 23 };$/;"	e	enum:ElemStack::__anon4	file:
+Left	StdString.h	/^	MYTYPE Left(int nCount) const$/;"	f	class:CStdStr
+Length	AskMsg/XmlMarkup.cpp	/^	int Length() const { return m_nR - m_nL + 1; };$/;"	f	struct:TokenPos
+Level	AskMsg/XmlMarkup.cpp	/^    int Level() const { return nFlags & 0xffff; };$/;"	f	struct:ElemPos
+Load	AskMsg/XmlMarkup.cpp	/^bool CMarkup::Load( MCD_CSTR_FILENAME szFileName )$/;"	f	class:CMarkup
+Load	StdString.h	/^	bool Load(UINT nId, HMODULE hModule=NULL)$/;"	f	class:CStdStr
+LoadString	StdString.h	/^	bool LoadString(UINT nId)$/;"	f	class:CStdStr
+Log	logclass/log.cpp	/^void CLog::Log(const char *fmt, ...)$/;"	f	class:CLog
+Log	logclass/log.cpp	/^void CLog::Log(const std::string &str)$/;"	f	class:CLog
+LogOut	Agent.cpp	/^BOOL CAgent::LogOut()$/;"	f	class:CAgent
+Login	Agent.cpp	/^BOOL CAgent::Login()$/;"	f	class:CAgent
+LoginSipTalkData	Agent.cpp	/^BOOL CAgent::LoginSipTalkData()\/\/sip座席login设置全局变量$/;"	f	class:CAgent
+LoginTalkData	Agent.cpp	/^BOOL CAgent::LoginTalkData()$/;"	f	class:CAgent
+LogoutSipTalkData	Agent.cpp	/^BOOL CAgent::LogoutSipTalkData()\/\/sip座席logout置空全局变量$/;"	f	class:CAgent
+LogoutTalkData	Agent.cpp	/^BOOL CAgent::LogoutTalkData()$/;"	f	class:CAgent
+MAKECALLEVT_H	AskMsg/MakeCallEvt.h	6;"	d
+MARKUP_FILEBLOCKSIZE	AskMsg/XmlMarkup.h	57;"	d
+MARKUP_ICONV	AskMsg/XmlMarkup.h	37;"	d
+MARKUP_MBCS	AskMsg/XmlMarkup.h	44;"	d
+MARKUP_SETDEBUGSTATE	AskMsg/XmlMarkup.h	440;"	d
+MARKUP_SETDEBUGSTATE	AskMsg/XmlMarkup.h	442;"	d
+MARKUP_SIZEOFWCHAR	AskMsg/XmlMarkup.h	48;"	d
+MARKUP_SIZEOFWCHAR	AskMsg/XmlMarkup.h	50;"	d
+MARKUP_STL	AskMsg/XmlMarkup.h	34;"	d
+MARKUP_WCHAR	AskMsg/XmlMarkup.h	41;"	d
+MARKUP_WINCONV	AskMsg/XmlMarkup.h	54;"	d
+MAXFD	main.cpp	6;"	d	file:
+MAX_FMT_TRIES	StdString.h	3136;"	d
+MCD_2PCSZ	AskMsg/XmlMarkup.h	150;"	d
+MCD_2PCSZ	AskMsg/XmlMarkup.h	170;"	d
+MCD_ACP	AskMsg/XmlMarkup.h	62;"	d
+MCD_BLDAPPEND	AskMsg/XmlMarkup.h	165;"	d
+MCD_BLDAPPEND	AskMsg/XmlMarkup.h	184;"	d
+MCD_BLDAPPEND1	AskMsg/XmlMarkup.h	166;"	d
+MCD_BLDAPPEND1	AskMsg/XmlMarkup.h	185;"	d
+MCD_BLDAPPENDN	AskMsg/XmlMarkup.h	164;"	d
+MCD_BLDAPPENDN	AskMsg/XmlMarkup.h	183;"	d
+MCD_BLDCHECK	AskMsg/XmlMarkup.h	162;"	d
+MCD_BLDCHECK	AskMsg/XmlMarkup.h	181;"	d
+MCD_BLDRELEASE	AskMsg/XmlMarkup.h	163;"	d
+MCD_BLDRELEASE	AskMsg/XmlMarkup.h	182;"	d
+MCD_BLDRESERVE	AskMsg/XmlMarkup.h	161;"	d
+MCD_BLDRESERVE	AskMsg/XmlMarkup.h	180;"	d
+MCD_CHAR	AskMsg/XmlMarkup.h	101;"	d
+MCD_CHAR	AskMsg/XmlMarkup.h	67;"	d
+MCD_CLEN	AskMsg/XmlMarkup.h	127;"	d
+MCD_CLEN	AskMsg/XmlMarkup.h	129;"	d
+MCD_CLEN	AskMsg/XmlMarkup.h	133;"	d
+MCD_CLEN	AskMsg/XmlMarkup.h	99;"	d
+MCD_CSTR	AskMsg/XmlMarkup.h	/^	MCD_CSTR( MCD_PCSZ p ) { pcsz=p; };$/;"	f	struct:MCD_CSTR
+MCD_CSTR	AskMsg/XmlMarkup.h	/^	MCD_CSTR( const MCD_STR& s ) { pcsz = MCD_2PCSZ(s); };$/;"	f	struct:MCD_CSTR
+MCD_CSTR	AskMsg/XmlMarkup.h	/^	MCD_CSTR() { pcsz=NULL; };$/;"	f	struct:MCD_CSTR
+MCD_CSTR	AskMsg/XmlMarkup.h	/^struct MCD_CSTR$/;"	s
+MCD_CSTR_FILENAME	AskMsg/XmlMarkup.h	/^	MCD_CSTR_FILENAME( MCD_PCSZ_FILENAME p ) { pcsz=p; };$/;"	f	struct:MCD_CSTR_FILENAME
+MCD_CSTR_FILENAME	AskMsg/XmlMarkup.h	/^	MCD_CSTR_FILENAME( const std::string& s ) { pcsz = s.c_str(); };$/;"	f	struct:MCD_CSTR_FILENAME
+MCD_CSTR_FILENAME	AskMsg/XmlMarkup.h	/^	MCD_CSTR_FILENAME() { pcsz=NULL; };$/;"	f	struct:MCD_CSTR_FILENAME
+MCD_CSTR_FILENAME	AskMsg/XmlMarkup.h	/^struct MCD_CSTR_FILENAME$/;"	s
+MCD_CSTR_FILENAME	AskMsg/XmlMarkup.h	214;"	d
+MCD_ENC	AskMsg/XmlMarkup.h	125;"	d
+MCD_ENC	AskMsg/XmlMarkup.h	132;"	d
+MCD_ENC	AskMsg/XmlMarkup.h	95;"	d
+MCD_ENC	AskMsg/XmlMarkup.h	97;"	d
+MCD_FOPEN	AskMsg/XmlMarkup.h	114;"	d
+MCD_FOPEN	AskMsg/XmlMarkup.h	121;"	d
+MCD_FOPEN	AskMsg/XmlMarkup.h	201;"	d
+MCD_FOPEN	AskMsg/XmlMarkup.h	202;"	d
+MCD_FOPEN	AskMsg/XmlMarkup.h	80;"	d
+MCD_FOPEN	AskMsg/XmlMarkup.h	91;"	d
+MCD_FSEEK	AskMsg/XmlMarkup.h	220;"	d
+MCD_FSEEK	AskMsg/XmlMarkup.h	228;"	d
+MCD_FSEEK	AskMsg/XmlMarkup.h	232;"	d
+MCD_FTELL	AskMsg/XmlMarkup.h	221;"	d
+MCD_FTELL	AskMsg/XmlMarkup.h	229;"	d
+MCD_FTELL	AskMsg/XmlMarkup.h	233;"	d
+MCD_GETBUFFER	AskMsg/XmlMarkup.h	159;"	d
+MCD_GETBUFFER	AskMsg/XmlMarkup.h	178;"	d
+MCD_INTFILEOFFSET	AskMsg/XmlMarkup.h	222;"	d
+MCD_INTFILEOFFSET	AskMsg/XmlMarkup.h	230;"	d
+MCD_INTFILEOFFSET	AskMsg/XmlMarkup.h	234;"	d
+MCD_PCSZ	AskMsg/XmlMarkup.h	102;"	d
+MCD_PCSZ	AskMsg/XmlMarkup.h	68;"	d
+MCD_PCSZ_FILENAME	AskMsg/XmlMarkup.h	204;"	d
+MCD_PCSZ_FILENAME	AskMsg/XmlMarkup.h	216;"	d
+MCD_PSZCAT	AskMsg/XmlMarkup.h	112;"	d
+MCD_PSZCAT	AskMsg/XmlMarkup.h	119;"	d
+MCD_PSZCAT	AskMsg/XmlMarkup.h	78;"	d
+MCD_PSZCAT	AskMsg/XmlMarkup.h	89;"	d
+MCD_PSZCHR	AskMsg/XmlMarkup.h	104;"	d
+MCD_PSZCHR	AskMsg/XmlMarkup.h	70;"	d
+MCD_PSZCPY	AskMsg/XmlMarkup.h	110;"	d
+MCD_PSZCPY	AskMsg/XmlMarkup.h	117;"	d
+MCD_PSZCPY	AskMsg/XmlMarkup.h	76;"	d
+MCD_PSZCPY	AskMsg/XmlMarkup.h	87;"	d
+MCD_PSZLEN	AskMsg/XmlMarkup.h	103;"	d
+MCD_PSZLEN	AskMsg/XmlMarkup.h	69;"	d
+MCD_PSZNCMP	AskMsg/XmlMarkup.h	107;"	d
+MCD_PSZNCMP	AskMsg/XmlMarkup.h	73;"	d
+MCD_PSZNCPY	AskMsg/XmlMarkup.h	111;"	d
+MCD_PSZNCPY	AskMsg/XmlMarkup.h	118;"	d
+MCD_PSZNCPY	AskMsg/XmlMarkup.h	77;"	d
+MCD_PSZNCPY	AskMsg/XmlMarkup.h	88;"	d
+MCD_PSZSTR	AskMsg/XmlMarkup.h	105;"	d
+MCD_PSZSTR	AskMsg/XmlMarkup.h	71;"	d
+MCD_PSZTOL	AskMsg/XmlMarkup.h	106;"	d
+MCD_PSZTOL	AskMsg/XmlMarkup.h	72;"	d
+MCD_RELEASEBUFFER	AskMsg/XmlMarkup.h	160;"	d
+MCD_RELEASEBUFFER	AskMsg/XmlMarkup.h	179;"	d
+MCD_SPRINTF	AskMsg/XmlMarkup.h	113;"	d
+MCD_SPRINTF	AskMsg/XmlMarkup.h	120;"	d
+MCD_SPRINTF	AskMsg/XmlMarkup.h	79;"	d
+MCD_SPRINTF	AskMsg/XmlMarkup.h	90;"	d
+MCD_SSZ	AskMsg/XmlMarkup.h	109;"	d
+MCD_SSZ	AskMsg/XmlMarkup.h	116;"	d
+MCD_SSZ	AskMsg/XmlMarkup.h	75;"	d
+MCD_SSZ	AskMsg/XmlMarkup.h	83;"	d
+MCD_SSZ	AskMsg/XmlMarkup.h	85;"	d
+MCD_STR	AskMsg/XmlMarkup.h	146;"	d
+MCD_STR	AskMsg/XmlMarkup.h	148;"	d
+MCD_STR	AskMsg/XmlMarkup.h	169;"	d
+MCD_STRASSIGN	AskMsg/XmlMarkup.h	156;"	d
+MCD_STRASSIGN	AskMsg/XmlMarkup.h	176;"	d
+MCD_STRCAPACITY	AskMsg/XmlMarkup.h	157;"	d
+MCD_STRCAPACITY	AskMsg/XmlMarkup.h	177;"	d
+MCD_STRCLEAR	AskMsg/XmlMarkup.h	152;"	d
+MCD_STRCLEAR	AskMsg/XmlMarkup.h	172;"	d
+MCD_STRCLEARSIZE	AskMsg/XmlMarkup.h	153;"	d
+MCD_STRCLEARSIZE	AskMsg/XmlMarkup.h	173;"	d
+MCD_STRERROR	AskMsg/XmlMarkup.h	137;"	d
+MCD_STRINSERTREPLACE	AskMsg/XmlMarkup.h	158;"	d
+MCD_STRISEMPTY	AskMsg/XmlMarkup.h	154;"	d
+MCD_STRISEMPTY	AskMsg/XmlMarkup.h	174;"	d
+MCD_STRLENGTH	AskMsg/XmlMarkup.h	151;"	d
+MCD_STRLENGTH	AskMsg/XmlMarkup.h	171;"	d
+MCD_STRMID	AskMsg/XmlMarkup.h	155;"	d
+MCD_STRMID	AskMsg/XmlMarkup.h	175;"	d
+MCD_STRTOINT	AskMsg/XmlMarkup.h	187;"	d
+MCD_T	AskMsg/XmlMarkup.h	123;"	d
+MCD_T	AskMsg/XmlMarkup.h	93;"	d
+MCD_T_FILENAME	AskMsg/XmlMarkup.h	203;"	d
+MCD_T_FILENAME	AskMsg/XmlMarkup.h	215;"	d
+MCD_UTF16	AskMsg/XmlMarkup.h	64;"	d
+MCD_UTF32	AskMsg/XmlMarkup.h	65;"	d
+MCD_UTF8	AskMsg/XmlMarkup.h	63;"	d
+MDF_APPENDFILE	AskMsg/XmlMarkup.h	/^		MDF_APPENDFILE = 64,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_IGNORECASE	AskMsg/XmlMarkup.h	/^		MDF_IGNORECASE = 8,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_READFILE	AskMsg/XmlMarkup.h	/^		MDF_READFILE = 16,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_UTF16BEFILE	AskMsg/XmlMarkup.h	/^		MDF_UTF16BEFILE = 128$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_UTF16LEFILE	AskMsg/XmlMarkup.h	/^		MDF_UTF16LEFILE = 1,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_UTF8PREAMBLE	AskMsg/XmlMarkup.h	/^		MDF_UTF8PREAMBLE = 4,$/;"	e	enum:CMarkup::MarkupDocFlags
+MDF_WRITEFILE	AskMsg/XmlMarkup.h	/^		MDF_WRITEFILE = 32,$/;"	e	enum:CMarkup::MarkupDocFlags
+MNF_CHILD	AskMsg/XmlMarkup.h	/^		MNF_CHILD      = 0x004000$/;"	e	enum:CMarkup::MarkupNodeFlagsInternal
+MNF_DELETED	AskMsg/XmlMarkup.cpp	/^	MNF_DELETED    = 0x020000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_EMPTY	AskMsg/XmlMarkup.cpp	/^	MNF_EMPTY      = 0x010000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_ESCAPEQUOTES	AskMsg/XmlMarkup.h	/^		MNF_ESCAPEQUOTES  = 0x100,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_FIRST	AskMsg/XmlMarkup.cpp	/^	MNF_FIRST      = 0x080000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_ILLDATA	AskMsg/XmlMarkup.h	/^		MNF_ILLDATA    = 0x200000$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_ILLFORMED	AskMsg/XmlMarkup.cpp	/^	MNF_ILLFORMED  = 0x800000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_INSERT	AskMsg/XmlMarkup.h	/^		MNF_INSERT     = 0x002000,$/;"	e	enum:CMarkup::MarkupNodeFlagsInternal
+MNF_NONENDED	AskMsg/XmlMarkup.h	/^		MNF_NONENDED   = 0x100000,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_PUBLIC	AskMsg/XmlMarkup.cpp	/^	MNF_PUBLIC     = 0x300000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_QUOTED	AskMsg/XmlMarkup.cpp	/^	MNF_QUOTED     = 0x008000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_REPLACE	AskMsg/XmlMarkup.cpp	/^	MNF_REPLACE    = 0x001000,$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_USER	AskMsg/XmlMarkup.cpp	/^	MNF_USER      = 0xf000000$/;"	e	enum:MarkupNodeFlagsInternal2	file:
+MNF_WITHCDATA	AskMsg/XmlMarkup.h	/^		MNF_WITHCDATA      = 0x01,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHNOEND	AskMsg/XmlMarkup.h	/^		MNF_WITHNOEND      = 0x10,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHNOLINES	AskMsg/XmlMarkup.h	/^		MNF_WITHNOLINES    = 0x02,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHREFS	AskMsg/XmlMarkup.h	/^		MNF_WITHREFS       = 0x08,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNF_WITHXHTMLSPACE	AskMsg/XmlMarkup.h	/^		MNF_WITHXHTMLSPACE = 0x04,$/;"	e	enum:CMarkup::MarkupNodeFlags
+MNT_CDATA_SECTION	AskMsg/XmlMarkup.h	/^		MNT_CDATA_SECTION			= 8,    \/\/ 0x0008$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_COMMENT	AskMsg/XmlMarkup.h	/^		MNT_COMMENT					= 32,   \/\/ 0x0020$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_DOCUMENT_TYPE	AskMsg/XmlMarkup.h	/^		MNT_DOCUMENT_TYPE			= 64,   \/\/ 0x0040$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_ELEMENT	AskMsg/XmlMarkup.h	/^		MNT_ELEMENT					= 1,    \/\/ 0x0001$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_EXCLUDE_WHITESPACE	AskMsg/XmlMarkup.h	/^		MNT_EXCLUDE_WHITESPACE		= 123,  \/\/ 0x007b$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_LONE_END_TAG	AskMsg/XmlMarkup.h	/^		MNT_LONE_END_TAG			= 128,  \/\/ 0x0080$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_NODE_ERROR	AskMsg/XmlMarkup.h	/^		MNT_NODE_ERROR              = 32768 \/\/ 0x8000$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_PROCESSING_INSTRUCTION	AskMsg/XmlMarkup.h	/^		MNT_PROCESSING_INSTRUCTION	= 16,   \/\/ 0x0010$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_TEXT	AskMsg/XmlMarkup.h	/^		MNT_TEXT					= 2,    \/\/ 0x0002$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_TEXT_AND_WHITESPACE	AskMsg/XmlMarkup.h	/^		MNT_TEXT_AND_WHITESPACE     = 6,    \/\/ 0x0006$/;"	e	enum:CMarkup::MarkupNodeType
+MNT_WHITESPACE	AskMsg/XmlMarkup.h	/^		MNT_WHITESPACE				= 4,    \/\/ 0x0004$/;"	e	enum:CMarkup::MarkupNodeType
+MONITOREVT_H	AskMsg/MonitorEvt.h	6;"	d
+MRC_COUNT	AskMsg/XmlMarkup.cpp	/^	MRC_COUNT    = 1,$/;"	e	enum:MarkupResultCode	file:
+MRC_ENCODING	AskMsg/XmlMarkup.cpp	/^	MRC_ENCODING = 8,$/;"	e	enum:MarkupResultCode	file:
+MRC_LENGTH	AskMsg/XmlMarkup.cpp	/^	MRC_LENGTH   = 16,$/;"	e	enum:MarkupResultCode	file:
+MRC_MODIFY	AskMsg/XmlMarkup.cpp	/^	MRC_MODIFY   = 32,$/;"	e	enum:MarkupResultCode	file:
+MRC_MSG	AskMsg/XmlMarkup.cpp	/^	MRC_MSG      = 64$/;"	e	enum:MarkupResultCode	file:
+MRC_NUMBER	AskMsg/XmlMarkup.cpp	/^	MRC_NUMBER   = 4,$/;"	e	enum:MarkupResultCode	file:
+MRC_TYPE	AskMsg/XmlMarkup.cpp	/^	MRC_TYPE     = 2,$/;"	e	enum:MarkupResultCode	file:
+MSGQUEUE_H	MsgQueue.h	2;"	d
+MYALLOC	StdString.h	/^	typedef typename MYBASE::allocator_type		MYALLOC;$/;"	t	class:CStdStr
+MYBASE	StdString.h	2104;"	d
+MYCITER	StdString.h	/^	typedef typename MYBASE::const_iterator		MYCITER; \/\/ you get the idea...$/;"	t	class:CStdStr
+MYITER	StdString.h	/^	typedef typename MYBASE::iterator			MYITER;  \/\/ my iterator type$/;"	t	class:CStdStr
+MYRITER	StdString.h	/^	typedef typename MYBASE::reverse_iterator	MYRITER;$/;"	t	class:CStdStr
+MYSIZE	StdString.h	/^	typedef typename MYBASE::size_type			MYSIZE;   $/;"	t	class:CStdStr
+MYTASK_H	UserConn/MyTask.h	6;"	d
+MYTYPE	StdString.h	/^	typedef CStdStr<CT>							MYTYPE;	 \/\/ myself$/;"	t	class:CStdStr
+MYVAL	StdString.h	/^	typedef typename MYBASE::value_type			MYVAL; $/;"	t	class:CStdStr
+MakeCall	Agent.cpp	/^BOOL CAgent::MakeCall()$/;"	f	class:CAgent
+MakeCall	Phone.cpp	/^void CPhone::MakeCall()$/;"	f	class:CPhone
+MakeLower	StdString.h	/^	void MakeLower()$/;"	f	class:CStdStr
+MakeReverse	StdString.h	/^	void MakeReverse()$/;"	f	class:CStdStr
+MakeUpper	StdString.h	/^	void MakeUpper()$/;"	f	class:CStdStr
+MarkupDocFlags	AskMsg/XmlMarkup.h	/^	enum MarkupDocFlags$/;"	g	class:CMarkup
+MarkupNodeFlags	AskMsg/XmlMarkup.h	/^	enum MarkupNodeFlags$/;"	g	class:CMarkup
+MarkupNodeFlagsInternal	AskMsg/XmlMarkup.h	/^	enum MarkupNodeFlagsInternal$/;"	g	class:CMarkup
+MarkupNodeFlagsInternal2	AskMsg/XmlMarkup.cpp	/^enum MarkupNodeFlagsInternal2$/;"	g	file:
+MarkupNodeType	AskMsg/XmlMarkup.h	/^	enum MarkupNodeType$/;"	g	class:CMarkup
+MarkupResultCode	AskMsg/XmlMarkup.cpp	/^enum MarkupResultCode$/;"	g	file:
+Match	AskMsg/XmlMarkup.cpp	/^	bool Match( MCD_CSTR szName )$/;"	f	struct:TokenPos
+Mid	StdString.h	/^	MYTYPE Mid(int nFirst) const$/;"	f	class:CStdStr
+Mid	StdString.h	/^	MYTYPE Mid(int nFirst, int nCount) const$/;"	f	class:CStdStr
+Monitor	Agent.cpp	/^BOOL CAgent::Monitor()$/;"	f	class:CAgent
+MulAcceptor	UserConn/MulAcceptor.cpp	/^MulAcceptor::MulAcceptor()$/;"	f	class:MulAcceptor
+MulAcceptor	UserConn/MulAcceptor.h	/^class MulAcceptor : public ACE_Asynch_Acceptor<Server>$/;"	c
+MyTask	UserConn/MyTask.cpp	/^MyTask::MyTask():$/;"	f	class:MyTask
+MyTask	UserConn/MyTask.h	/^	MyTask (ACE_Proactor *p ):proactor_(p){};$/;"	f	class:MyTask
+MyTask	UserConn/MyTask.h	/^class MyTask : public ACE_Task<ACE_MT_SYNCH>$/;"	c
+NextParent	AskMsg/XmlMarkup.cpp	/^	TagPos& NextParent( int& i ) { int iCur=i; i=pL[i].iParent; return pL[iCur]; };$/;"	f	struct:ElemStack
+NodePos	AskMsg/XmlMarkup.cpp	/^	NodePos( int n ) { nNodeFlags=n; nNodeType=0; nStart=0; nLength=0; };$/;"	f	struct:NodePos
+NodePos	AskMsg/XmlMarkup.cpp	/^	NodePos() {};$/;"	f	struct:NodePos
+NodePos	AskMsg/XmlMarkup.cpp	/^struct NodePos$/;"	s	file:
+Normalize	StdString.h	/^	MYTYPE& Normalize()$/;"	f	class:CStdStr
+NotSpace	StdString.h	/^struct NotSpace : public std::unary_function<CT, bool>$/;"	s
+OBSERVEREVT_H	AskMsg/ObserverEvt.h	6;"	d
+OLE2A	StdString.h	1085;"	d
+OLE2CA	StdString.h	1089;"	d
+OLE2CT	StdString.h	1081;"	d
+OLE2CW	StdString.h	1091;"	d
+OLE2T	StdString.h	1083;"	d
+OLE2W	StdString.h	1087;"	d
+OLECHAR	StdString.h	/^			typedef wchar_t			OLECHAR;$/;"	t
+OSTRING_DEFINED	StdString.h	1101;"	d
+OWNTYPE_H	owntype.h	2;"	d
+Observer	Agent.cpp	/^BOOL CAgent::Observer()$/;"	f	class:CAgent
+OemToAnsi	StdString.h	/^	void OemToAnsi()$/;"	f	class:CStdStr
+OnStart	AskProxyDlg.cpp	/^bool CAskProxyDlg::OnStart()$/;"	f	class:CAskProxyDlg
+Open	AskMsg/XmlMarkup.cpp	/^bool CMarkup::Open( MCD_CSTR szFileName, int nDocFlags, MCD_STR* pstrEncoding)$/;"	f	class:CMarkup
+OutOfElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::OutOfElem()$/;"	f	class:CMarkup
+OutOfLevel	AskMsg/XmlMarkup.cpp	/^	void OutOfLevel() { if (iPar!=iTop) Pop(); iPar = pL[iTop].iParent; --nLevel; };$/;"	f	struct:ElemStack
+PA_SEGBITS	AskMsg/XmlMarkup.cpp	/^	enum { PA_SEGBITS = 16, PA_SEGMASK = 0xffff };$/;"	e	enum:ElemPosTree::__anon3	file:
+PA_SEGMASK	AskMsg/XmlMarkup.cpp	/^	enum { PA_SEGBITS = 16, PA_SEGMASK = 0xffff };$/;"	e	enum:ElemPosTree::__anon3	file:
+PBXInfo	AskProxyDlg.h	/^struct PBXInfo\/\/skill_snap$/;"	s
+PBXTHREADNUM	HandleAskPBX.h	/^const size_t PBXTHREADNUM = 5;$/;"	v
+PCMYSTR	StdString.h	/^	typedef typename MYBASE::const_pointer		PCMYSTR; \/\/ PCSTR or PCWSTR $/;"	t	class:CStdStr
+PCOLESTR	StdString.h	/^	typedef const OLECHAR*			PCOLESTR;$/;"	t
+PCOLESTR_DEFINED	StdString.h	699;"	d
+PCSTR	StdString.h	/^			typedef const char*		PCSTR;$/;"	t
+PCTSTR	StdString.h	/^	typedef const TCHAR*			PCTSTR;$/;"	t
+PCTSTR_DEFINED	StdString.h	694;"	d
+PCUSTR	StdString.h	/^	typedef const unsigned char*	PCUSTR;$/;"	t
+PCUSTR_DEFINED	StdString.h	710;"	d
+PCWSTR	StdString.h	/^			typedef const wchar_t*	PCWSTR;$/;"	t
+PMYSTR	StdString.h	/^	typedef typename MYBASE::pointer			PMYSTR;	 \/\/ PSTR or PWSTR$/;"	t	class:CStdStr
+POLESTR	StdString.h	/^	typedef OLECHAR*				POLESTR;$/;"	t
+POLESTR_DEFINED	StdString.h	704;"	d
+PSTR	StdString.h	/^			typedef char*			PSTR;$/;"	t
+PUSTR	StdString.h	/^	typedef unsigned char*			PUSTR;$/;"	t
+PWSTR	StdString.h	/^			typedef wchar_t*		PWSTR;$/;"	t
+ParaAskMsg	AskMsg/EstablishEvt.cpp	/^BOOL    CEstablishEvt::ParaAskMsg(const std::string &strAskMsg)$/;"	f	class:CEstablishEvt
+ParaAskPBXResponse	ResponseMsg.cpp	/^std::string CResponseMsg::ParaAskPBXResponse(const std::string &sDoc)$/;"	f	class:CResponseMsg
+ParaMsg	AskMsg/AgentStateMsg.cpp	/^void CAgentStateMsg::ParaMsg(const std::string &sDoc)$/;"	f	class:CAgentStateMsg
+ParaMsg	AskMsg/ChannelStateMsg.cpp	/^void CChannelStateMsg::ParaMsg(const std::string &sDoc)$/;"	f	class:CChannelStateMsg
+ParaMsg	AskMsg/HeadMsg.cpp	/^BOOL CHeadMsg::ParaMsg(const std::string &strDoc)$/;"	f	class:CHeadMsg
+ParaMsg	HandSoftPhoneThread.cpp	/^void CHandSoftPhoneThread::ParaMsg(std::string& smsg)$/;"	f	class:CHandSoftPhoneThread
+ParaProxyMsg	AskMsg/HeadMsg.cpp	/^BOOL CHeadMsg::ParaProxyMsg(const std::string &strDoc)$/;"	f	class:CHeadMsg
+ParaProxyResponseMsg	SoftPhoneMsg.cpp	/^BOOL CSoftPhoneMsg::ParaProxyResponseMsg(const std::string &strDoc)$/;"	f	class:CSoftPhoneMsg
+ParaQueueParams	AskMsg/QueueEvt.cpp	/^BOOL CQueueEvt::ParaQueueParams(const std::string &sEvt)$/;"	f	class:CQueueEvt
+ParaResponseMsg	AskMsg/ConfEvt.cpp	/^BOOL CConfEvt::ParaResponseMsg(const std::string &strEvt)$/;"	f	class:CConfEvt
+ParaResponseMsg	AskMsg/HoldEvt.cpp	/^BOOL    CHoldEvt::ParaResponseMsg(const std::string &strEvt)$/;"	f	class:CHoldEvt
+ParaResponseMsg	AskMsg/RingEvt.cpp	/^BOOL    CRingEvt::ParaResponseMsg(const std::string &strEvt)$/;"	f	class:CRingEvt
+ParaRetPBXEvt	AskMsg/IdleEvt.cpp	/^BOOL CIdleEvt::ParaRetPBXEvt(const std::string &sDoc)$/;"	f	class:CIdleEvt
+ParaRetPBXEvt	AskMsg/LoginEvt.cpp	/^BOOL CLoginEvt::ParaRetPBXEvt(const std::string &sDoc)$/;"	f	class:CLoginEvt
+ParaRetPBXEvt	AskMsg/LogoutEvt.cpp	/^BOOL CLogoutEvt::ParaRetPBXEvt(const std::string &sDoc)$/;"	f	class:CLogoutEvt
+ParaRetPBXEvt	AskMsg/MonitorEvt.cpp	/^BOOL  CMonitorEvt::ParaRetPBXEvt(const std::string &strEvt)$/;"	f	class:CMonitorEvt
+ParaRetPBXEvt	AskMsg/ObserverEvt.cpp	/^BOOL  CObserverEvt::ParaRetPBXEvt(const std::string &strEvt)$/;"	f	class:CObserverEvt
+ParaSoftPhoneRequestMsg	AskMsg/BusyEvt.cpp	/^BOOL CBusyEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CBusyEvt
+ParaSoftPhoneRequestMsg	AskMsg/ConfEvt.cpp	/^BOOL CConfEvt::ParaSoftPhoneRequestMsg(const std::string &strDoc)$/;"	f	class:CConfEvt
+ParaSoftPhoneRequestMsg	AskMsg/ConsultCancelEvt.cpp	/^BOOL CConsultCancelEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CConsultCancelEvt
+ParaSoftPhoneRequestMsg	AskMsg/ConsultEvt.cpp	/^BOOL CConsultEvt::ParaSoftPhoneRequestMsg(const std::string &strDoc)$/;"	f	class:CConsultEvt
+ParaSoftPhoneRequestMsg	AskMsg/ConsultTransEvt.cpp	/^BOOL CConsultTransEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CConsultTransEvt
+ParaSoftPhoneRequestMsg	AskMsg/EnforceLogOutEvt.cpp	/^BOOL CEnforceLogOutEvt::ParaSoftPhoneRequestMsg(const std::string &strDoc)$/;"	f	class:CEnforceLogOutEvt
+ParaSoftPhoneRequestMsg	AskMsg/GetPopDataEvt.cpp	/^BOOL CGetPopDataEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CGetPopDataEvt
+ParaSoftPhoneRequestMsg	AskMsg/HangupEvt.cpp	/^BOOL CHangupEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CHangupEvt
+ParaSoftPhoneRequestMsg	AskMsg/HoldEvt.cpp	/^BOOL CHoldEvt::ParaSoftPhoneRequestMsg(const std::string &strDoc)$/;"	f	class:CHoldEvt
+ParaSoftPhoneRequestMsg	AskMsg/HoldupCallEvt.cpp	/^BOOL CHoldupCallEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CHoldupCallEvt
+ParaSoftPhoneRequestMsg	AskMsg/IdleEvt.cpp	/^BOOL CIdleEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CIdleEvt
+ParaSoftPhoneRequestMsg	AskMsg/LoginEvt.cpp	/^BOOL CLoginEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CLoginEvt
+ParaSoftPhoneRequestMsg	AskMsg/LogoutEvt.cpp	/^BOOL CLogoutEvt::ParaSoftPhoneRequestMsg(const std::string &strDoc)$/;"	f	class:CLogoutEvt
+ParaSoftPhoneRequestMsg	AskMsg/MakeCallEvt.cpp	/^BOOL CMakeCallEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CMakeCallEvt
+ParaSoftPhoneRequestMsg	AskMsg/MonitorEvt.cpp	/^BOOL CMonitorEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CMonitorEvt
+ParaSoftPhoneRequestMsg	AskMsg/ObserverEvt.cpp	/^BOOL CObserverEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CObserverEvt
+ParaSoftPhoneRequestMsg	AskMsg/SendDtmfEvt.cpp	/^BOOL CSendDtmfEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CSendDtmfEvt
+ParaSoftPhoneRequestMsg	AskMsg/SingleTransEvt.cpp	/^BOOL CSingleTransEvt::ParaSoftPhoneRequestMsg(const std::string &strDoc)$/;"	f	class:CSingleTransEvt
+ParaSoftPhoneRequestMsg	AskMsg/UnHoldEvt.cpp	/^BOOL CUnHoldEvt::ParaSoftPhoneRequestMsg(const std::string &strDoc)$/;"	f	class:CUnHoldEvt
+ParaSoftPhoneRequestMsg	AskMsg/WrapupEvt.cpp	/^BOOL CWrapupEvt::ParaSoftPhoneRequestMsg(const std::string &sDoc)$/;"	f	class:CWrapupEvt
+ParaXML	UntiTool.cpp	/^BOOL CUntiTool::ParaXML(const std::string &sDoc, const std::string &sKey, std::string& val)$/;"	f	class:CUntiTool
+ParseNode	AskMsg/XmlMarkup.cpp	/^int TokenPos::ParseNode( NodePos& node )$/;"	f	class:TokenPos
+ParsePath	AskMsg/XmlMarkup.cpp	/^bool PathPos::ParsePath()$/;"	f	class:PathPos
+ParseString	UntiTool.cpp	/^void CUntiTool::ParseString(std::string str,char div,std::list<std::string> &li)$/;"	f	class:CUntiTool
+ParseString	UntiTool.cpp	/^void CUntiTool::ParseString(std::string str,char div,std::map<std::string,std::string> & mp)$/;"	f	class:CUntiTool
+PathPos	AskMsg/XmlMarkup.cpp	/^	PathPos( MCD_PCSZ pszPath, bool b ) { p=pszPath; bReader=b; i=0; iPathAttribName=0; iSave=0; nPathType=0; if (!ParsePath()) nPathType=-1; };$/;"	f	struct:PathPos
+PathPos	AskMsg/XmlMarkup.cpp	/^struct PathPos$/;"	s	file:
+PerformConversion	AskMsg/XmlMarkup.cpp	/^int TextEncoding::PerformConversion( void* pTo, MCD_CSTR pszToEncoding\/*=NULL*\/ )$/;"	f	class:TextEncoding
+Pop	AskMsg/XmlMarkup.cpp	/^	void Pop() { iTop = iPar; while (iUsed && pL[iUsed].iParent==iPar) { if (pL[iUsed].nSlot!=-1) Unslot(pL[iUsed]); --iUsed; } };$/;"	f	struct:ElemStack
+Pop	MsgQueue.cpp	/^std::string   CMsgQueue::Pop()$/;"	f	class:CMsgQueue
+PopOutOfLevel	AskMsg/XmlMarkup.cpp	/^	void PopOutOfLevel() { --iTop; };$/;"	f	struct:ElemStack
+PredefEntityTable	AskMsg/XmlMarkup.cpp	/^MCD_PCSZ PredefEntityTable[130] =$/;"	v
+ProcessEvt	HandleAskPBX.cpp	/^void CHandleAskPBX::ProcessEvt(const std::string &strEvt)$/;"	f	class:CHandleAskPBX
+Push	AskMsg/XmlMarkup.cpp	/^	void Push( MCD_PCSZ pName, int n ) { ++iUsed; if (iUsed==nSize) Alloc(nSize*2); pL[iUsed].SetTagName(pName,n); pL[iUsed].iParent=iPar; iTop=iUsed; };$/;"	f	struct:ElemStack
+Push	MsgQueue.cpp	/^void  CMsgQueue::Push(const std::string &sMsg)$/;"	f	class:CMsgQueue
+PushIntoLevel	AskMsg/XmlMarkup.cpp	/^	void PushIntoLevel( MCD_PCSZ pName, int n ) { ++iTop; if (iTop==nSize) Alloc(nSize*2); pL[iTop].SetTagName(pName,n); };$/;"	f	struct:ElemStack
+PushTagAndCount	AskMsg/XmlMarkup.cpp	/^void ElemStack::PushTagAndCount( TokenPos& token )$/;"	f	class:ElemStack
+Q172398	StdString.h	1155;"	d
+Q172398	StdString.h	1157;"	d
+QUEUEEVT_H	AskMsg/QueueEvt.h	2;"	d
+QUEUESTATIC_H	QueueStatic.h	2;"	d
+QueryProc	HandleWS.cpp	/^void* CHandleWS::QueryProc(LPVOID lpvoid)$/;"	f	class:CHandleWS
+QueryRun	HandleWS.cpp	/^BOOL CHandleWS::QueryRun()$/;"	f	class:CHandleWS
+RECORDEVT_H	AskMsg/RecordEvt.h	6;"	d
+REGASKMSG_H	AskMsg/RegAskMsg.h	2;"	d
+REPLACE	owntype.h	7;"	d
+RESPONSEMSG_H	ResponseMsg.h	2;"	d
+RINGEVT_H	AskMsg/RingEvt.h	6;"	d
+ReadAgentCfg	SettingData.cpp	/^void CSettingData::ReadAgentCfg(const std::string &strPath)$/;"	f	class:CSettingData
+ReadCfg	SettingData.cpp	/^void CSettingData::ReadCfg(const std::string &strPath)$/;"	f	class:CSettingData
+ReadTextFile	AskMsg/XmlMarkup.cpp	/^bool CMarkup::ReadTextFile( MCD_CSTR_FILENAME szFileName, MCD_STR& strDoc, MCD_STR* pstrResult, int* pnDocFlags, MCD_STR* pstrEncoding )$/;"	f	class:CMarkup
+ReadWSCfg	AskProxyDlg.cpp	/^BOOL CAskProxyDlg::ReadWSCfg(const std::string &sPath)$/;"	f	class:CAskProxyDlg
+RegEnCode	AskMsg/RegAskMsg.cpp	/^void CRegAskMsg::RegEnCode()$/;"	f	class:CRegAskMsg
+RelBuf	StdString.h	/^	void RelBuf(int nNewLen=-1)$/;"	f	class:CStdStr
+Release	Agent.cpp	/^void CAgent::Release()$/;"	f	class:CAgent
+Release	AskMsg/XmlMarkup.cpp	/^	void Release() { for (int n=0;n<SegsUsed();++n) delete[] (char*)m_pSegs[n]; if (m_pSegs) delete[] (char*)m_pSegs; };$/;"	f	struct:ElemPosTree
+ReleaseBuffer	StdString.h	/^	void ReleaseBuffer(int nNewLen=-1)$/;"	f	class:CStdStr
+ReleaseElemPosTree	AskMsg/XmlMarkup.cpp	/^	void ReleaseElemPosTree() { Release(); Clear(); };$/;"	f	struct:ElemPosTree
+ReleaseMaps	AskMsg/XmlMarkup.cpp	/^	void ReleaseMaps() { SavedPosMap**p = m_pMaps; if (p) { while (*p) delete *p++; delete[] m_pMaps; m_pMaps=NULL; } };$/;"	f	struct:SavedPosMapArray
+Remove	StdString.h	/^	int Remove(CT ch)$/;"	f	class:CStdStr
+RemoveAgentFromMap	AskProxyDlg.cpp	/^BOOL CAskProxyDlg::RemoveAgentFromMap(CAgent* pAgent)$/;"	f	class:CAskProxyDlg
+RemoveAttrib	AskMsg/XmlMarkup.cpp	/^bool CMarkup::RemoveAttrib( MCD_CSTR szAttrib )$/;"	f	class:CMarkup
+RemoveChanFromMap	AskProxyDlg.cpp	/^BOOL CAskProxyDlg::RemoveChanFromMap(const char *szChan,CAgent* pAgent)$/;"	f	class:CAskProxyDlg
+RemoveChildAttrib	AskMsg/XmlMarkup.cpp	/^bool CMarkup::RemoveChildAttrib( MCD_CSTR szAttrib )$/;"	f	class:CMarkup
+RemoveChildElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::RemoveChildElem()$/;"	f	class:CMarkup
+RemoveElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::RemoveElem()$/;"	f	class:CMarkup
+RemoveNode	AskMsg/XmlMarkup.cpp	/^bool CMarkup::RemoveNode()$/;"	f	class:CMarkup
+Replace	StdString.h	/^	int Replace(CT chOld, CT chNew)$/;"	f	class:CStdStr
+Replace	StdString.h	/^	int Replace(PCMYSTR szOld, PCMYSTR szNew)$/;"	f	class:CStdStr
+ResetCONN	Agent.h	/^  void ResetCONN()$/;"	f	class:CONN_CHAN
+ResetChildPos	AskMsg/XmlMarkup.h	/^	void ResetChildPos() { x_SetPos(m_iPosParent,m_iPos,0); };$/;"	f	class:CMarkup
+ResetMainPos	AskMsg/XmlMarkup.h	/^	void ResetMainPos() { x_SetPos(m_iPosParent,0,0); };$/;"	f	class:CMarkup
+ResetPos	AskMsg/XmlMarkup.h	/^	void ResetPos() { x_SetPos(0,0,0); };$/;"	f	class:CMarkup
+RestorePos	AskMsg/XmlMarkup.cpp	/^bool CMarkup::RestorePos( MCD_CSTR szPosName \/*=""*\/, int nMap \/*=0*\/ )$/;"	f	class:CMarkup
+ReverseFind	StdString.h	/^	int ReverseFind(CT ch) const$/;"	f	class:CStdStr
+ReverseFind	StdString.h	/^	int ReverseFind(PCMYSTR szFind, MYSIZE pos=MYBASE::npos) const$/;"	f	class:CStdStr
+RevertOffset	AskMsg/XmlMarkup.cpp	/^	void RevertOffset() { i=iSave; };$/;"	f	struct:PathPos
+RevertOffsetAsName	AskMsg/XmlMarkup.cpp	/^	void RevertOffsetAsName() { i=iSave; nPathType=1; };$/;"	f	struct:PathPos
+Right	StdString.h	/^	MYTYPE Right(int nCount) const$/;"	f	class:CStdStr
+Run	HandleWebResponse.cpp	/^void CHandleWebResponse::Run()$/;"	f	class:CHandleWebResponse
+RunDispatchAskPBX	HandleAskPBX  (2013-5-7).cpp	/^void CHandleAskPBX::RunDispatchAskPBX()$/;"	f	class:CHandleAskPBX
+RunDispatchAskPBX	HandleAskPBX.cpp	/^void CHandleAskPBX::RunDispatchAskPBX()$/;"	f	class:CHandleAskPBX
+RunDispatchSoftPhoeMsg	HandSoftPhoneThread.cpp	/^void  CHandSoftPhoneThread::RunDispatchSoftPhoeMsg()$/;"	f	class:CHandSoftPhoneThread
+RunHandleAskPBX	HandleAskPBX  (2013-5-7).cpp	/^void  CHandleAskPBX::RunHandleAskPBX()$/;"	f	class:CHandleAskPBX
+RunHandleAskPBX	HandleAskPBX.cpp	/^void  CHandleAskPBX::RunHandleAskPBX()$/;"	f	class:CHandleAskPBX
+RunHandleSoftPhoeMsg	HandSoftPhoneThread.cpp	/^void CHandSoftPhoneThread::RunHandleSoftPhoeMsg()$/;"	f	class:CHandSoftPhoneThread
+SENDDTMFEVT_H	AskMsg/SendDtmfEvt.h	6;"	d
+SETTINGDATA_H	SettingData.h	2;"	d
+SINGLETRANSEVT_H	AskMsg/SingleTransEvt.h	6;"	d
+SOCKETMANAGER_H	socket/SocketManager (复件).h	2;"	d
+SOCKETMANAGER_H	socket/SocketManager.h	2;"	d
+SOFTPHONEMSG_H	SoftPhoneMsg.h	2;"	d
+SPM_CHILD	AskMsg/XmlMarkup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::__anon5	file:
+SPM_LAST	AskMsg/XmlMarkup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::__anon5	file:
+SPM_MAIN	AskMsg/XmlMarkup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::__anon5	file:
+SPM_USED	AskMsg/XmlMarkup.cpp	/^	enum { SPM_MAIN = 1, SPM_CHILD = 2, SPM_USED = 4, SPM_LAST = 8 };$/;"	e	enum:SavedPos::__anon5	file:
+SSA2COLE	StdString.h	/^	    inline PCOLESTR		SSA2COLE(PCSTR p)	{ return p; }$/;"	f
+SSA2COLE	StdString.h	1042;"	d
+SSA2CT	StdString.h	/^	    inline PCTSTR	SSA2CT(PCSTR p)			{ return p; }$/;"	f
+SSA2CT	StdString.h	991;"	d
+SSA2CW	StdString.h	984;"	d
+SSA2OLE	StdString.h	/^	    inline POLESTR		SSA2OLE(PSTR p)		{ return p; }$/;"	f
+SSA2OLE	StdString.h	1040;"	d
+SSA2T	StdString.h	/^	    inline PTSTR	SSA2T(PSTR p)			{ return p; }$/;"	f
+SSA2T	StdString.h	989;"	d
+SSA2W	StdString.h	953;"	d
+SSA2W	StdString.h	972;"	d
+SSCVT	StdString.h	947;"	d
+SSCVT	StdString.h	950;"	d
+SSCVT	StdString.h	966;"	d
+SSCVT	StdString.h	969;"	d
+SSCodeCvt	StdString.h	/^	typedef std::codecvt<wchar_t, char, mbstate_t> SSCodeCvt;$/;"	t
+SSMAX	StdString.h	/^inline const Type& SSMAX(const Type& arg1, const Type& arg2)$/;"	f
+SSMIN	StdString.h	/^inline const Type& SSMIN(const Type& arg1, const Type& arg2)$/;"	f
+SSOLE2A	StdString.h	/^	    inline PSTR			SSOLE2A(POLESTR p)	{ return p; }$/;"	f
+SSOLE2A	StdString.h	1041;"	d
+SSOLE2CA	StdString.h	/^	    inline PCSTR		SSOLE2CA(PCOLESTR p){ return p; }$/;"	f
+SSOLE2CA	StdString.h	1043;"	d
+SSOLE2CT	StdString.h	/^	    inline PCTSTR	SSOLE2CT(PCOLESTR p)	{ return p; }$/;"	f
+SSOLE2CT	StdString.h	1026;"	d
+SSOLE2CW	StdString.h	/^	    inline PCWSTR		SSOLE2CW(PCOLESTR p){ return p; }$/;"	f
+SSOLE2CW	StdString.h	1034;"	d
+SSOLE2T	StdString.h	/^	    inline PTSTR	SSOLE2T(POLESTR p)		{ return p; }$/;"	f
+SSOLE2T	StdString.h	1027;"	d
+SSOLE2W	StdString.h	/^	    inline PWSTR		SSOLE2W(POLESTR p)	{ return p; }$/;"	f
+SSOLE2W	StdString.h	1032;"	d
+SSREF	StdString.h	1212;"	d
+SSREF	StdString.h	1214;"	d
+SSREF	StdString.h	1217;"	d
+SSRES	StdString.h	2118;"	d
+SSResourceHandle	StdString.h	/^	inline HMODULE& SSResourceHandle()$/;"	f
+SSSHDR	StdString.h	/^	typedef struct SSSHDR$/;"	s	class:CStdStr
+SSSHDR	StdString.h	/^	} SSSHDR;	\/\/ as in "Standard String Stream Header"$/;"	t	class:CStdStr	typeref:struct:CStdStr::SSSHDR
+SSSO_COMPRESS	StdString.h	3739;"	d
+SSSO_UNICODE	StdString.h	3738;"	d
+SST2A	StdString.h	/^	    inline PSTR		SST2A(PTSTR p)			{ return p; }$/;"	f
+SST2A	StdString.h	988;"	d
+SST2CA	StdString.h	/^	    inline PCSTR	SST2CA(PCTSTR p)		{ return p; }$/;"	f
+SST2CA	StdString.h	990;"	d
+SST2COLE	StdString.h	/^	    inline PCOLESTR	SST2COLE(PCTSTR p)		{ return p; }$/;"	f
+SST2COLE	StdString.h	1024;"	d
+SST2CW	StdString.h	/^	    inline PCWSTR	SST2CW(PCTSTR p)		{ return p; }$/;"	f
+SST2CW	StdString.h	1002;"	d
+SST2OLE	StdString.h	/^	    inline POLESTR	SST2OLE(PTSTR p)		{ return p; }$/;"	f
+SST2OLE	StdString.h	1025;"	d
+SST2W	StdString.h	/^	    inline PWSTR	SST2W(PTSTR p)			{ return p; }$/;"	f
+SST2W	StdString.h	1000;"	d
+SSToLower	StdString.h	/^	struct SSToLower : public std::binary_function<CT, std::locale, CT>$/;"	s
+SSToLower	StdString.h	/^	struct SSToLower : public std::unary_function<CT, CT>$/;"	s
+SSToUpper	StdString.h	/^	struct SSToUpper : public std::binary_function<CT, std::locale, CT>$/;"	s
+SSToUpper	StdString.h	/^	struct SSToUpper : public std::unary_function<CT, CT>$/;"	s
+SSW2A	StdString.h	958;"	d
+SSW2A	StdString.h	977;"	d
+SSW2CA	StdString.h	985;"	d
+SSW2COLE	StdString.h	/^	    inline PCOLESTR		SSW2COLE(PCWSTR p)	{ return p; }$/;"	f
+SSW2COLE	StdString.h	1033;"	d
+SSW2CT	StdString.h	/^	    inline PCTSTR	SSW2CT(PCWSTR p)		{ return p; }$/;"	f
+SSW2CT	StdString.h	1003;"	d
+SSW2OLE	StdString.h	/^	    inline POLESTR		SSW2OLE(PWSTR p)	{ return p; }$/;"	f
+SSW2OLE	StdString.h	1031;"	d
+SSW2T	StdString.h	/^	    inline PTSTR	SSW2T(PWSTR p)			{ return p; }$/;"	f
+SSW2T	StdString.h	1001;"	d
+SS_ALLOCA	StdString.h	493;"	d
+SS_ANSI	StdString.h	474;"	d
+SS_DEFLANGID	StdString.h	4219;"	d
+SS_INC_COMDEF	StdString.h	675;"	d
+SS_IS_INTRESOURCE	StdString.h	356;"	d
+SS_IS_INTRESOURCE	StdString.h	359;"	d
+SS_IS_INTRESOURCE	StdString.h	361;"	d
+SS_IS_INTRESOURCE	StdString.h	363;"	d
+SS_MBCS	StdString.h	510;"	d
+SS_NOTHROW	StdString.h	677;"	d
+SS_NOTHROW	StdString.h	679;"	d
+SS_NO_REFCOUNT	StdString.h	444;"	d
+SS_PTRTYPE	StdString.h	/^typedef std::string::pointer		SS_PTRTYPE;  $/;"	t
+SS_SAFE_FORMAT	StdString.h	423;"	d
+SS_SIZETYPE	StdString.h	/^typedef std::string::size_type		SS_SIZETYPE; \/\/ just for shorthand, really$/;"	t
+SS_UNSIGNED	StdString.h	378;"	d
+SS_USE_FACET	StdString.h	760;"	d
+SS_USE_FACET	StdString.h	764;"	d
+SS_USE_FACET	StdString.h	769;"	d
+SS_USE_FACET	StdString.h	773;"	d
+SS_WIN32	StdString.h	459;"	d
+STDSTRING_H	StdString.h	332;"	d
+STDSTRING_INC_COMDEF	StdString.h	676;"	d
+STD_BUF_SIZE	StdString.h	3140;"	d
+STRICT	StdString.h	594;"	d
+STRICT	StdString.h	634;"	d
+SW_PTRTYPE	StdString.h	/^typedef std::wstring::pointer		SW_PTRTYPE;  $/;"	t
+SW_SIZETYPE	StdString.h	/^typedef std::wstring::size_type		SW_SIZETYPE;$/;"	t
+S_QueueCalls	AskMsg/QueueEvt.h	/^}S_QueueCalls;$/;"	t	typeref:struct:__anon6
+Save	AskMsg/XmlMarkup.cpp	/^bool CMarkup::Save( MCD_CSTR_FILENAME szFileName )$/;"	f	class:CMarkup
+SaveOffset	AskMsg/XmlMarkup.cpp	/^	void SaveOffset() { iSave=i; };$/;"	f	struct:PathPos
+SavePos	AskMsg/XmlMarkup.cpp	/^bool CMarkup::SavePos( MCD_CSTR szPosName \/*=""*\/, int nMap \/*=0*\/ )$/;"	f	class:CMarkup
+SavedPos	AskMsg/XmlMarkup.cpp	/^	SavedPos() { nSavedPosFlags=0; iPos=0; };$/;"	f	struct:SavedPos
+SavedPos	AskMsg/XmlMarkup.cpp	/^struct SavedPos$/;"	s	file:
+SavedPosMap	AskMsg/XmlMarkup.cpp	/^	SavedPosMap( int nSize ) { nMapSize=nSize; pTable = new SavedPos*[nSize]; memset(pTable,0,nSize*sizeof(SavedPos*)); };$/;"	f	struct:SavedPosMap
+SavedPosMap	AskMsg/XmlMarkup.cpp	/^struct SavedPosMap$/;"	s	file:
+SavedPosMapArray	AskMsg/XmlMarkup.cpp	/^	SavedPosMapArray() { m_pMaps = NULL; };$/;"	f	struct:SavedPosMapArray
+SavedPosMapArray	AskMsg/XmlMarkup.cpp	/^struct SavedPosMapArray$/;"	s	file:
+SegsUsed	AskMsg/XmlMarkup.cpp	/^	int SegsUsed() const { return ((m_nSize-1)>>PA_SEGBITS) + 1; };$/;"	f	struct:ElemPosTree
+SendCMD	GenCMD.cpp	/^void CGenCMD::SendCMD(CSocketManager* sock)$/;"	f	class:CGenCMD
+SendCMDToPBX	Agent.cpp	/^BOOL CAgent::SendCMDToPBX(const std::string &sendCmd)$/;"	f	class:CAgent
+SendCMDToPBX	Phone.cpp	/^BOOL CPhone::SendCMDToPBX(const std::string &sendCmd)$/;"	f	class:CPhone
+SendDTMF	Agent.cpp	/^BOOL CAgent::SendDTMF(const std::string &dtmf)$/;"	f	class:CAgent
+SendMsgToUser	CompletePort.cpp	/^bool CCompletePort::SendMsgToUser(int s, const std::string &msg)$/;"	f	class:CCompletePort
+SendResult	AgentOp.cpp	/^BOOL CAgentOp::SendResult(CAgent* pAgent,const std::string &sMsg)$/;"	f	class:CAgentOp
+Server	UserConn/Proactor.cpp	/^Server::Server()$/;"	f	class:Server
+Server	UserConn/Proactor.h	/^class Server : public ACE_Service_Handler$/;"	c
+SetAgentStatusReportData	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::SetAgentStatusReportData(CAgent* pAgent)$/;"	f	class:CHandleAskPBX
+SetAgentStatusReportData	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::SetAgentStatusReportData(CAgent* pAgent)$/;"	f	class:CHandleAskPBX
+SetAgentToChan	AskProxyDlg.cpp	/^void CAskProxyDlg::SetAgentToChan(const char *szChan,CAgent* pAgent)$/;"	f	class:CAskProxyDlg
+SetAgentToStation	AskProxyDlg.cpp	/^void CAskProxyDlg::SetAgentToStation(const std::string &sStation)$/;"	f	class:CAskProxyDlg
+SetAt	StdString.h	/^	void SetAt(int nIndex, CT ch)$/;"	f	class:CStdStr
+SetAttrib	AskMsg/XmlMarkup.h	/^	bool SetAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue, int nFlags=0 ) { return x_SetAttrib(m_iPos,szAttrib,szValue,nFlags); };$/;"	f	class:CMarkup
+SetAttrib	AskMsg/XmlMarkup.h	/^	bool SetAttrib( MCD_CSTR szAttrib, int nValue, int nFlags=0 ) { return x_SetAttrib(m_iPos,szAttrib,nValue,nFlags); };$/;"	f	class:CMarkup
+SetBuf	StdString.h	/^	CT* SetBuf(int nLen)$/;"	f	class:CStdStr
+SetBusy	Agent.cpp	/^BOOL CAgent::SetBusy()$/;"	f	class:CAgent
+SetChildAttrib	AskMsg/XmlMarkup.h	/^	bool SetChildAttrib( MCD_CSTR szAttrib, MCD_CSTR szValue, int nFlags=0 ) { return x_SetAttrib(m_iPosChild,szAttrib,szValue,nFlags); };$/;"	f	class:CMarkup
+SetChildAttrib	AskMsg/XmlMarkup.h	/^	bool SetChildAttrib( MCD_CSTR szAttrib, int nValue, int nFlags=0 ) { return x_SetAttrib(m_iPosChild,szAttrib,nValue,nFlags); };$/;"	f	class:CMarkup
+SetChildData	AskMsg/XmlMarkup.h	/^	bool SetChildData( MCD_CSTR szData, int nFlags=0 ) { return x_SetData(m_iPosChild,szData,nFlags); };$/;"	f	class:CMarkup
+SetChildData	AskMsg/XmlMarkup.h	/^	bool SetChildData( int nValue ) { return x_SetData(m_iPosChild,nValue); };$/;"	f	class:CMarkup
+SetData	AskMsg/XmlMarkup.h	/^	bool SetData( MCD_CSTR szData, int nFlags=0 ) { return x_SetData(m_iPos,szData,nFlags); };$/;"	f	class:CMarkup
+SetData	AskMsg/XmlMarkup.h	/^	bool SetData( int nValue ) { return x_SetData(m_iPos,nValue); };$/;"	f	class:CMarkup
+SetDoc	AskMsg/XmlMarkup.cpp	/^bool CMarkup::SetDoc( MCD_PCSZ pDoc )$/;"	f	class:CMarkup
+SetDoc	AskMsg/XmlMarkup.cpp	/^bool CMarkup::SetDoc( const MCD_STR& strDoc )$/;"	f	class:CMarkup
+SetDocFlags	AskMsg/XmlMarkup.h	/^	void SetDocFlags( int nFlags ) { m_nDocFlags = (nFlags & ~(MDF_READFILE|MDF_WRITEFILE|MDF_APPENDFILE)); };$/;"	f	class:CMarkup
+SetElemContent	AskMsg/XmlMarkup.h	/^	bool SetElemContent( MCD_CSTR szContent ) { return x_SetElemContent(szContent); };$/;"	f	class:CMarkup
+SetEndTagLen	AskMsg/XmlMarkup.cpp	/^	void SetEndTagLen( int n ) { nEndTagLen = n; };$/;"	f	struct:ElemPos
+SetEndTagLenUnparsed	AskMsg/XmlMarkup.cpp	/^	void SetEndTagLenUnparsed() { SetEndTagLen(1); };$/;"	f	struct:ElemPos
+SetErrorMsgToList	socket/SocketManager  (复件).cpp	/^void CSocketManager::SetErrorMsgToList(const std::string &strerror,int nerrornum,_errortype etype)$/;"	f	class:CSocketManager
+SetErrorMsgToList	socket/SocketManager.cpp	/^void CSocketManager::SetErrorMsgToList(const std::string &strerror,int nerrornum,_errortype etype)$/;"	f	class:CSocketManager
+SetErrorThreadStart	socket/SocketManager  (复件).cpp	/^void CSocketManager::SetErrorThreadStart(bool bisusing, long nerrorlistnum)$/;"	f	class:CSocketManager
+SetErrorThreadStart	socket/SocketManager.cpp	/^void CSocketManager::SetErrorThreadStart(bool bisusing, long nerrorlistnum)$/;"	f	class:CSocketManager
+SetIdle	Agent.cpp	/^BOOL CAgent::SetIdle()$/;"	f	class:CAgent
+SetLevel	AskMsg/XmlMarkup.cpp	/^    void SetLevel( int nLev ) { nFlags = (nFlags & ~0xffff) | nLev; };$/;"	f	struct:ElemPos
+SetLock	AskProxyDlg.cpp	/^void CAskProxyDlg::SetLock(int v)$/;"	f	class:CAskProxyDlg
+SetMainSocket	Agent.cpp	/^void CAgent::SetMainSocket(CSocketManager* pSocket)$/;"	f	class:CAgent
+SetMainSocket	Phone.cpp	/^void CPhone::SetMainSocket(CSocketManager* pSocket)$/;"	f	class:CPhone
+SetMainWnd	Agent.cpp	/^void CAgent::SetMainWnd(CAskProxyDlg* pDlg)$/;"	f	class:CAgent
+SetMainWnd	Phone.cpp	/^ void CPhone::SetMainWnd(CAskProxyDlg* pDlg)$/;"	f	class:CPhone
+SetMapSize	AskMsg/XmlMarkup.cpp	/^bool CMarkup::SetMapSize( int nSize, int nMap \/*=0*\/ )$/;"	f	class:CMarkup
+SetResourceHandle	StdString.h	/^		static void SetResourceHandle(HMODULE hNew)$/;"	f	class:CStdStr
+SetStartTagLen	AskMsg/XmlMarkup.cpp	/^	void SetStartTagLen( int n ) { nStartTagLen = n; };$/;"	f	struct:ElemPos
+SetSysString	StdString.h	/^	BSTR SetSysString(BSTR* pbstr) const$/;"	f	class:CStdStr
+SetTagName	AskMsg/XmlMarkup.cpp	/^	void SetTagName( MCD_PCSZ pName, int n ) { MCD_STRASSIGN(strTagName,pName,n); };$/;"	f	struct:TagPos
+SetUnLock	AskProxyDlg.cpp	/^void CAskProxyDlg::SetUnLock()$/;"	f	class:CAskProxyDlg
+SetWSCDRData	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::SetWSCDRData(CAgent* pAgent)$/;"	f	class:CHandleAskPBX
+SetWSCDRData	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::SetWSCDRData(CAgent* pAgent)$/;"	f	class:CHandleAskPBX
+SetWSSkillSnap	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::SetWSSkillSnap(CQueueEvt* pQueue, const std::string &sTenantID)$/;"	f	class:CHandleAskPBX
+SetWSSkillSnap	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::SetWSSkillSnap(CQueueEvt* pQueue, const std::string &sTenantID)$/;"	f	class:CHandleAskPBX
+SetWnd	CheckAgent.cpp	/^void CCheckAgent::SetWnd(CAskProxyDlg* pDlg)$/;"	f	class:CCheckAgent
+SetWorkNoToMap	AskProxyDlg.cpp	/^BOOL CAskProxyDlg::SetWorkNoToMap(CAgent* pAgent)$/;"	f	class:CAskProxyDlg
+SetWrapup	Agent.cpp	/^BOOL CAgent::SetWrapup()$/;"	f	class:CAgent
+SingleTrans	Agent.cpp	/^BOOL CAgent::SingleTrans()$/;"	f	class:CAgent
+Slot	AskMsg/XmlMarkup.cpp	/^	void Slot( int n ) { pL[iUsed].nSlot=n; int i=anTable[n]; anTable[n]=iUsed; pL[iUsed].iSlotNext=i; if (i) pL[i].iSlotPrev=iUsed; };$/;"	f	struct:ElemStack
+SpanExcluding	StdString.h	/^	MYTYPE SpanExcluding(PCMYSTR szCharSet) const$/;"	f	class:CStdStr
+SpanIncluding	StdString.h	/^	MYTYPE SpanIncluding(PCMYSTR szCharSet) const$/;"	f	class:CStdStr
+SplitterString	GeneralUtils.cpp	/^UINT CGeneralUtils::SplitterString(const std::string &szInput, const std::string &szDelimiter, std::vector<std::string>& arrayElems)$/;"	f	class:CGeneralUtils
+Start	GenCMD.cpp	/^void CGenCMD::Start()$/;"	f	class:CGenCMD
+StartAfter	AskMsg/XmlMarkup.cpp	/^	int StartAfter() const { return nStart + nLength; };$/;"	f	struct:ElemPos
+StartCheckAgentThread	CheckAgent.cpp	/^BOOL CCheckAgent::StartCheckAgentThread()$/;"	f	class:CCheckAgent
+StartContent	AskMsg/XmlMarkup.cpp	/^	int StartContent() const { return nStart + StartTagLen(); };$/;"	f	struct:ElemPos
+StartDispatchSoftPhoneMsg	HandSoftPhoneThread.cpp	/^BOOL CHandSoftPhoneThread::StartDispatchSoftPhoneMsg(CAskProxyDlg* pDlg)$/;"	f	class:CHandSoftPhoneThread
+StartHandleAskPBX	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::StartHandleAskPBX(CAskProxyDlg* pDlg)$/;"	f	class:CHandleAskPBX
+StartHandleAskPBX	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::StartHandleAskPBX(CAskProxyDlg* pDlg)$/;"	f	class:CHandleAskPBX
+StartHandleSoftPhoneMsg	HandSoftPhoneThread.cpp	/^BOOL CHandSoftPhoneThread::StartHandleSoftPhoneMsg(CAskProxyDlg* pDlg)$/;"	f	class:CHandSoftPhoneThread
+StartHandleWebResponseThread	HandleWebResponse.cpp	/^BOOL   CHandleWebResponse::StartHandleWebResponseThread(CAskProxyDlg* pDlg)\/\/启动线程$/;"	f	class:CHandleWebResponse
+StartQueryThread	HandleWS.cpp	/^BOOL CHandleWS::StartQueryThread(CAskProxyDlg* pDlg)$/;"	f	class:CHandleWS
+StartTagLen	AskMsg/XmlMarkup.cpp	/^	int StartTagLen() const { return nStartTagLen; };$/;"	f	struct:ElemPos
+StartThread	UserConn/Userconn.cpp	/^void* CUserConn::StartThread(void *arg)$/;"	f	class:CUserConn
+StartThread	socket/SocketManager  (复件).cpp	/^void CSocketManager::StartThread(BOOL run)$/;"	f	class:CSocketManager
+StartThread	socket/SocketManager.cpp	/^void CSocketManager::StartThread(BOOL run)$/;"	f	class:CSocketManager
+StdCodeCvt	StdString.h	/^		inline PSTR StdCodeCvt(PSTR pDstA, int nDst, PCWSTR pSrcW, int nSrc, $/;"	f
+StdCodeCvt	StdString.h	/^		inline PUSTR StdCodeCvt(PUSTR pDstA, int nDst, PCWSTR pSrcW, int nSrc, $/;"	f
+StdCodeCvt	StdString.h	/^		inline PWSTR StdCodeCvt(PWSTR pDstW, int nDst, PCSTR pSrcA, int nSrc, $/;"	f
+StdCodeCvt	StdString.h	/^		inline PWSTR StdCodeCvt(PWSTR pDstW, int nDst, PCUSTR pSrcA, int nSrc, $/;"	f
+StdCodeCvt	StdString.h	/^	inline PSTR StdCodeCvt(PSTR pDstA, int nDst, PCWSTR pSrcW, int nSrc,$/;"	f
+StdCodeCvt	StdString.h	/^	inline PUSTR StdCodeCvt(PUSTR pDstA, int nDst, PCWSTR pSrcW, int nSrc,$/;"	f
+StdCodeCvt	StdString.h	/^	inline PWSTR StdCodeCvt(PWSTR pDstW, int nDst, PCSTR pSrcA, int nSrc,$/;"	f
+StdCodeCvt	StdString.h	/^	inline PWSTR StdCodeCvt(PWSTR pDstW, int nDst, PCUSTR pSrcA, int nSrc,$/;"	f
+StdCodeCvt	StdString.h	/^inline PSTR StdCodeCvt(PSTR pDst, int nDst, PCSTR pSrc, int nSrc)$/;"	f
+StdCodeCvt	StdString.h	/^inline PSTR StdCodeCvt(PSTR pDst, int nDst, PCUSTR pSrc, int nSrc)$/;"	f
+StdCodeCvt	StdString.h	/^inline PUSTR StdCodeCvt(PUSTR pDst, int nDst, PCSTR pSrc, int nSrc)$/;"	f
+StdCodeCvt	StdString.h	/^inline PWSTR StdCodeCvt(PWSTR pDst, int nDst, PCWSTR pSrc, int nSrc)$/;"	f
+StdStringEqualsNoCase	StdString.h	4285;"	d
+StdStringEqualsNoCase	StdString.h	4288;"	d
+StdStringEqualsNoCaseA	StdString.h	/^struct StdStringEqualsNoCaseA$/;"	s
+StdStringEqualsNoCaseA	StdString.h	4281;"	d
+StdStringEqualsNoCaseW	StdString.h	/^struct StdStringEqualsNoCaseW$/;"	s
+StdStringEqualsNoCaseW	StdString.h	4279;"	d
+StdStringLessNoCase	StdString.h	4284;"	d
+StdStringLessNoCase	StdString.h	4287;"	d
+StdStringLessNoCaseA	StdString.h	/^struct StdStringLessNoCaseA$/;"	s
+StdStringLessNoCaseA	StdString.h	4280;"	d
+StdStringLessNoCaseW	StdString.h	/^struct StdStringLessNoCaseW$/;"	s
+StdStringLessNoCaseW	StdString.h	4278;"	d
+StopCheckAgentThread	CheckAgent.cpp	/^void CCheckAgent::StopCheckAgentThread()$/;"	f	class:CCheckAgent
+StopComm	socket/SocketManager  (复件).cpp	/^void CSocketManager::StopComm()$/;"	f	class:CSocketManager
+StopComm	socket/SocketManager.cpp	/^void CSocketManager::StopComm()$/;"	f	class:CSocketManager
+StopDispatchSoftPhoneMsg	HandSoftPhoneThread.cpp	/^BOOL  CHandSoftPhoneThread::StopDispatchSoftPhoneMsg()$/;"	f	class:CHandSoftPhoneThread
+StopErrorThread	socket/SocketManager.cpp	/^void CSocketManager::StopErrorThread()$/;"	f	class:CSocketManager
+StopHandleAskPBX	HandleAskPBX  (2013-5-7).cpp	/^BOOL CHandleAskPBX::StopHandleAskPBX()$/;"	f	class:CHandleAskPBX
+StopHandleAskPBX	HandleAskPBX.cpp	/^BOOL CHandleAskPBX::StopHandleAskPBX()$/;"	f	class:CHandleAskPBX
+StopHandleSoftPhoneMsg	HandSoftPhoneThread.cpp	/^BOOL    CHandSoftPhoneThread::StopHandleSoftPhoneMsg()$/;"	f	class:CHandSoftPhoneThread
+StopHandleWebResponseThread	HandleWebResponse.cpp	/^BOOL   CHandleWebResponse::StopHandleWebResponseThread()\/\/停止线程$/;"	f	class:CHandleWebResponse
+StrNIACmp	AskMsg/XmlMarkup.cpp	/^	static int StrNIACmp( MCD_PCSZ p1, MCD_PCSZ p2, int n )$/;"	f	struct:TokenPos
+StrSizeType	StdString.h	1405;"	d
+StreamLoad	StdString.h	/^	HRESULT StreamLoad(IStream* pStream)$/;"	f	class:CStdStr
+StreamSave	StdString.h	/^	HRESULT StreamSave(IStream* pStream) const$/;"	f	class:CStdStr
+StreamSize	StdString.h	/^	ULONG StreamSize() const$/;"	f	class:CStdStr
+T2A	StdString.h	1070;"	d
+T2CA	StdString.h	1074;"	d
+T2COLE	StdString.h	1080;"	d
+T2CW	StdString.h	1076;"	d
+T2OLE	StdString.h	1082;"	d
+T2W	StdString.h	1072;"	d
+TCHAR	StdString.h	/^				typedef char		TCHAR;$/;"	t
+TCHAR	StdString.h	/^				typedef wchar_t		TCHAR;$/;"	t
+THIS_FILE	AskMsg/LogoutEvt.cpp	/^static char THIS_FILE[]=__FILE__;$/;"	v	file:
+THIS_FILE	AskMsg/LogoutEvt.cpp	12;"	d	file:
+THIS_FILE	AskMsg/XmlMarkup.cpp	/^static char THIS_FILE[]=__FILE__;$/;"	v	file:
+THIS_FILE	AskMsg/XmlMarkup.cpp	33;"	d	file:
+TRACE	StdString.h	4323;"	d
+TRACE	StdString.h	684;"	d
+TRACE_DEFINED_HERE	StdString.h	4324;"	d
+TRACE_DEFINED_HERE	StdString.h	683;"	d
+TRUE	AskProxy.h	9;"	d
+TRUE	owntype.h	4;"	d
+TSTRING_DEFINED	StdString.h	1148;"	d
+TagPos	AskMsg/XmlMarkup.cpp	/^	TagPos() { Init(); };$/;"	f	struct:TagPos
+TagPos	AskMsg/XmlMarkup.cpp	/^struct TagPos$/;"	s	file:
+TextEncoding	AskMsg/XmlMarkup.cpp	/^	TextEncoding( MCD_CSTR pszFromEncoding, const void* pFromBuffer, int nFromBufferLen )$/;"	f	struct:TextEncoding
+TextEncoding	AskMsg/XmlMarkup.cpp	/^struct TextEncoding$/;"	s	file:
+ToLower	StdString.h	/^	MYTYPE& ToLower(const std::locale& loc=std::locale())$/;"	f	class:CStdStr
+ToUpper	StdString.h	/^    MYTYPE& ToUpper(const std::locale& loc=std::locale())$/;"	f	class:CStdStr
+TokenPos	AskMsg/XmlMarkup.cpp	/^	TokenPos( MCD_CSTR sz, int n, FilePos* p=NULL ) { Clear(); m_pDocText=sz; m_nTokenFlags=n; m_pReaderFilePos=p; };$/;"	f	struct:TokenPos
+TokenPos	AskMsg/XmlMarkup.cpp	/^struct TokenPos$/;"	s	file:
+Trim	StdString.h	/^	MYTYPE& Trim()$/;"	f	class:CStdStr
+TrimLeft	StdString.h	/^	MYTYPE&  TrimLeft(CT tTrim)$/;"	f	class:CStdStr
+TrimLeft	StdString.h	/^	MYTYPE&  TrimLeft(PCMYSTR szTrimChars)$/;"	f	class:CStdStr
+TrimLeft	StdString.h	/^	MYTYPE& TrimLeft()$/;"	f	class:CStdStr
+TrimRight	StdString.h	/^	MYTYPE&  TrimRight(CT tTrim)$/;"	f	class:CStdStr
+TrimRight	StdString.h	/^	MYTYPE&  TrimRight(PCMYSTR szTrimChars)$/;"	f	class:CStdStr
+TrimRight	StdString.h	/^	MYTYPE& TrimRight()$/;"	f	class:CStdStr
+TryLoad	StdString.h	/^	bool TryLoad(const void* pT)$/;"	f	class:CStdStr
+UINT	AskProxy.h	/^typedef unsigned int UINT;$/;"	t
+UINT	AskProxyDlg.h	/^typedef unsigned int UINT;$/;"	t
+UINT	SettingData.h	/^typedef unsigned int UINT;$/;"	t
+UINT	owntype.h	/^typedef unsigned int UINT;$/;"	t
+UNHOLDEVT_H	AskMsg/UnHoldEvt.h	6;"	d
+UNKNOWN_CONN_STATE	Agent.h	/^    UNKNOWN_CONN_STATE,$/;"	e	enum:CONN_ID_STATE
+UNKNOWN_STATE	Agent.h	/^    UNKNOWN_STATE,$/;"	e	enum:__anon2
+UNTITOOL_H	UntiTool.h	2;"	d
+UNUSED	StdString.h	654;"	d
+USERCONN_H	UserConn/Userconn.h	2;"	d
+USES_CONVERSION	StdString.h	1067;"	d
+UTF16To8	AskMsg/XmlMarkup.cpp	/^int CMarkup::UTF16To8( char* pszUTF8, const unsigned short* pwszUTF16, int nUTF8Count )$/;"	f	class:CMarkup
+UTF8To16	AskMsg/XmlMarkup.cpp	/^int CMarkup::UTF8To16( unsigned short* pwszUTF16, const char* pszUTF8, int nUTF8Count )$/;"	f	class:CMarkup
+UTF8ToA	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::UTF8ToA( MCD_CSTR pszUTF8, int* pnFailed\/*=NULL*\/ )$/;"	f	class:CMarkup
+UnHold	Agent.cpp	/^BOOL CAgent::UnHold()$/;"	f	class:CAgent
+UnRegEnCode	AskMsg/RegAskMsg.cpp	/^void CRegAskMsg::UnRegEnCode()$/;"	f	class:CRegAskMsg
+UnescapeText	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::UnescapeText( MCD_CSTR szText, int nTextLength \/*=-1*\/ )$/;"	f	class:CMarkup
+Unslot	AskMsg/XmlMarkup.cpp	/^	void Unslot( TagPos& lp ) { int n=lp.iSlotNext,p=lp.iSlotPrev; if (n) pL[n].iSlotPrev=p; if (p) pL[p].iSlotNext=n; else anTable[lp.nSlot]=n; };$/;"	f	struct:ElemStack
+VERIFY	StdString.h	623;"	d
+VERIFY	StdString.h	625;"	d
+VERIFY	StdString.h	645;"	d
+VERIFY	StdString.h	647;"	d
+ValidPath	AskMsg/XmlMarkup.cpp	/^	bool ValidPath() { return nPathType != -1; };$/;"	f	struct:PathPos
+W2CA	StdString.h	1069;"	d
+W2COLE	StdString.h	1090;"	d
+W2CT	StdString.h	1077;"	d
+W2OLE	StdString.h	1086;"	d
+W2T	StdString.h	1073;"	d
+WRAPUPEVT_H	AskMsg/WrapupEvt.h	6;"	d
+WRAPUP_STATE	Agent.h	/^	WRAPUP_STATE$/;"	e	enum:__anon2
+WS_Q	MsgQueue.h	/^struct WS_Q$/;"	s
+WUFmt	StdString.h	4263;"	d
+WUFmtA	StdString.h	4261;"	d
+WUFmtW	StdString.h	4262;"	d
+WUFormat	StdString.h	4248;"	d
+WUFormat	StdString.h	4253;"	d
+WUFormatA	StdString.h	/^	inline CStdStringA WUFormatA(UINT nId, ...)$/;"	f
+WUFormatA	StdString.h	/^inline CStdStringA WUFormatA(PCSTR szFormat, ...)$/;"	f
+WUFormatW	StdString.h	/^	inline CStdStringW WUFormatW(UINT nId, ...)$/;"	f
+WUFormatW	StdString.h	/^inline CStdStringW WUFormatW(PCWSTR szwFormat, ...)$/;"	f
+WULastErrMsg	StdString.h	4264;"	d
+WULastErrMsgA	StdString.h	4265;"	d
+WULastErrMsgW	StdString.h	4266;"	d
+WUSysMessage	StdString.h	4247;"	d
+WUSysMessage	StdString.h	4252;"	d
+WUSysMessageA	StdString.h	/^	inline CStdStringA WUSysMessageA(DWORD dwError, DWORD dwLangId=SS_DEFLANGID)$/;"	f
+WUSysMessageW	StdString.h	/^	inline CStdStringW WUSysMessageW(DWORD dwError, DWORD dwLangId=SS_DEFLANGID)$/;"	f
+WUSysMsg	StdString.h	4258;"	d
+WUSysMsgA	StdString.h	4259;"	d
+WUSysMsgW	StdString.h	4260;"	d
+WatchComm	socket/SocketManager  (复件).cpp	/^bool CSocketManager::WatchComm()$/;"	f	class:CSocketManager
+WatchComm	socket/SocketManager.cpp	/^bool CSocketManager::WatchComm()$/;"	f	class:CSocketManager
+WhitespaceToTag	AskMsg/XmlMarkup.cpp	/^	int WhitespaceToTag( int n ) { m_nNext = n; if (FindAny()&&m_pDocText[m_nNext]!='<') { m_nNext=n; m_nR=n-1; } return m_nNext; };$/;"	f	struct:TokenPos
+WorkThread	UserConn/Userconn.cpp	/^void CUserConn::WorkThread(void)$/;"	f	class:CUserConn
+WriteComm	socket/SocketManager  (复件).cpp	/^ssize_t CSocketManager::WriteComm(const std::string &buffer, int length)$/;"	f	class:CSocketManager
+WriteComm	socket/SocketManager.cpp	/^ssize_t CSocketManager::WriteComm(const std::string &buffer, int length)$/;"	f	class:CSocketManager
+WriteTextFile	AskMsg/XmlMarkup.cpp	/^bool CMarkup::WriteTextFile( MCD_CSTR_FILENAME szFileName, const MCD_STR& strDoc, MCD_STR* pstrResult, int* pnDocFlags, MCD_STR* pstrEncoding )$/;"	f	class:CMarkup
+_ASK_MSG_DEF_H_	AskMsg/askmsgdef.h	2;"	d
+_ASK_PROXY_DEF_H_	askproxydef.h	2;"	d
+_MARKUP_H_INCLUDED_	AskMsg/XmlMarkup.h	10;"	d
+_MUL_ACCEPTOR_H_	UserConn/MulAcceptor.h	2;"	d
+_NO_STDCONVERSION	StdString.h	1056;"	d
+_NO_STDCONVERSION	StdString.h	1063;"	d
+_PHONE_H_	Phone.h	2;"	d
+_SERVER_H_	UserConn/Proactor.h	2;"	d
+_T	AskProxy.h	15;"	d
+_T	owntype.h	19;"	d
+_connect	socket/SocketManager.h	/^        _connect$/;"	e	enum:CSocketManager::_errortype
+_errInof	socket/SocketManager (复件).h	/^    typedef struct _errInof$/;"	s	class:CSocketManager
+_errInof	socket/SocketManager.h	/^    typedef struct _errInof$/;"	s	class:CSocketManager
+_errortype	socket/SocketManager (复件).h	/^    enum _errortype$/;"	g	class:CSocketManager
+_errortype	socket/SocketManager.h	/^    enum _errortype$/;"	g	class:CSocketManager
+_recv	socket/SocketManager (复件).h	/^        _send,_recv$/;"	e	enum:CSocketManager::_errortype
+_recv	socket/SocketManager.h	/^        _send,_recv,$/;"	e	enum:CSocketManager::_errortype
+_recvError	socket/SocketManager (复件).h	/^        _recvError=0,$/;"	e	enum:CSocketManager::_recvType
+_recvError	socket/SocketManager.h	/^        _recvError=0,$/;"	e	enum:CSocketManager::_recvType
+_recvIdle	socket/SocketManager (复件).h	/^        _recvIdle,$/;"	e	enum:CSocketManager::_recvType
+_recvIdle	socket/SocketManager.h	/^        _recvIdle,$/;"	e	enum:CSocketManager::_recvType
+_recvSuccess	socket/SocketManager (复件).h	/^        _recvSuccess$/;"	e	enum:CSocketManager::_recvType
+_recvSuccess	socket/SocketManager.h	/^        _recvSuccess$/;"	e	enum:CSocketManager::_recvType
+_recvType	socket/SocketManager (复件).h	/^    enum _recvType$/;"	g	class:CSocketManager
+_recvType	socket/SocketManager.h	/^    enum _recvType$/;"	g	class:CSocketManager
+_selectrecv	socket/SocketManager (复件).h	/^        _selectrecv,$/;"	e	enum:CSocketManager::_errortype
+_selectrecv	socket/SocketManager.h	/^        _selectrecv,$/;"	e	enum:CSocketManager::_errortype
+_selectsend	socket/SocketManager (复件).h	/^        _selectsend,$/;"	e	enum:CSocketManager::_errortype
+_selectsend	socket/SocketManager.h	/^        _selectsend,$/;"	e	enum:CSocketManager::_errortype
+_send	socket/SocketManager (复件).h	/^        _send,_recv$/;"	e	enum:CSocketManager::_errortype
+_send	socket/SocketManager.h	/^        _send,_recv,$/;"	e	enum:CSocketManager::_errortype
+_unknowntype	socket/SocketManager (复件).h	/^        _unknowntype=0,$/;"	e	enum:CSocketManager::_errortype
+_unknowntype	socket/SocketManager.h	/^        _unknowntype=0,$/;"	e	enum:CSocketManager::_errortype
+a_	StdString.h	/^    const ARG& a_;$/;"	m	struct:FmtArg
+a_	StdString.h	/^    const CStdStringA& a_;$/;"	m	struct:FmtArg
+a_	StdString.h	/^    const CStdStringW& a_;$/;"	m	struct:FmtArg
+a_	StdString.h	/^    const std::string& a_;$/;"	m	struct:FmtArg
+a_	StdString.h	/^    const std::wstring& a_;$/;"	m	struct:FmtArg
+accessNumber	Agent.h	/^		std::string accessNumber;$/;"	m	struct:CAgent::liPopdata
+anTable	AskMsg/XmlMarkup.cpp	/^	int anTable[LS_TABLESIZE];$/;"	m	struct:ElemStack	file:
+ani	Agent.h	/^		std::string ani;$/;"	m	struct:CAgent::liPopdata
+assign	StdString.h	/^		MYTYPE& assign(MYCITER iterFirst, MYCITER iterLast)$/;"	f	class:CStdStr
+assign	StdString.h	/^		MYTYPE& assign(MYSIZE nChars, MYVAL val)$/;"	f	class:CStdStr
+assign	StdString.h	/^		MYTYPE& assign(const CT* pC, MYSIZE nChars)$/;"	f	class:CStdStr
+assign	StdString.h	/^		MYTYPE& assign(const CT* pT)$/;"	f	class:CStdStr
+assign	StdString.h	/^		MYTYPE& assign(const MYBASE& str)$/;"	f	class:CStdStr
+assign	StdString.h	/^		MYTYPE& assign(const MYBASE& str, MYSIZE nStart, MYSIZE nChars)$/;"	f	class:CStdStr
+assign	StdString.h	/^		MYTYPE& assign(const MYTYPE& str)$/;"	f	class:CStdStr
+assign	StdString.h	/^		MYTYPE& assign(const MYTYPE& str, MYSIZE nStart, MYSIZE nChars)$/;"	f	class:CStdStr
+bConsult	Agent.h	/^    BOOL    bConsult;$/;"	m	class:CAgent
+bIntoEstablish	Agent.h	/^	BOOL    bIntoEstablish;$/;"	m	class:CAgent
+bLogin	Agent.h	/^	BOOL    bLogin;  \/\/座席是否登录在PBX中$/;"	m	class:CAgent
+bReader	AskMsg/XmlMarkup.cpp	/^	bool bReader;$/;"	m	struct:PathPos	file:
+byCtrl	StdString.h	/^		BYTE	byCtrl;$/;"	m	struct:CStdStr::SSSHDR
+callClearTime	Agent.h	/^		std::string callClearTime;$/;"	m	struct:CAgent::liPopdata
+callID	Agent.h	/^		std::string callID;$/;"	m	struct:CAgent::liPopdata
+callRingTime	Agent.h	/^		std::string callRingTime;$/;"	m	struct:CAgent::liPopdata
+callStartTime	Agent.h	/^		std::string callStartTime;$/;"	m	struct:CAgent::liPopdata
+caller	Phone.h	/^    std::string caller;$/;"	m	class:CPhone
+closeConn	UserConn/Userconn.cpp	/^void CUserConn::closeConn(int fd)$/;"	f	class:CUserConn
+closeServer	UserConn/Proactor.cpp	/^void Server::closeServer()$/;"	f	class:Server
+cmd	MsgQueue.h	/^	int  cmd;$/;"	m	struct:WS_Q
+cmd	Phone.h	/^    std::string cmd;$/;"	m	class:CPhone
+connChan	Agent.h	/^	CONN_CHAN  connChan[2];$/;"	m	class:CAgent
+digits	AskMsg/SendDtmfEvt.h	/^	std::string digits;$/;"	m	class:CSendDtmfEvt
+dnis	Agent.h	/^		std::string dnis;$/;"	m	struct:CAgent::liPopdata
+dt	MsgQueue.h	/^	ACE_Date_Time dt;$/;"	m	struct:WS_Q
+errInfo	socket/SocketManager (复件).h	/^    } errInfo;$/;"	t	class:CSocketManager	typeref:struct:CSocketManager::_errInof
+errInfo	socket/SocketManager.h	/^    } errInfo;$/;"	t	class:CSocketManager	typeref:struct:CSocketManager::_errInof
+errThread	socket/SocketManager  (复件).cpp	/^void* CSocketManager::errThread(void *par)$/;"	f	class:CSocketManager
+errThread	socket/SocketManager.cpp	/^void* CSocketManager::errThread(void *par)$/;"	f	class:CSocketManager
+errorNum	socket/SocketManager (复件).h	/^        int errorNum;$/;"	m	struct:CSocketManager::_errInof
+errorNum	socket/SocketManager.h	/^        int errorNum;$/;"	m	struct:CSocketManager::_errInof
+errorStr	socket/SocketManager (复件).h	/^        std::string errorStr;$/;"	m	struct:CSocketManager::_errInof
+errorStr	socket/SocketManager.h	/^        std::string errorStr;$/;"	m	struct:CSocketManager::_errInof
+errorType	socket/SocketManager (复件).h	/^        _errortype errorType;$/;"	m	struct:CSocketManager::_errInof
+errorType	socket/SocketManager.h	/^        _errortype errorType;$/;"	m	struct:CSocketManager::_errInof
+fd	Phone.h	/^    int fd;$/;"	m	class:CPhone
+getValidChanFromOrigChan	UntiTool.cpp	/^std::string CUntiTool::getValidChanFromOrigChan(const std::string &origChan)$/;"	f	class:CUntiTool
+get_handle	socket/SocketManager.cpp	/^ACE_HANDLE CSocketManager::get_handle(void) const$/;"	f	class:CSocketManager
+getpipe	main.cpp	/^void getpipe(int)$/;"	f
+handle_	UserConn/Proactor.h	/^	ACE_HANDLE handle_;$/;"	m	class:Server
+handle_close	socket/SocketManager.cpp	/^int CSocketManager::handle_close(ACE_HANDLE handle, ACE_Reactor_Mask mask)$/;"	f	class:CSocketManager
+handle_input	socket/SocketManager.cpp	/^int CSocketManager::handle_input(ACE_HANDLE)$/;"	f	class:CSocketManager
+handle_read_stream	UserConn/Proactor.cpp	/^void Server::handle_read_stream(const ACE_Asynch_Read_Stream::Result& result)$/;"	f	class:Server
+handle_write_stream	UserConn/Proactor.cpp	/^void Server::handle_write_stream(const ACE_Asynch_Write_Stream::Result& result)$/;"	f	class:Server
+i	AskMsg/XmlMarkup.cpp	/^	int i;$/;"	m	struct:PathPos	file:
+iElemChild	AskMsg/XmlMarkup.cpp	/^	int iElemChild; \/\/ first child$/;"	m	struct:ElemPos	file:
+iElemNext	AskMsg/XmlMarkup.cpp	/^	int iElemNext; \/\/ next sibling$/;"	m	struct:ElemPos	file:
+iElemParent	AskMsg/XmlMarkup.cpp	/^	int iElemParent;$/;"	m	struct:ElemPos	file:
+iElemPrev	AskMsg/XmlMarkup.cpp	/^	int iElemPrev; \/\/ if this is first, iElemPrev points to last$/;"	m	struct:ElemPos	file:
+iNext	AskMsg/XmlMarkup.cpp	/^	int iNext;$/;"	m	struct:TagPos	file:
+iPar	AskMsg/XmlMarkup.cpp	/^	int iPar;$/;"	m	struct:ElemStack	file:
+iParent	AskMsg/XmlMarkup.cpp	/^	int iParent;$/;"	m	struct:TagPos	file:
+iPathAttribName	AskMsg/XmlMarkup.cpp	/^	int iPathAttribName;$/;"	m	struct:PathPos	file:
+iPos	AskMsg/XmlMarkup.cpp	/^	int iPos;$/;"	m	struct:SavedPos	file:
+iPrev	AskMsg/XmlMarkup.cpp	/^	int iPrev;$/;"	m	struct:TagPos	file:
+iSave	AskMsg/XmlMarkup.cpp	/^	int iSave;$/;"	m	struct:PathPos	file:
+iSlotNext	AskMsg/XmlMarkup.cpp	/^	int iSlotNext;$/;"	m	struct:TagPos	file:
+iSlotPrev	AskMsg/XmlMarkup.cpp	/^	int iSlotPrev;$/;"	m	struct:TagPos	file:
+iTop	AskMsg/XmlMarkup.cpp	/^	int iTop;$/;"	m	struct:ElemStack	file:
+iUsed	AskMsg/XmlMarkup.cpp	/^	int iUsed;$/;"	m	struct:ElemStack	file:
+init	UserConn/Userconn.cpp	/^bool CUserConn::init(int port)$/;"	f	class:CUserConn
+initiate_read_stream	UserConn/Proactor.cpp	/^int Server::initiate_read_stream(void)$/;"	f	class:Server
+initiate_write_stream	UserConn/Proactor.cpp	/^int Server::initiate_write_stream(ACE_Message_Block& mb,size_t nbytes)$/;"	f	class:Server
+isExist	Agent.h	/^  bool isExist;$/;"	m	class:CONN_CHAN
+isOpen	socket/SocketManager  (复件).cpp	/^bool CSocketManager::isOpen()$/;"	f	class:CSocketManager
+isOpen	socket/SocketManager.cpp	/^bool CSocketManager::isOpen()$/;"	f	class:CSocketManager
+isStart	socket/SocketManager  (复件).cpp	/^bool CSocketManager::isStart()$/;"	f	class:CSocketManager
+isStart	socket/SocketManager.cpp	/^bool CSocketManager::isStart()$/;"	f	class:CSocketManager
+ivrTrack	Agent.h	/^		std::string ivrTrack;$/;"	m	struct:CAgent::liPopdata
+liPopdata	Agent.h	/^	struct liPopdata$/;"	s	class:CAgent
+lock	Agent.cpp	/^void CAgent::lock()$/;"	f	class:CAgent
+lock_	UserConn/MyTask.h	/^	ACE_SYNCH_RECURSIVE_MUTEX lock_;$/;"	m	class:MyTask
+m_AgentLock	AskProxyDlg.h	/^    ACE_Thread_Mutex  m_AgentLock;$/;"	m	class:CAskProxyDlg
+m_AgentLog	AskProxyDlg.h	/^    CLog m_AgentLog;$/;"	m	class:CAskProxyDlg
+m_AgentMsgList	AskProxyDlg.h	/^    CAgentMsgList       m_AgentMsgList; \/\/调函动作数据$/;"	m	class:CAskProxyDlg
+m_AskMsgCritical	HandleAskPBX.h	/^    ACE_Thread_Mutex  m_AskMsgCritical;\/\/临界区$/;"	m	class:CHandleAskPBX
+m_AskMsgList	HandleAskPBX.h	/^	std::list<std::string> m_AskMsgList;$/;"	m	class:CHandleAskPBX
+m_AskMsgRun	HandleAskPBX.h	/^    ACE_Thread_Semaphore m_AskMsgRun;$/;"	m	class:CHandleAskPBX
+m_AskMsgStop	HandleAskPBX.h	/^    volatile bool m_AskMsgStop;$/;"	m	class:CHandleAskPBX
+m_CheckAgent	AskProxyDlg.h	/^    CCheckAgent m_CheckAgent;$/;"	m	class:CAskProxyDlg
+m_CheckAgentLog	CheckAgent.h	/^	CLog m_CheckAgentLog;$/;"	m	class:CCheckAgent
+m_CriticalSection	Agent.h	/^    ACE_Thread_Mutex m_CriticalSection;$/;"	m	class:CAgent
+m_CriticalSection	MsgQueue.h	/^    ACE_Thread_Mutex m_CriticalSection;$/;"	m	class:CMsgQueue
+m_DispatchAskPBXID	HandleAskPBX.h	/^    ACE_thread_t  m_DispatchAskPBXID;$/;"	m	class:CHandleAskPBX
+m_DispatchRun	HandleAskPBX.h	/^    ACE_Thread_Semaphore m_DispatchRun;$/;"	m	class:CHandleAskPBX
+m_DispatchStop	HandleAskPBX.h	/^    volatile bool m_DispatchStop;$/;"	m	class:CHandleAskPBX
+m_EnableWebServiceRequest	HandleWebResponse.h	/^    BOOL                    m_EnableWebServiceRequest;$/;"	m	class:CHandleWebResponse
+m_HandAskPBXGrp	HandleAskPBX.h	/^    int           m_HandAskPBXGrp;$/;"	m	class:CHandleAskPBX
+m_HandAskPBXID	HandleAskPBX.h	/^    ACE_thread_t  m_HandAskPBXID[PBXTHREADNUM];$/;"	m	class:CHandleAskPBX
+m_HandleAskPBX	AskProxyDlg.h	/^    CHandleAskPBX   m_HandleAskPBX; \/\/与PBX交互$/;"	m	class:CAskProxyDlg
+m_HandleSoftPhoneThread	AskProxyDlg.h	/^    CHandSoftPhoneThread m_HandleSoftPhoneThread; \/\/与座席端交互$/;"	m	class:CAskProxyDlg
+m_HandleWS	AskProxyDlg.h	/^    CHandleWebResponse  m_HandleWS; \/\/与AskProxyTOCM交互$/;"	m	class:CAskProxyDlg
+m_HandleWSQuery	AskProxyDlg.h	/^    CHandleWS           m_HandleWSQuery; \/\/每5分钟调用PBX接口(为了获取shillSnap信息)$/;"	m	class:CAskProxyDlg
+m_HangupStatus	Agent.h	/^	UINT m_HangupStatus;$/;"	m	class:CAgent
+m_HangupStatus	AskMsg/LoginEvt.h	/^	UINT m_HangupStatus;$/;"	m	class:CLoginEvt
+m_IOOpt	AskProxyDlg.h	/^    CCompletePort  m_IOOpt;$/;"	m	class:CAskProxyDlg
+m_Log	AskProxyDlg.h	/^    CLog m_Log;\/\/程序日志类$/;"	m	class:CAskProxyDlg
+m_MapChanToAgent	AskProxyDlg.h	/^    std::map<std::string, CAgent*> m_MapChanToAgent; \/\/Map表  呼入呼出(签出的时候delete pAgent)$/;"	m	class:CAskProxyDlg
+m_MapQueueCall	AskProxyDlg.h	/^    std::map<std::string, CQueueCallInfo*> m_MapQueueCall; \/\/HandleJoinEvt$/;"	m	class:CAskProxyDlg
+m_MapQueueCallLock	AskProxyDlg.h	/^    ACE_Thread_Mutex m_MapQueueCallLock;$/;"	m	class:CAskProxyDlg
+m_MapQueueToIslogin	Agent.h	/^	std::map<std::string, std::string> m_MapQueueToIslogin;$/;"	m	class:CAgent
+m_MapStationToAgent	AskProxyDlg.h	/^    std::map<std::string, CAgent*> m_MapStationToAgent; \/\/new CAgent$/;"	m	class:CAskProxyDlg
+m_MapStationToAgentLock	AskProxyDlg.h	/^    ACE_Thread_Mutex  m_MapStationToAgentLock;$/;"	m	class:CAskProxyDlg
+m_MapWorkNoToStation	AskProxyDlg.h	/^    std::map<std::string, std::string> m_MapWorkNoToStation; \/\/成功签入中的座席的Map$/;"	m	class:CAskProxyDlg
+m_MapWorkNoToStationLock	AskProxyDlg.h	/^    ACE_Thread_Mutex m_MapWorkNoToStationLock;$/;"	m	class:CAskProxyDlg
+m_PBXInfoCritical	AskProxyDlg.h	/^    ACE_Thread_Mutex m_PBXInfoCritical;$/;"	m	class:CAskProxyDlg
+m_PBXInfoList	AskProxyDlg.h	/^    CPBXInfoList m_PBXInfoList; \/\/存储所有的技能组和租户$/;"	m	class:CAskProxyDlg
+m_PBXLog	AskProxyDlg.h	/^    CLog m_PBXLog;\/\/Askrisk返回数据$/;"	m	class:CAskProxyDlg
+m_PBXMsgCritical	AskProxyDlg.h	/^    ACE_Thread_Mutex     m_PBXMsgCritical;$/;"	m	class:CAskProxyDlg
+m_PBXMsgList	AskProxyDlg.h	/^    std::list<std::string> m_PBXMsgList; \/\/PBX返回事件数据 to m_HandleAskPBX.m_AskMsgList$/;"	m	class:CAskProxyDlg
+m_RecvThreadID	socket/SocketManager (复件).h	/^    ACE_thread_t m_RecvThreadID;$/;"	m	class:CSocketManager
+m_RecvThreadID	socket/SocketManager.h	/^    ACE_thread_t m_RecvThreadID;$/;"	m	class:CSocketManager
+m_RegAction	AskProxyDlg.h	/^    CRegAskMsg m_RegAction; \/\/建立和断开与PBX交互的通道$/;"	m	class:CAskProxyDlg
+m_ReportLog	AskProxyDlg.h	/^    CLog m_ReportLog;\/\/记录报表数据$/;"	m	class:CAskProxyDlg
+m_SettingData	AskProxyDlg.h	/^    CSettingData  m_SettingData;$/;"	m	class:CAskProxyDlg
+m_SockManager	AskProxyDlg.h	/^    CSocketManager m_SockManager;$/;"	m	class:CAskProxyDlg
+m_SoftPhoneMsgCritical	AskProxyDlg.h	/^    ACE_Thread_Mutex   m_SoftPhoneMsgCritical;\/\/临界区$/;"	m	class:CAskProxyDlg
+m_WSQueue	AskProxyDlg.h	/^    CMsgQueue           m_WSQueue; \/\/发送给AskProxyTOCM数据$/;"	m	class:CAskProxyDlg
+m_accessNumber	Agent.h	/^	std::string m_accessNumber;\/\/接入码$/;"	m	class:CAgent
+m_addr	socket/SocketManager (复件).h	/^    ACE_INET_Addr m_addr;$/;"	m	class:CSocketManager
+m_addr	socket/SocketManager.h	/^    ACE_INET_Addr m_addr;$/;"	m	class:CSocketManager
+m_bCheckLog	AskProxyDlg.h	/^    BOOL	m_bCheckLog;$/;"	m	class:CAskProxyDlg
+m_bFileMode	AskMsg/XmlMarkup.h	/^	bool m_bFileMode;$/;"	m	class:CMarkup
+m_bIsAgentReConn	AskMsg/LoginEvt.h	/^	BOOL m_bIsAgentReConn; \/\/20121025 used to reconnect$/;"	m	class:CLoginEvt
+m_bIsReconn	socket/SocketManager (复件).h	/^    bool m_bIsReconn;$/;"	m	class:CSocketManager
+m_bIsReconn	socket/SocketManager.h	/^    bool m_bIsReconn;$/;"	m	class:CSocketManager
+m_bIsSopping	AskProxyDlg.h	/^    BOOL m_bIsSopping;\/\/程序是否正在结束$/;"	m	class:CAskProxyDlg
+m_bIsStop	socket/SocketManager (复件).h	/^    volatile bool m_bIsStop;$/;"	m	class:CSocketManager
+m_bIsStop	socket/SocketManager.h	/^    volatile bool m_bIsStop;$/;"	m	class:CSocketManager
+m_bIsUsing	socket/SocketManager (复件).h	/^    bool m_bIsUsing;$/;"	m	class:CSocketManager
+m_bIsUsing	socket/SocketManager.h	/^    bool m_bIsUsing;$/;"	m	class:CSocketManager
+m_bRecvRun	socket/SocketManager (复件).h	/^    volatile bool m_bRecvRun;$/;"	m	class:CSocketManager
+m_bRecvRun	socket/SocketManager.h	/^    volatile bool m_bRecvRun;$/;"	m	class:CSocketManager
+m_cRef	Agent.h	/^    int m_cRef;$/;"	m	class:CAgent
+m_callClearTime	Agent.h	/^	std::string m_callClearTime;	\/\/通话结束时间$/;"	m	class:CAgent
+m_callID	Agent.h	/^	std::string m_callID;	\/\/通话标识$/;"	m	class:CAgent
+m_callRingTime	Agent.h	/^	std::string m_callRingTime;	\/\/振铃时间$/;"	m	class:CAgent
+m_callStartTime	Agent.h	/^	std::string m_callStartTime;\/\/开始通话时间$/;"	m	class:CAgent
+m_clientaddr	UserConn/Userconn.h	/^    struct sockaddr_in  m_clientaddr;$/;"	m	class:CUserConn	typeref:struct:CUserConn::sockaddr_in
+m_conn	CompletePort.h	/^    CUserConn m_conn;$/;"	m	class:CCompletePort
+m_connectType	socket/SocketManager (复件).h	/^    int m_connectType;$/;"	m	class:CSocketManager
+m_connectType	socket/SocketManager.h	/^    int m_connectType;$/;"	m	class:CSocketManager
+m_connector	socket/SocketManager (复件).h	/^    ACE_SOCK_Connector m_connector;$/;"	m	class:CSocketManager
+m_connector	socket/SocketManager.h	/^    ACE_SOCK_Connector m_connector;$/;"	m	class:CSocketManager
+m_elemstack	AskMsg/XmlMarkup.cpp	/^	ElemStack m_elemstack;$/;"	m	struct:FilePos	file:
+m_epfd	UserConn/Userconn.h	/^    int                 m_epfd;$/;"	m	class:CUserConn
+m_errMsgList	socket/SocketManager (复件).h	/^    std::list<errInfo*> m_errMsgList;$/;"	m	class:CSocketManager
+m_errMsgList	socket/SocketManager.h	/^    std::list<errInfo*> m_errMsgList;$/;"	m	class:CSocketManager
+m_errThreadID	socket/SocketManager (复件).h	/^    ACE_thread_t m_errThreadID;$/;"	m	class:CSocketManager
+m_errThreadID	socket/SocketManager.h	/^    ACE_thread_t m_errThreadID;$/;"	m	class:CSocketManager
+m_errorListNum	socket/SocketManager (复件).h	/^    UINT  m_errorListNum;$/;"	m	class:CSocketManager
+m_errorListNum	socket/SocketManager.h	/^    UINT  m_errorListNum;$/;"	m	class:CSocketManager
+m_ev	UserConn/Userconn.h	/^    struct epoll_event  m_ev;$/;"	m	class:CUserConn	typeref:struct:CUserConn::epoll_event
+m_events	UserConn/Userconn.h	/^    struct epoll_event  m_events[1024];$/;"	m	class:CUserConn	typeref:struct:CUserConn::epoll_event
+m_fp	AskMsg/XmlMarkup.cpp	/^	FILE* m_fp;$/;"	m	struct:FilePos	file:
+m_hSerialEvent	HandleAskPBX.h	/^    ACE_Thread_Semaphore m_hSerialEvent;$/;"	m	class:CHandleAskPBX
+m_hStartCheckAgentEvent	CheckAgent.h	/^	ACE_Thread_Semaphore  m_hStartCheckAgentEvent;$/;"	m	class:CCheckAgent
+m_hStartDispatchSoftPhoneMsg	HandSoftPhoneThread.h	/^	ACE_Thread_Semaphore  m_hStartDispatchSoftPhoneMsg;$/;"	m	class:CHandSoftPhoneThread
+m_hStartHandleSoftPhoneMsg	HandSoftPhoneThread.h	/^	ACE_Thread_Semaphore  m_hStartHandleSoftPhoneMsg;$/;"	m	class:CHandSoftPhoneThread
+m_hStartHandleWebResponse	HandleWebResponse.h	/^    ACE_Thread_Semaphore    m_hStartHandleWebResponse;$/;"	m	class:CHandleWebResponse
+m_hStopCheckAgentEvent	CheckAgent.h	/^	volatile bool  m_hStopCheckAgentEvent;$/;"	m	class:CCheckAgent
+m_hStopDispatchSoftPhoneMsg	HandSoftPhoneThread.h	/^	volatile bool m_hStopDispatchSoftPhoneMsg;$/;"	m	class:CHandSoftPhoneThread
+m_hStopHandleSoftPhoneMsg	HandSoftPhoneThread.h	/^	volatile bool m_hStopHandleSoftPhoneMsg;$/;"	m	class:CHandSoftPhoneThread
+m_hStopHandleWebResponse	HandleWebResponse.h	/^    volatile bool           m_hStopHandleWebResponse;$/;"	m	class:CHandleWebResponse
+m_hStopQuery	HandleWS.h	/^	bool m_hStopQuery;$/;"	m	class:CHandleWS
+m_iGetQueueTime	AskProxyDlg.h	/^    int     m_iGetQueueTime;$/;"	m	class:CAskProxyDlg
+m_iPos	AskMsg/XmlMarkup.h	/^	int m_iPos;$/;"	m	class:CMarkup
+m_iPosChild	AskMsg/XmlMarkup.h	/^	int m_iPosChild;$/;"	m	class:CMarkup
+m_iPosDeleted	AskMsg/XmlMarkup.h	/^	int m_iPosDeleted;$/;"	m	class:CMarkup
+m_iPosFree	AskMsg/XmlMarkup.h	/^	int m_iPosFree;$/;"	m	class:CMarkup
+m_iPosParent	AskMsg/XmlMarkup.h	/^	int m_iPosParent;$/;"	m	class:CMarkup
+m_ivrTrack	Agent.h	/^	std::string m_ivrTrack;		\/\/ivr号，等同接入码$/;"	m	class:CAgent
+m_keepLive	AskProxyDlg.h	/^    CLog m_keepLive;$/;"	m	class:CAskProxyDlg
+m_listPopData	Agent.h	/^	std::list<liPopdata*> m_listPopData;$/;"	m	class:CAgent
+m_listenfd	UserConn/Userconn.h	/^    int                 m_listenfd;$/;"	m	class:CUserConn
+m_log	logclass/log.h	/^    log4cxx::LoggerPtr m_log;$/;"	m	class:CLog
+m_lpThread	CheckAgent.h	/^	ACE_thread_t m_lpThread;$/;"	m	class:CCheckAgent
+m_lpThread	HandleWS.h	/^	ACE_thread_t m_lpThread;$/;"	m	class:CHandleWS
+m_mapChanToAgentLock	AskProxyDlg.h	/^    ACE_Thread_Mutex m_mapChanToAgentLock;$/;"	m	class:CAskProxyDlg
+m_mapNoType	SettingData.h	/^	std::map<std::string,std::string> m_mapNoType;$/;"	m	class:CSettingData
+m_mapSkillAndPenalty	Agent.h	/^	std::map<std::string, std::string> m_mapSkillAndPenalty;$/;"	m	class:CAgent
+m_mapSkillT	Agent.h	/^	std::map<std::string, std::string> m_mapSkillT;$/;"	m	class:CAgent
+m_mutexErrInfo	socket/SocketManager (复件).h	/^    ACE_Thread_Mutex  m_mutexErrInfo;$/;"	m	class:CSocketManager
+m_mutexErrInfo	socket/SocketManager.h	/^    ACE_Thread_Mutex  m_mutexErrInfo;$/;"	m	class:CSocketManager
+m_nAgentCount	SettingData.h	/^	UINT     m_nAgentCount;$/;"	m	class:CSettingData
+m_nBlockSizeBasis	AskMsg/XmlMarkup.cpp	/^	int m_nBlockSizeBasis;$/;"	m	struct:FilePos	file:
+m_nDefStatus	Agent.h	/^	UINT m_nDefStatus;$/;"	m	class:CAgent
+m_nDefStatus	AskMsg/LoginEvt.h	/^	UINT m_nDefStatus;$/;"	m	class:CLoginEvt
+m_nDocFlags	AskMsg/XmlMarkup.cpp	/^	int m_nDocFlags;$/;"	m	struct:FilePos	file:
+m_nDocFlags	AskMsg/XmlMarkup.h	/^	int m_nDocFlags;$/;"	m	class:CMarkup
+m_nFailedChars	AskMsg/XmlMarkup.cpp	/^	int m_nFailedChars;$/;"	m	struct:TextEncoding	file:
+m_nFileByteLen	AskMsg/XmlMarkup.cpp	/^	MCD_INTFILEOFFSET m_nFileByteLen;$/;"	m	struct:FilePos	file:
+m_nFileByteOffset	AskMsg/XmlMarkup.cpp	/^	MCD_INTFILEOFFSET m_nFileByteOffset;$/;"	m	struct:FilePos	file:
+m_nFileCharUnitSize	AskMsg/XmlMarkup.cpp	/^	int m_nFileCharUnitSize;$/;"	m	struct:FilePos	file:
+m_nFileFlags	AskMsg/XmlMarkup.h	/^	int m_nFileFlags;$/;"	m	class:CMarkup
+m_nFromLen	AskMsg/XmlMarkup.cpp	/^	int m_nFromLen;$/;"	m	struct:TextEncoding	file:
+m_nL	AskMsg/XmlMarkup.cpp	/^	int m_nL;$/;"	m	struct:TokenPos	file:
+m_nNext	AskMsg/XmlMarkup.cpp	/^	int m_nNext;$/;"	m	struct:TokenPos	file:
+m_nNodeLength	AskMsg/XmlMarkup.h	/^	int m_nNodeLength;$/;"	m	class:CMarkup
+m_nNodeOffset	AskMsg/XmlMarkup.h	/^	int m_nNodeOffset;$/;"	m	class:CMarkup
+m_nNodeType	AskMsg/XmlMarkup.h	/^	int m_nNodeType;$/;"	m	class:CMarkup
+m_nOpFileByteLen	AskMsg/XmlMarkup.cpp	/^	int m_nOpFileByteLen;$/;"	m	struct:FilePos	file:
+m_nOpFileTextLen	AskMsg/XmlMarkup.cpp	/^	int m_nOpFileTextLen;$/;"	m	struct:FilePos	file:
+m_nPort	HandleWebResponse.h	/^    int                     m_nPort;$/;"	m	class:CHandleWebResponse
+m_nPreSpaceLength	AskMsg/XmlMarkup.cpp	/^	int m_nPreSpaceLength;$/;"	m	struct:TokenPos	file:
+m_nPreSpaceStart	AskMsg/XmlMarkup.cpp	/^	int m_nPreSpaceStart;$/;"	m	struct:TokenPos	file:
+m_nR	AskMsg/XmlMarkup.cpp	/^	int m_nR;$/;"	m	struct:TokenPos	file:
+m_nReadBufferRemoved	AskMsg/XmlMarkup.cpp	/^	int m_nReadBufferRemoved;$/;"	m	struct:FilePos	file:
+m_nReadBufferStart	AskMsg/XmlMarkup.cpp	/^	int m_nReadBufferStart;$/;"	m	struct:FilePos	file:
+m_nReadGatherStart	AskMsg/XmlMarkup.cpp	/^	int m_nReadGatherStart;$/;"	m	struct:FilePos	file:
+m_nSegs	AskMsg/XmlMarkup.cpp	/^	int m_nSegs;$/;"	m	struct:ElemPosTree	file:
+m_nSize	AskMsg/XmlMarkup.cpp	/^	int m_nSize;$/;"	m	struct:ElemPosTree	file:
+m_nToCount	AskMsg/XmlMarkup.cpp	/^	int m_nToCount;$/;"	m	struct:TextEncoding	file:
+m_nTokenFlags	AskMsg/XmlMarkup.cpp	/^	int m_nTokenFlags;$/;"	m	struct:TokenPos	file:
+m_pDebugCur	AskMsg/XmlMarkup.h	/^	MCD_PCSZ m_pDebugCur;$/;"	m	class:CMarkup
+m_pDebugPos	AskMsg/XmlMarkup.h	/^	MCD_PCSZ m_pDebugPos;$/;"	m	class:CMarkup
+m_pDispatchSoftPhoneThread	HandSoftPhoneThread.h	/^	ACE_thread_t m_pDispatchSoftPhoneThread;$/;"	m	class:CHandSoftPhoneThread
+m_pDlg	Agent.h	/^	CAskProxyDlg* m_pDlg;$/;"	m	class:CAgent
+m_pDlg	AskMsg/LoginEvt.h	/^	CAskProxyDlg* m_pDlg;$/;"	m	class:CLoginEvt
+m_pDlg	CheckAgent.h	/^	CAskProxyDlg* m_pDlg;$/;"	m	class:CCheckAgent
+m_pDlg	CompletePort.h	/^    CAskProxyDlg* m_pDlg;$/;"	m	class:CCompletePort
+m_pDlg	HandSoftPhoneThread.h	/^	CAskProxyDlg* m_pDlg;$/;"	m	class:CHandSoftPhoneThread
+m_pDlg	HandleAskPBX.h	/^	CAskProxyDlg* m_pDlg;$/;"	m	class:CHandleAskPBX
+m_pDlg	HandleWS.h	/^	CAskProxyDlg* m_pDlg;$/;"	m	class:CHandleWS
+m_pDlg	HandleWebResponse.h	/^    CAskProxyDlg*           m_pDlg;$/;"	m	class:CHandleWebResponse
+m_pDlg	Phone.h	/^    CAskProxyDlg* m_pDlg;$/;"	m	class:CPhone
+m_pDocText	AskMsg/XmlMarkup.cpp	/^	MCD_PCSZ m_pDocText;$/;"	m	struct:TokenPos	file:
+m_pElemPosTree	AskMsg/XmlMarkup.h	/^	ElemPosTree* m_pElemPosTree;$/;"	m	class:CMarkup
+m_pFilePos	AskMsg/XmlMarkup.h	/^	FilePos* m_pFilePos;$/;"	m	class:CMarkup
+m_pFrom	AskMsg/XmlMarkup.cpp	/^	const void* m_pFrom;$/;"	m	struct:TextEncoding	file:
+m_pHandleSoftPhoneThread	HandSoftPhoneThread.h	/^	ACE_thread_t m_pHandleSoftPhoneThread;$/;"	m	class:CHandSoftPhoneThread
+m_pHandleWebResponseTread	HandleWebResponse.h	/^    ACE_thread_t            m_pHandleWebResponseTread;$/;"	m	class:CHandleWebResponse
+m_pMainSock	Agent.h	/^	CSocketManager* m_pMainSock;$/;"	m	class:CAgent
+m_pMainSock	Phone.h	/^    CSocketManager* m_pMainSock; $/;"	m	class:CPhone
+m_pMaps	AskMsg/XmlMarkup.cpp	/^	SavedPosMap** m_pMaps; \/\/ NULL terminated array$/;"	m	struct:SavedPosMapArray	file:
+m_pReaderFilePos	AskMsg/XmlMarkup.cpp	/^	FilePos* m_pReaderFilePos;$/;"	m	struct:TokenPos	file:
+m_pSavedPosMaps	AskMsg/XmlMarkup.h	/^	SavedPosMapArray* m_pSavedPosMaps;$/;"	m	class:CMarkup
+m_pSegs	AskMsg/XmlMarkup.cpp	/^	ElemPos** m_pSegs;$/;"	m	struct:ElemPosTree	file:
+m_pSendSocket	AskProxyDlg.h	/^    CSocketManager m_pSendSocket; \/\/更改成指针形式$/;"	m	class:CAskProxyDlg
+m_pbxIP	ResponseMsg.h	/^	std::string m_pbxIP;$/;"	m	class:CResponseMsg
+m_pdlg	socket/SocketManager (复件).h	/^    CAskProxyDlg *m_pdlg;$/;"	m	class:CSocketManager
+m_pdlg	socket/SocketManager.h	/^    CAskProxyDlg *m_pdlg;$/;"	m	class:CSocketManager
+m_phoneMap	AskProxyDlg.h	/^    std::map<std::string,CPhone*>  m_phoneMap;$/;"	m	class:CAskProxyDlg
+m_phoneMap	HandSoftPhoneThread.h	/^     	std::map<std::string,CPhone*>  m_phoneMap;$/;"	m	class:CHandSoftPhoneThread
+m_phoneMapCritical	AskProxyDlg.h	/^    ACE_Thread_Mutex m_phoneMapCritical;$/;"	m	class:CAskProxyDlg
+m_phoneMapCritical	HandSoftPhoneThread.h	/^   	ACE_Thread_Mutex m_phoneMapCritical;$/;"	m	class:CHandSoftPhoneThread
+m_pid	UserConn/Userconn.h	/^    pthread_t m_pid;$/;"	m	class:CUserConn
+m_pstrBuffer	AskMsg/XmlMarkup.cpp	/^	MCD_STR* m_pstrBuffer;$/;"	m	struct:FilePos	file:
+m_reactor	socket/SocketManager.h	/^    ACE_Reactor m_reactor;$/;"	m	class:CSocketManager
+m_recordID	Agent.h	/^	std::string m_recordID;	\/\/录音标识$/;"	m	class:CAgent
+m_sRegActionID	AskMsg/RegAskMsg.h	/^	std::string m_sRegActionID;\/\/注册标识$/;"	m	class:CRegAskMsg
+m_sSoftPhoneVersion	AskMsg/LoginEvt.h	/^	std::string m_sSoftPhoneVersion;\/\/软电话的版本号，默认为1.0.0.1$/;"	m	class:CLoginEvt
+m_sStationType	Agent.h	/^	std::string m_sStationType;\/\/分机类型: PSTN\/SIP$/;"	m	class:CAgent
+m_serveraddr	UserConn/Userconn.h	/^    struct sockaddr_in  m_serveraddr;$/;"	m	class:CUserConn	typeref:struct:CUserConn::sockaddr_in
+m_skillSnapLog	AskProxyDlg.h	/^    CLog m_skillSnapLog;$/;"	m	class:CAskProxyDlg
+m_sloginqueue	AskMsg/LoginEvt.h	/^	std::string m_sloginqueue;\/\/login 技能组$/;"	m	class:CLoginEvt
+m_slogoutqueue	AskMsg/LogoutEvt.h	/^	std::string m_slogoutqueue; \/\/成功签出技能组号码$/;"	m	class:CLogoutEvt
+m_socklen	UserConn/Userconn.h	/^    socklen_t           m_socklen;$/;"	m	class:CUserConn
+m_startError	socket/SocketManager (复件).h	/^    sem_t m_startError;$/;"	m	class:CSocketManager
+m_startError	socket/SocketManager.h	/^    ACE_Thread_Semaphore m_startError;$/;"	m	class:CSocketManager
+m_strAction	AskMsg/HeadMsg.h	/^	std::string m_strAction;$/;"	m	class:CHeadMsg
+m_strAction	SoftPhoneMsg.h	/^	std::string m_strAction;$/;"	m	class:CSoftPhoneMsg
+m_strActionID	GenCMD.h	/^	std::string m_strActionID;$/;"	m	class:CGenCMD
+m_strActionID	ResponseMsg.h	/^	std::string m_strActionID;$/;"	m	class:CResponseMsg
+m_strAgentActualTimeStatus	AskProxyDlg.h	/^    std::string   m_strAgentActualTimeStatus;$/;"	m	class:CAskProxyDlg
+m_strAgentCDRReport	Agent.h	/^	std::string m_strAgentCDRReport;$/;"	m	class:CAgent
+m_strAgentId	AskMsg/BusyEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CBusyEvt
+m_strAgentId	AskMsg/ConfEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CConfEvt
+m_strAgentId	AskMsg/EstablishEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CEstablishEvt
+m_strAgentId	AskMsg/GetPopDataEvt.h	/^    std::string m_strAgentId;$/;"	m	class:CGetPopDataEvt
+m_strAgentId	AskMsg/HangupEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CHangupEvt
+m_strAgentId	AskMsg/HoldEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CHoldEvt
+m_strAgentId	AskMsg/IdleEvt.h	/^    std::string m_strAgentId;$/;"	m	class:CIdleEvt
+m_strAgentId	AskMsg/LoginEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CLoginEvt
+m_strAgentId	AskMsg/LogoutEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CLogoutEvt
+m_strAgentId	AskMsg/MakeCallEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CMakeCallEvt
+m_strAgentId	AskMsg/MonitorEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CMonitorEvt
+m_strAgentId	AskMsg/ObserverEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CObserverEvt
+m_strAgentId	AskMsg/RecordEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CRecordEvt
+m_strAgentId	AskMsg/RingEvt.h	/^	std::string m_strAgentId;$/;"	m	class:CRingEvt
+m_strAgentId	AskMsg/WrapupEvt.h	/^    std::string m_strAgentId;$/;"	m	class:CWrapupEvt
+m_strAgentId	ResponseMsg.h	/^    std::string m_strAgentId;$/;"	m	class:CResponseMsg
+m_strAgentState	AskMsg/AgentStateMsg.h	/^	std::string m_strAgentState;$/;"	m	class:CAgentStateMsg
+m_strAgentStatusReport	Agent.h	/^	std::string m_strAgentStatusReport;$/;"	m	class:CAgent
+m_strAgentStatusWeb	AskProxyDlg.h	/^    std::string   m_strAgentStatusWeb;$/;"	m	class:CAskProxyDlg
+m_strAllSkill	Agent.h	/^    std::string m_strAllSkill;$/;"	m	class:CAgent
+m_strAni	AskMsg/ConsultEvt.h	/^	std::string  m_strAni;$/;"	m	class:CConsultEvt
+m_strAni	AskMsg/EstablishEvt.h	/^	std::string  m_strAni;$/;"	m	class:CEstablishEvt
+m_strAni	AskMsg/MakeCallEvt.h	/^	std::string m_strAni;$/;"	m	class:CMakeCallEvt
+m_strAni	AskMsg/RingEvt.h	/^	std::string m_strAni;$/;"	m	class:CRingEvt
+m_strBody	ResponseMsg.h	/^	std::string m_strBody;$/;"	m	class:CResponseMsg
+m_strCMD	GenCMD.h	/^	std::string m_strCMD;$/;"	m	class:CGenCMD
+m_strCause	AskMsg/BusyEvt.h	/^	std::string m_strCause;$/;"	m	class:CBusyEvt
+m_strCause	AskMsg/HangupEvt.h	/^	std::string m_strCause;$/;"	m	class:CHangupEvt
+m_strCause	AskMsg/HoldupCallEvt.h	/^	std::string m_strCause;$/;"	m	class:CHoldupCallEvt
+m_strCause	AskMsg/IdleEvt.h	/^	std::string m_strCause;$/;"	m	class:CIdleEvt
+m_strCause	AskMsg/LoginEvt.h	/^	std::string m_strCause; \/\/登录失败原因$/;"	m	class:CLoginEvt
+m_strCause	AskMsg/LogoutEvt.h	/^	std::string m_strCause; \/\/失败原因$/;"	m	class:CLogoutEvt
+m_strCause	AskMsg/MakeCallEvt.h	/^	std::string m_strCause;$/;"	m	class:CMakeCallEvt
+m_strCause	AskMsg/MonitorEvt.h	/^	std::string m_strCause;$/;"	m	class:CMonitorEvt
+m_strCause	AskMsg/ObserverEvt.h	/^	std::string m_strCause;$/;"	m	class:CObserverEvt
+m_strCause	AskMsg/WrapupEvt.h	/^	std::string m_strCause;$/;"	m	class:CWrapupEvt
+m_strCause	SoftPhoneMsg.h	/^	std::string m_strCause;$/;"	m	class:CSoftPhoneMsg
+m_strCdrWeb	AskProxyDlg.h	/^    std::string   m_strCdrWeb;$/;"	m	class:CAskProxyDlg
+m_strChan	AskMsg/ConfEvt.h	/^	std::string m_strChan;$/;"	m	class:CConfEvt
+m_strChan	AskMsg/HoldEvt.h	/^	std::string m_strChan;$/;"	m	class:CHoldEvt
+m_strChan1	AskMsg/HoldupCallEvt.h	/^	std::string m_strChan1;$/;"	m	class:CHoldupCallEvt
+m_strChan1	AskMsg/MonitorEvt.h	/^	std::string m_strChan1;$/;"	m	class:CMonitorEvt
+m_strChan1	AskMsg/ObserverEvt.h	/^	std::string m_strChan1;$/;"	m	class:CObserverEvt
+m_strChan2	AskMsg/HoldupCallEvt.h	/^	std::string m_strChan2;$/;"	m	class:CHoldupCallEvt
+m_strChan2	AskMsg/MonitorEvt.h	/^	std::string m_strChan2;$/;"	m	class:CMonitorEvt
+m_strChan2	AskMsg/ObserverEvt.h	/^	std::string m_strChan2;$/;"	m	class:CObserverEvt
+m_strChanState	AskMsg/ChannelStateMsg.h	/^	std::string m_strChanState;$/;"	m	class:CChannelStateMsg
+m_strChannel1	AskMsg/ConsultEvt.h	/^	std::string  m_strChannel1;$/;"	m	class:CConsultEvt
+m_strChannel2	AskMsg/ConsultEvt.h	/^	std::string  m_strChannel2;$/;"	m	class:CConsultEvt
+m_strClientAddr	Agent.h	/^	std::string m_strClientAddr;\/\/客户端地址$/;"	m	class:CAgent
+m_strClientAddr	AskMsg/LoginEvt.h	/^	std::string m_strClientAddr;$/;"	m	class:CLoginEvt
+m_strConfigCaller	Agent.h	/^	std::string m_strConfigCaller;\/\/平台呼座席使用的主叫号码-配置台配置$/;"	m	class:CAgent
+m_strConnAgentPwd	AskProxyDlg.h	/^    std::string m_strConnAgentPwd;$/;"	m	class:CAskProxyDlg
+m_strDirect	AskMsg/RingEvt.h	/^	std::string m_strDirect;$/;"	m	class:CRingEvt
+m_strDirector	AskMsg/MakeCallEvt.h	/^	std::string m_strDirector;$/;"	m	class:CMakeCallEvt
+m_strDnis	AskMsg/ConsultEvt.h	/^	std::string  m_strDnis;$/;"	m	class:CConsultEvt
+m_strDnis	AskMsg/EstablishEvt.h	/^	std::string  m_strDnis;$/;"	m	class:CEstablishEvt
+m_strDnis	AskMsg/GetPopDataEvt.h	/^	std::string m_strDnis;$/;"	m	class:CGetPopDataEvt
+m_strDnis	AskMsg/MakeCallEvt.h	/^	std::string m_strDnis;$/;"	m	class:CMakeCallEvt
+m_strDnis	AskMsg/RingEvt.h	/^	std::string m_strDnis;$/;"	m	class:CRingEvt
+m_strDnis	SoftPhoneMsg.h	/^	std::string m_strDnis;$/;"	m	class:CSoftPhoneMsg
+m_strDoc	AskMsg/XmlMarkup.h	/^	MCD_STR m_strDoc;$/;"	m	class:CMarkup
+m_strEncoding	AskMsg/XmlMarkup.cpp	/^	MCD_STR m_strEncoding;$/;"	m	struct:FilePos	file:
+m_strEvt	AskMsg/BusyEvt.h	/^	std::string m_strEvt;$/;"	m	class:CBusyEvt
+m_strEvt	AskMsg/ConfEvt.h	/^	std::string m_strEvt;$/;"	m	class:CConfEvt
+m_strEvt	AskMsg/ConsultEvt.h	/^	std::string m_strEvt;$/;"	m	class:CConsultEvt
+m_strEvt	AskMsg/EstablishEvt.h	/^	std::string m_strEvt;$/;"	m	class:CEstablishEvt
+m_strEvt	AskMsg/HangupEvt.h	/^	std::string m_strEvt;$/;"	m	class:CHangupEvt
+m_strEvt	AskMsg/HeadMsg.h	/^	std::string m_strEvt;$/;"	m	class:CHeadMsg
+m_strEvt	AskMsg/IdleEvt.h	/^	std::string m_strEvt;$/;"	m	class:CIdleEvt
+m_strEvt	AskMsg/MakeCallEvt.h	/^	std::string m_strEvt;$/;"	m	class:CMakeCallEvt
+m_strEvt	AskMsg/RingEvt.h	/^	std::string m_strEvt;$/;"	m	class:CRingEvt
+m_strEvt	AskMsg/SendDtmfEvt.h	/^	std::string m_strEvt;$/;"	m	class:CSendDtmfEvt
+m_strEvt	AskMsg/WrapupEvt.h	/^	std::string m_strEvt;$/;"	m	class:CWrapupEvt
+m_strEvtPBX	HandleAskPBX.h	/^	std::string m_strEvtPBX;\/\/用于存储上一次获取的粘包数据$/;"	m	class:CHandleAskPBX
+m_strFileName	AskMsg/XmlMarkup.h	/^	MCD_STR m_strFileName;$/;"	m	class:CMarkup
+m_strFromEncoding	AskMsg/XmlMarkup.cpp	/^	MCD_STR m_strFromEncoding;$/;"	m	struct:TextEncoding	file:
+m_strGetStationType	AskProxyDlg.h	/^    std::string m_strGetStationType;\/\/获取分机类型 sip skill agent others(pstn)$/;"	m	class:CAskProxyDlg
+m_strHoldupNo	AskMsg/HoldupCallEvt.h	/^	std::string m_strHoldupNo;$/;"	m	class:CHoldupCallEvt
+m_strIOResult	AskMsg/XmlMarkup.cpp	/^	MCD_STR m_strIOResult;$/;"	m	struct:FilePos	file:
+m_strInPBX	SettingData.h	/^	std::string m_strInPBX;\/\/接入PBX$/;"	m	class:CSettingData
+m_strIsStationLogin	AskProxyDlg.h	/^    std::string   m_strIsStationLogin;\/\/分机是否允许登录的http验证串$/;"	m	class:CAskProxyDlg
+m_strIvrTrack	AskMsg/RingEvt.h	/^	std::string m_strIvrTrack; \/\/增加IVR轨迹的弹屏$/;"	m	class:CRingEvt
+m_strLoginFromWeb	SettingData.h	/^	std::string m_strLoginFromWeb;$/;"	m	class:CSettingData
+m_strLoginType	AskMsg/LoginEvt.h	/^	std::string m_strLoginType;$/;"	m	class:CLoginEvt
+m_strLogoutAgentId	AskMsg/EnforceLogOutEvt.h	/^	std::string m_strLogoutAgentId;$/;"	m	class:CEnforceLogOutEvt
+m_strLogoutStation	AskMsg/EnforceLogOutEvt.h	/^	std::string m_strLogoutStation;$/;"	m	class:CEnforceLogOutEvt
+m_strMemberName	AskMsg/LoginEvt.h	/^	std::string m_strMemberName;$/;"	m	class:CLoginEvt
+m_strMonitorNo	AskMsg/MonitorEvt.h	/^	std::string m_strMonitorNo;$/;"	m	class:CMonitorEvt
+m_strMyChan	AskMsg/HoldupCallEvt.h	/^	std::string m_strMyChan;$/;"	m	class:CHoldupCallEvt
+m_strMyChan	AskMsg/MonitorEvt.h	/^	std::string m_strMyChan;$/;"	m	class:CMonitorEvt
+m_strMyChan	AskMsg/ObserverEvt.h	/^	std::string m_strMyChan;$/;"	m	class:CObserverEvt
+m_strObserverNo	AskMsg/ObserverEvt.h	/^	std::string m_strObserverNo;$/;"	m	class:CObserverEvt
+m_strOperation	AskMsg/LogoutEvt.h	/^	std::string m_strOperation;$/;"	m	class:CLogoutEvt
+m_strOperation	ResponseMsg.h	/^	std::string m_strOperation;$/;"	m	class:CResponseMsg
+m_strOverTime	AskProxyDlg.h	/^    std::string   m_strOverTime;\/\/超时设置$/;"	m	class:CAskProxyDlg
+m_strPBX	SettingData.h	/^	std::string  m_strPBX;\/\/服务器名$/;"	m	class:CSettingData
+m_strPBXInfo	AskProxyDlg.h	/^    std::string m_strPBXInfo;\/\/获取所有的租户和技能组$/;"	m	class:CAskProxyDlg
+m_strPbxPort	SettingData.h	/^	std::string  m_strPbxPort;\/\/pbx端口$/;"	m	class:CSettingData
+m_strPbxPwd	SettingData.h	/^	std::string  m_strPbxPwd;\/\/密码$/;"	m	class:CSettingData
+m_strPbxUsr	SettingData.h	/^	std::string  m_strPbxUsr;\/\/用户名$/;"	m	class:CSettingData
+m_strProxyPort	SettingData.h	/^	std::string m_strProxyPort;\/\/Proxy端口$/;"	m	class:CSettingData
+m_strPwd	AskMsg/LoginEvt.h	/^	std::string m_strPwd;$/;"	m	class:CLoginEvt
+m_strQueue	ResponseMsg.h	/^	std::string m_strQueue;$/;"	m	class:CResponseMsg
+m_strReadGatherMarkup	AskMsg/XmlMarkup.cpp	/^	MCD_STR m_strReadGatherMarkup;$/;"	m	struct:FilePos	file:
+m_strReason	AskMsg/BusyEvt.h	/^	std::string m_strReason;$/;"	m	class:CBusyEvt
+m_strReason	AskMsg/GetPopDataEvt.h	/^	std::string m_strReason;$/;"	m	class:CGetPopDataEvt
+m_strReason	AskMsg/HangupEvt.h	/^	std::string m_strReason;$/;"	m	class:CHangupEvt
+m_strReason	AskMsg/LogoutEvt.h	/^	std::string m_strReason;$/;"	m	class:CLogoutEvt
+m_strReason	AskMsg/WrapupEvt.h	/^	std::string m_strReason;$/;"	m	class:CWrapupEvt
+m_strReason	SoftPhoneMsg.h	/^	std::string m_strReason;$/;"	m	class:CSoftPhoneMsg
+m_strRecordID	AskMsg/RecordEvt.h	/^	std::string m_strRecordID;$/;"	m	class:CRecordEvt
+m_strReportIP	HandleWebResponse.h	/^    std::string             m_strReportIP;$/;"	m	class:CHandleWebResponse
+m_strResponse	AskMsg/AgentStateMsg.h	/^	std::string m_strResponse;$/;"	m	class:CAgentStateMsg
+m_strResponse	AskMsg/ChannelStateMsg.h	/^	std::string m_strResponse;$/;"	m	class:CChannelStateMsg
+m_strResponse	AskMsg/HangupEvt.h	/^	std::string m_strResponse;$/;"	m	class:CHangupEvt
+m_strResponse	AskMsg/HeadMsg.h	/^	std::string m_strResponse;$/;"	m	class:CHeadMsg
+m_strResportPort	AskProxyDlg.h	/^    std::string   m_strResportPort; \/\/报表AskProxyTOCM的Port$/;"	m	class:CAskProxyDlg
+m_strResportServer	AskProxyDlg.h	/^    std::string   m_strResportServer; \/\/报表AskProxyTOCM的IP$/;"	m	class:CAskProxyDlg
+m_strResult	AskMsg/XmlMarkup.h	/^	MCD_STR m_strResult;$/;"	m	class:CMarkup
+m_strRet	AskMsg/BusyEvt.h	/^	std::string m_strRet;$/;"	m	class:CBusyEvt
+m_strRet	AskMsg/ConfEvt.h	/^	std::string m_strRet;$/;"	m	class:CConfEvt
+m_strRet	AskMsg/GetPopDataEvt.h	/^	std::string m_strRet;$/;"	m	class:CGetPopDataEvt
+m_strRet	AskMsg/HoldEvt.h	/^	std::string m_strRet;$/;"	m	class:CHoldEvt
+m_strRet	AskMsg/HoldupCallEvt.h	/^	std::string m_strRet;$/;"	m	class:CHoldupCallEvt
+m_strRet	AskMsg/IdleEvt.h	/^	std::string m_strRet;$/;"	m	class:CIdleEvt
+m_strRet	AskMsg/LoginEvt.h	/^	std::string m_strRet;   \/\/登录结果$/;"	m	class:CLoginEvt
+m_strRet	AskMsg/LogoutEvt.h	/^	std::string m_strRet;   \/\/结果$/;"	m	class:CLogoutEvt
+m_strRet	AskMsg/MakeCallEvt.h	/^	std::string m_strRet;$/;"	m	class:CMakeCallEvt
+m_strRet	AskMsg/MonitorEvt.h	/^	std::string m_strRet;$/;"	m	class:CMonitorEvt
+m_strRet	AskMsg/ObserverEvt.h	/^	std::string m_strRet;$/;"	m	class:CObserverEvt
+m_strRet	AskMsg/UnHoldEvt.h	/^	std::string m_strRet;$/;"	m	class:CUnHoldEvt
+m_strRet	AskMsg/WrapupEvt.h	/^	std::string m_strRet;$/;"	m	class:CWrapupEvt
+m_strRet	ResponseMsg.h	/^	std::string m_strRet;$/;"	m	class:CResponseMsg
+m_strRet	SoftPhoneMsg.h	/^	std::string m_strRet;$/;"	m	class:CSoftPhoneMsg
+m_strSkills	AskMsg/LoginEvt.h	/^	std::string m_strSkills;$/;"	m	class:CLoginEvt
+m_strSource	Agent.h	/^	std::string m_strSource;	\/\/客户端类型：手机\/其他$/;"	m	class:CAgent
+m_strSource	AskMsg/AgentStateMsg.h	/^	std::string m_strSource;$/;"	m	class:CAgentStateMsg
+m_strSource	AskMsg/ChannelStateMsg.h	/^	std::string m_strSource;$/;"	m	class:CChannelStateMsg
+m_strSource	AskMsg/HangupEvt.h	/^	std::string m_strSource;$/;"	m	class:CHangupEvt
+m_strSource	AskMsg/HeadMsg.h	/^	std::string m_strSource;$/;"	m	class:CHeadMsg
+m_strSource	AskMsg/LoginEvt.h	/^	std::string m_strSource;   \/\/2013-01-07 add by chenlin$/;"	m	class:CLoginEvt
+m_strStation	AskMsg/BusyEvt.h	/^	std::string m_strStation;$/;"	m	class:CBusyEvt
+m_strStation	AskMsg/ConfEvt.h	/^	std::string m_strStation;$/;"	m	class:CConfEvt
+m_strStation	AskMsg/ConsultCancelEvt.h	/^	std::string m_strStation;$/;"	m	class:CConsultCancelEvt
+m_strStation	AskMsg/ConsultEvt.h	/^	std::string m_strStation;$/;"	m	class:CConsultEvt
+m_strStation	AskMsg/ConsultTransEvt.h	/^	std::string m_strStation;$/;"	m	class:CConsultTransEvt
+m_strStation	AskMsg/EnforceLogOutEvt.h	/^	std::string m_strStation;$/;"	m	class:CEnforceLogOutEvt
+m_strStation	AskMsg/EstablishEvt.h	/^    std::string m_strStation;$/;"	m	class:CEstablishEvt
+m_strStation	AskMsg/GetPopDataEvt.h	/^	std::string m_strStation;$/;"	m	class:CGetPopDataEvt
+m_strStation	AskMsg/HangupEvt.h	/^	std::string m_strStation;$/;"	m	class:CHangupEvt
+m_strStation	AskMsg/HoldEvt.h	/^	std::string m_strStation;$/;"	m	class:CHoldEvt
+m_strStation	AskMsg/HoldupCallEvt.h	/^	std::string m_strStation;$/;"	m	class:CHoldupCallEvt
+m_strStation	AskMsg/IdleEvt.h	/^	std::string m_strStation;$/;"	m	class:CIdleEvt
+m_strStation	AskMsg/LoginEvt.h	/^	std::string m_strStation;$/;"	m	class:CLoginEvt
+m_strStation	AskMsg/LogoutEvt.h	/^	std::string m_strStation;$/;"	m	class:CLogoutEvt
+m_strStation	AskMsg/MakeCallEvt.h	/^	std::string m_strStation;$/;"	m	class:CMakeCallEvt
+m_strStation	AskMsg/MonitorEvt.h	/^	std::string m_strStation;$/;"	m	class:CMonitorEvt
+m_strStation	AskMsg/ObserverEvt.h	/^	std::string m_strStation;$/;"	m	class:CObserverEvt
+m_strStation	AskMsg/RecordEvt.h	/^	std::string m_strStation;$/;"	m	class:CRecordEvt
+m_strStation	AskMsg/RingEvt.h	/^	std::string	m_strStation;$/;"	m	class:CRingEvt
+m_strStation	AskMsg/SendDtmfEvt.h	/^	std::string m_strStation;$/;"	m	class:CSendDtmfEvt
+m_strStation	AskMsg/SingleTransEvt.h	/^	std::string m_strStation;$/;"	m	class:CSingleTransEvt
+m_strStation	AskMsg/UnHoldEvt.h	/^	std::string m_strStation;$/;"	m	class:CUnHoldEvt
+m_strStation	AskMsg/WrapupEvt.h	/^	std::string m_strStation;$/;"	m	class:CWrapupEvt
+m_strStation	ResponseMsg.h	/^	std::string m_strStation;$/;"	m	class:CResponseMsg
+m_strStation	SoftPhoneMsg.h	/^	std::string m_strStation;$/;"	m	class:CSoftPhoneMsg
+m_strSupportVersion	SettingData.h	/^	std::string m_strSupportVersion;$/;"	m	class:CSettingData
+m_strTime	AskMsg/BusyEvt.h	/^	std::string m_strTime;$/;"	m	class:CBusyEvt
+m_strTime	AskMsg/ConfEvt.h	/^	std::string m_strTime;$/;"	m	class:CConfEvt
+m_strTime	AskMsg/EstablishEvt.h	/^	std::string m_strTime;$/;"	m	class:CEstablishEvt
+m_strTime	AskMsg/GetPopDataEvt.h	/^	std::string m_strTime;$/;"	m	class:CGetPopDataEvt
+m_strTime	AskMsg/HangupEvt.h	/^	std::string m_strTime;$/;"	m	class:CHangupEvt
+m_strTime	AskMsg/HoldEvt.h	/^	std::string m_strTime;$/;"	m	class:CHoldEvt
+m_strTime	AskMsg/IdleEvt.h	/^	std::string m_strTime;$/;"	m	class:CIdleEvt
+m_strTime	AskMsg/LoginEvt.h	/^	std::string m_strTime;$/;"	m	class:CLoginEvt
+m_strTime	AskMsg/LogoutEvt.h	/^	std::string m_strTime;$/;"	m	class:CLogoutEvt
+m_strTime	AskMsg/MakeCallEvt.h	/^	std::string m_strTime;$/;"	m	class:CMakeCallEvt
+m_strTime	AskMsg/MonitorEvt.h	/^	std::string m_strTime;$/;"	m	class:CMonitorEvt
+m_strTime	AskMsg/ObserverEvt.h	/^	std::string m_strTime;$/;"	m	class:CObserverEvt
+m_strTime	AskMsg/RecordEvt.h	/^	std::string m_strTime;$/;"	m	class:CRecordEvt
+m_strTime	AskMsg/RingEvt.h	/^	std::string m_strTime;$/;"	m	class:CRingEvt
+m_strTime	AskMsg/WrapupEvt.h	/^	std::string m_strTime;$/;"	m	class:CWrapupEvt
+m_strTime	ResponseMsg.h	/^	std::string m_strTime;$/;"	m	class:CResponseMsg
+m_strToEncoding	AskMsg/XmlMarkup.cpp	/^	MCD_STR m_strToEncoding;$/;"	m	struct:TextEncoding	file:
+m_strTransNo	AskMsg/SingleTransEvt.h	/^	std::string m_strTransNo;$/;"	m	class:CSingleTransEvt
+m_strUCID	AskMsg/EstablishEvt.h	/^	std::string  m_strUCID;$/;"	m	class:CEstablishEvt
+m_strUCID	AskMsg/HangupEvt.h	/^	std::string m_strUCID;$/;"	m	class:CHangupEvt
+m_strUCID	AskMsg/HoldEvt.h	/^	std::string m_strUCID;$/;"	m	class:CHoldEvt
+m_strUCID	AskMsg/MakeCallEvt.h	/^	std::string m_strUCID;$/;"	m	class:CMakeCallEvt
+m_strUCID	AskMsg/MonitorEvt.h	/^	std::string m_strUCID;$/;"	m	class:CMonitorEvt
+m_strUCID	AskMsg/ObserverEvt.h	/^	std::string m_strUCID;$/;"	m	class:CObserverEvt
+m_strUCID	AskMsg/RecordEvt.h	/^	std::string m_strUCID;$/;"	m	class:CRecordEvt
+m_strUCID	AskMsg/RingEvt.h	/^	std::string m_strUCID;$/;"	m	class:CRingEvt
+m_strUnqueid1	AskMsg/ConsultEvt.h	/^	std::string  m_strUnqueid1;$/;"	m	class:CConsultEvt
+m_strUnqueid2	AskMsg/ConsultEvt.h	/^	std::string  m_strUnqueid2;$/;"	m	class:CConsultEvt
+m_strUserData	AskMsg/BusyEvt.h	/^	std::string m_strUserData;$/;"	m	class:CBusyEvt
+m_strUserData	AskMsg/ConfEvt.h	/^	std::string m_strUserData;$/;"	m	class:CConfEvt
+m_strUserData	AskMsg/ConsultCancelEvt.h	/^	std::string m_strUserData;$/;"	m	class:CConsultCancelEvt
+m_strUserData	AskMsg/ConsultEvt.h	/^	std::string m_strUserData;$/;"	m	class:CConsultEvt
+m_strUserData	AskMsg/ConsultTransEvt.h	/^	std::string m_strUserData;$/;"	m	class:CConsultTransEvt
+m_strUserData	AskMsg/EnforceLogOutEvt.h	/^	std::string m_strUserData;$/;"	m	class:CEnforceLogOutEvt
+m_strUserData	AskMsg/EstablishEvt.h	/^	std::string m_strUserData;$/;"	m	class:CEstablishEvt
+m_strUserData	AskMsg/GetPopDataEvt.h	/^	std::string m_strUserData;$/;"	m	class:CGetPopDataEvt
+m_strUserData	AskMsg/HangupEvt.h	/^	std::string m_strUserData;$/;"	m	class:CHangupEvt
+m_strUserData	AskMsg/HoldEvt.h	/^	std::string m_strUserData;$/;"	m	class:CHoldEvt
+m_strUserData	AskMsg/HoldupCallEvt.h	/^	std::string m_strUserData;$/;"	m	class:CHoldupCallEvt
+m_strUserData	AskMsg/IdleEvt.h	/^	std::string m_strUserData;$/;"	m	class:CIdleEvt
+m_strUserData	AskMsg/LoginEvt.h	/^	std::string m_strUserData;$/;"	m	class:CLoginEvt
+m_strUserData	AskMsg/LogoutEvt.h	/^	std::string m_strUserData;$/;"	m	class:CLogoutEvt
+m_strUserData	AskMsg/MakeCallEvt.h	/^	std::string m_strUserData;$/;"	m	class:CMakeCallEvt
+m_strUserData	AskMsg/MonitorEvt.h	/^	std::string m_strUserData;$/;"	m	class:CMonitorEvt
+m_strUserData	AskMsg/ObserverEvt.h	/^	std::string m_strUserData;$/;"	m	class:CObserverEvt
+m_strUserData	AskMsg/RingEvt.h	/^	std::string m_strUserData;$/;"	m	class:CRingEvt
+m_strUserData	AskMsg/SingleTransEvt.h	/^	std::string m_strUserData;$/;"	m	class:CSingleTransEvt
+m_strUserData	AskMsg/UnHoldEvt.h	/^	std::string m_strUserData;$/;"	m	class:CUnHoldEvt
+m_strUserData	AskMsg/WrapupEvt.h	/^	std::string m_strUserData;$/;"	m	class:CWrapupEvt
+m_strUserData	ResponseMsg.h	/^	std::string m_strUserData;$/;"	m	class:CResponseMsg
+m_strUserData	SoftPhoneMsg.h	/^	std::string m_strUserData;$/;"	m	class:CSoftPhoneMsg
+m_strViewCaller	AskMsg/LoginEvt.h	/^	std::string m_strViewCaller;$/;"	m	class:CLoginEvt
+m_strWSConn	AskProxyDlg.h	/^    std::string   m_strWSConn;$/;"	m	class:CAskProxyDlg
+m_strWSSipExt	AskProxyDlg.h	/^    std::string	m_strWSSipExt;$/;"	m	class:CAskProxyDlg
+m_strWebServiceIPAddr	HandleWebResponse.h	/^    std::string             m_strWebServiceIPAddr;$/;"	m	class:CHandleWebResponse
+m_strWebServiceMethodName	HandleWebResponse.h	/^    std::string             m_strWebServiceMethodName;$/;"	m	class:CHandleWebResponse
+m_strWebServicePort	HandleWebResponse.h	/^    std::string             m_strWebServicePort;$/;"	m	class:CHandleWebResponse
+m_strWorkNo	AskMsg/LoginEvt.h	/^	std::string m_strWorkNo;$/;"	m	class:CLoginEvt
+m_strdialAgentCallerNumber	AskProxyDlg.h	/^    std::string   m_strdialAgentCallerNumber;\/\/通过租户id获取平台拨座席的主叫号码$/;"	m	class:CAskProxyDlg
+m_stream	socket/SocketManager (复件).h	/^    ACE_SOCK_Stream m_stream;$/;"	m	class:CSocketManager
+m_stream	socket/SocketManager.h	/^    ACE_SOCK_Stream m_stream;$/;"	m	class:CSocketManager
+m_strlistenNum	SettingData.h	/^	std::string m_strlistenNum;\/\/监听数$/;"	m	class:CSettingData
+m_strpstnAgentPrefix	Agent.h	/^	std::string m_strpstnAgentPrefix;\/\/获取某一租户信息<pstnAgentPrefix>PSTN座席的前缀码<\/ pstnAgentPrefix >$/;"	m	class:CAgent
+m_strskillRecordWeb	AskProxyDlg.h	/^    std::string   m_strskillRecordWeb;$/;"	m	class:CAskProxyDlg
+m_strskillSnapWeb	AskProxyDlg.h	/^    std::string   m_strskillSnapWeb;$/;"	m	class:CAskProxyDlg
+m_tempSkill	Agent.h	/^	std::string m_tempSkill;\/\/2013-03-06 add by chenlin;存放座席所有技能组cdr$/;"	m	class:CAgent
+m_tenantID	ResponseMsg.h	/^    std::string m_tenantID;$/;"	m	class:CResponseMsg
+m_timeout	socket/SocketManager (复件).h	/^    ACE_Time_Value m_timeout;$/;"	m	class:CSocketManager
+m_timeout	socket/SocketManager.h	/^    ACE_Time_Value m_timeout;$/;"	m	class:CSocketManager
+m_webSock	HandSoftPhoneThread.h	/^    int m_webSock;$/;"	m	class:CHandSoftPhoneThread
+m_wsQueue	MsgQueue.h	/^	std::list<std::string> m_wsQueue;$/;"	m	class:CMsgQueue
+main	main.cpp	/^int main ()$/;"	f
+manageTime	Agent.h	/^	std::string manageTime;$/;"	m	class:CAgent
+nBomFlag	AskMsg/XmlMarkup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+nBomLen	AskMsg/XmlMarkup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+nChars	StdString.h	/^		ULONG	nChars;$/;"	m	struct:CStdStr::SSSHDR
+nCount	AskMsg/XmlMarkup.cpp	/^	int nCount;$/;"	m	struct:TagPos	file:
+nEndTagLen	AskMsg/XmlMarkup.cpp	/^	unsigned int nEndTagLen : 10; \/\/ 1K limit for end tag$/;"	m	struct:ElemPos	file:
+nFlags	AskMsg/XmlMarkup.cpp	/^    int nFlags; \/\/ 16 bits flags, 16 bits level 65536 depth limit$/;"	m	struct:ElemPos	file:
+nLen	AskMsg/XmlMarkup.cpp	/^	int nLen;$/;"	m	struct:PathPos	file:
+nLength	AskMsg/XmlMarkup.cpp	/^	int nLength;$/;"	m	struct:ElemPos	file:
+nLength	AskMsg/XmlMarkup.cpp	/^	int nLength;$/;"	m	struct:NodePos	file:
+nLevel	AskMsg/XmlMarkup.cpp	/^	int nLevel;$/;"	m	struct:ElemStack	file:
+nLogoutTimeOutNum	Agent.h	/^	int nLogoutTimeOutNum; \/\/登出后等待心跳次数$/;"	m	class:CAgent
+nMapSize	AskMsg/XmlMarkup.cpp	/^	int nMapSize;$/;"	m	struct:SavedPosMap	file:
+nNodeFlags	AskMsg/XmlMarkup.cpp	/^	int nNodeFlags;$/;"	m	struct:NodePos	file:
+nNodeType	AskMsg/XmlMarkup.cpp	/^	int nNodeType;$/;"	m	struct:NodePos	file:
+nPathType	AskMsg/XmlMarkup.cpp	/^	int nPathType; \/\/ -1 invalid, 0 empty, 1 name, 2 absolute path, 3 anywhere path$/;"	m	struct:PathPos	file:
+nSavedPosFlags	AskMsg/XmlMarkup.cpp	/^	int nSavedPosFlags;$/;"	m	struct:SavedPos	file:
+nSize	AskMsg/XmlMarkup.cpp	/^	int nSize;$/;"	m	struct:ElemStack	file:
+nSlot	AskMsg/XmlMarkup.cpp	/^	int nSlot;$/;"	m	struct:TagPos	file:
+nStart	AskMsg/XmlMarkup.cpp	/^	int nStart;$/;"	m	struct:ElemPos	file:
+nStart	AskMsg/XmlMarkup.cpp	/^	int nStart;$/;"	m	struct:NodePos	file:
+nStartTagLen	AskMsg/XmlMarkup.cpp	/^	unsigned int nStartTagLen : 22; \/\/ 4MB limit for start tag$/;"	m	struct:ElemPos	file:
+nTagNames	AskMsg/XmlMarkup.cpp	/^	int nTagNames;$/;"	m	struct:TagPos	file:
+new	AskMsg/LogoutEvt.cpp	14;"	d	file:
+new	AskMsg/XmlMarkup.cpp	36;"	d	file:
+new_conn	UserConn/Userconn.cpp	/^void CUserConn::new_conn()$/;"	f	class:CUserConn
+no	Phone.h	/^    std::string no;$/;"	m	class:CPhone
+ocscpy	StdString.h	1079;"	d
+ocslen	StdString.h	1078;"	d
+open	UserConn/Proactor.cpp	/^void Server::open(ACE_HANDLE handler,ACE_Message_Block& message_block)$/;"	f	class:Server
+operator ()	StdString.h	/^		inline CT operator()(const CT& t) const$/;"	f	struct:SSToLower
+operator ()	StdString.h	/^		inline CT operator()(const CT& t) const$/;"	f	struct:SSToUpper
+operator ()	StdString.h	/^		inline CT operator()(const CT& t, const std::locale& loc) const$/;"	f	struct:SSToLower
+operator ()	StdString.h	/^		inline CT operator()(const CT& t, const std::locale& loc) const$/;"	f	struct:SSToUpper
+operator ()	StdString.h	/^	bool operator() (CT t) const { return !ssisspace(t); }$/;"	f	struct:NotSpace
+operator ()	StdString.h	/^	bool operator()(const CStdStringA& sLeft, const CStdStringA& sRight) const$/;"	f	struct:StdStringEqualsNoCaseA
+operator ()	StdString.h	/^	bool operator()(const CStdStringA& sLeft, const CStdStringA& sRight) const$/;"	f	struct:StdStringLessNoCaseA
+operator ()	StdString.h	/^	bool operator()(const CStdStringW& sLeft, const CStdStringW& sRight) const$/;"	f	struct:StdStringEqualsNoCaseW
+operator ()	StdString.h	/^	bool operator()(const CStdStringW& sLeft, const CStdStringW& sRight) const$/;"	f	struct:StdStringLessNoCaseW
+operator ()	StdString.h	/^    PCSTR operator()() const { return a_.c_str(); }$/;"	f	struct:FmtArg
+operator ()	StdString.h	/^    PCWSTR operator()() const { return a_.c_str(); }$/;"	f	struct:FmtArg
+operator ()	StdString.h	/^    const ARG& operator()() const { return a_; }$/;"	f	struct:FmtArg
+operator +	StdString.h	/^	inline CStdStringA operator+(PCSTR pA, const CStdStringW& sW)$/;"	f
+operator +	StdString.h	/^	inline CStdStringA operator+(PCWSTR pW, const CStdStringA& sA)$/;"	f
+operator +	StdString.h	/^	inline CStdStringW operator+(PCSTR pA, const CStdStringW& sW)$/;"	f
+operator +	StdString.h	/^	inline CStdStringW operator+(PCWSTR pW, const CStdStringA& sA)$/;"	f
+operator +	StdString.h	/^inline CStdStringA operator+(PCSTR pA, const CStdStringA& sA)$/;"	f
+operator +	StdString.h	/^inline CStdStringA operator+(const CStdStringA& s1, CStdStringA::value_type t)$/;"	f
+operator +	StdString.h	/^inline CStdStringA operator+(const CStdStringA& s1, PCSTR pA)$/;"	f
+operator +	StdString.h	/^inline CStdStringA operator+(const CStdStringA& s1, PCWSTR pW)$/;"	f
+operator +	StdString.h	/^inline CStdStringA operator+(const CStdStringA& s1, const CStdStringA& s2)$/;"	f
+operator +	StdString.h	/^inline CStdStringA operator+(const CStdStringA& s1, const CStdStringW& s2)$/;"	f
+operator +	StdString.h	/^inline CStdStringW operator+(PCWSTR pW, const CStdStringW& sW)$/;"	f
+operator +	StdString.h	/^inline CStdStringW operator+(const CStdStringW& s1, CStdStringW::value_type t)$/;"	f
+operator +	StdString.h	/^inline CStdStringW operator+(const CStdStringW& s1, PCSTR pA)$/;"	f
+operator +	StdString.h	/^inline CStdStringW operator+(const CStdStringW& s1, PCWSTR pW)$/;"	f
+operator +	StdString.h	/^inline CStdStringW operator+(const CStdStringW& s1, const CStdStringA& s2)$/;"	f
+operator +	StdString.h	/^inline CStdStringW operator+(const CStdStringW& s1, const CStdStringW& s2)$/;"	f
+operator +=	StdString.h	/^		MYTYPE& operator+=(const _bstr_t& bstr)$/;"	f	class:CStdStr
+operator +=	StdString.h	/^	MYTYPE& operator+=(CT t)$/;"	f	class:CStdStr
+operator +=	StdString.h	/^	MYTYPE& operator+=(PCSTR pA)$/;"	f	class:CStdStr
+operator +=	StdString.h	/^	MYTYPE& operator+=(PCWSTR pW)$/;"	f	class:CStdStr
+operator +=	StdString.h	/^	MYTYPE& operator+=(const MYTYPE& str)$/;"	f	class:CStdStr
+operator +=	StdString.h	/^	MYTYPE& operator+=(const std::string& str)$/;"	f	class:CStdStr
+operator +=	StdString.h	/^	MYTYPE& operator+=(const std::wstring& str)$/;"	f	class:CStdStr
+operator <<	StdString.h	/^	inline CArchive& AFXAPI operator<<(CArchive& ar, const CStdStringA& strA)$/;"	f
+operator <<	StdString.h	/^	inline CArchive& AFXAPI operator<<(CArchive& ar, const CStdStringW& strW)$/;"	f
+operator =	AskMsg/XmlMarkup.cpp	/^void CMarkup::operator=( const CMarkup& markup )$/;"	f	class:CMarkup
+operator =	StdString.h	/^		MYTYPE& operator=(const _bstr_t& bstr)$/;"	f	class:CStdStr
+operator =	StdString.h	/^	MYTYPE& operator=(CT t)$/;"	f	class:CStdStr
+operator =	StdString.h	/^	MYTYPE& operator=(PCSTR pA)$/;"	f	class:CStdStr
+operator =	StdString.h	/^	MYTYPE& operator=(PCUSTR pU)$/;"	f	class:CStdStr
+operator =	StdString.h	/^	MYTYPE& operator=(PCWSTR pW)$/;"	f	class:CStdStr
+operator =	StdString.h	/^	MYTYPE& operator=(const MYTYPE& str)$/;"	f	class:CStdStr
+operator =	StdString.h	/^	MYTYPE& operator=(const std::string& str)$/;"	f	class:CStdStr
+operator =	StdString.h	/^	MYTYPE& operator=(const std::wstring& str)$/;"	f	class:CStdStr
+operator =	StdString.h	/^    FmtArg& operator=(const FmtArg&) { return *this; }$/;"	f	struct:FmtArg
+operator =	StdString.h	/^    FmtArg<CStdStringA>& operator=(const FmtArg<CStdStringA>&) { return *this; }$/;"	f	struct:FmtArg
+operator =	StdString.h	/^    FmtArg<CStdStringW>& operator=(const FmtArg<CStdStringW>&) { return *this; }$/;"	f	struct:FmtArg
+operator =	StdString.h	/^    FmtArg<std::string>& operator=(const FmtArg<std::string>&) { return *this; }$/;"	f	struct:FmtArg
+operator =	StdString.h	/^    FmtArg<std::wstring>& operator=(const FmtArg<std::wstring>&) {return *this;}$/;"	f	struct:FmtArg
+operator >>	StdString.h	/^	inline CArchive& AFXAPI operator>>(CArchive& ar, CStdStringA& strA)$/;"	f
+operator >>	StdString.h	/^	inline CArchive& AFXAPI operator>>(CArchive& ar, CStdStringW& strW)$/;"	f
+operator MCD_PCSZ	AskMsg/XmlMarkup.h	/^	operator MCD_PCSZ() const { return pcsz; };$/;"	f	struct:MCD_CSTR
+operator MCD_PCSZ_FILENAME	AskMsg/XmlMarkup.h	/^	operator MCD_PCSZ_FILENAME() const { return pcsz; };$/;"	f	struct:MCD_CSTR_FILENAME
+operator []	StdString.h	/^	CT& operator[](int nIdx)$/;"	f	class:CStdStr
+operator []	StdString.h	/^	CT& operator[](unsigned int nIdx)$/;"	f	class:CStdStr
+operator []	StdString.h	/^	const CT& operator[](int nIdx) const$/;"	f	class:CStdStr
+operator []	StdString.h	/^	const CT& operator[](unsigned int nIdx) const$/;"	f	class:CStdStr
+operator const CT*	StdString.h	/^	operator const CT*() const$/;"	f	class:CStdStr
+orginAni	Agent.h	/^	std::string orginAni;$/;"	m	class:CAgent
+orginCallDirect	Agent.h	/^	std::string orginCallDirect;$/;"	m	class:CAgent
+orginDnis	Agent.h	/^	std::string orginDnis;$/;"	m	class:CAgent
+originUCID	Agent.h	/^	std::string originUCID;$/;"	m	class:CAgent
+ostring	StdString.h	/^	typedef std::basic_string<OLECHAR> ostring;$/;"	t
+p	AskMsg/XmlMarkup.cpp	/^	MCD_PCSZ p;$/;"	m	struct:PathPos	file:
+pL	AskMsg/XmlMarkup.cpp	/^	TagPos* pL;$/;"	m	struct:ElemStack	file:
+pTable	AskMsg/XmlMarkup.cpp	/^	SavedPos** pTable;$/;"	m	struct:SavedPosMap	file:
+pcsz	AskMsg/XmlMarkup.h	/^	MCD_PCSZ pcsz;$/;"	m	struct:MCD_CSTR
+pcsz	AskMsg/XmlMarkup.h	/^	MCD_PCSZ_FILENAME pcsz;$/;"	m	struct:MCD_CSTR_FILENAME
+pdlg	AskMsg/RegAskMsg.h	/^	CAskProxyDlg* pdlg;$/;"	m	class:CRegAskMsg
+preLiveTime	Agent.h	/^	ACE_Date_Time preLiveTime;$/;"	m	class:CAgent
+preLiveTimeSecond	Agent.h	/^	long int preLiveTimeSecond;$/;"	m	class:CAgent
+proactor_	UserConn/MyTask.h	/^	ACE_Proactor * proactor_;$/;"	m	class:MyTask
+process_message	UserConn/Proactor.cpp	/^bool Server::process_message(ACE_Message_Block* mblk)$/;"	f	class:Server
+process_message	UserConn/Userconn.cpp	/^void CUserConn::process_message(int fd, const char *pbuf)$/;"	f	class:CUserConn
+pszBom	AskMsg/XmlMarkup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+pszBomEnc	AskMsg/XmlMarkup.cpp	/^struct BomTableStruct { const char* pszBom; int nBomLen; MCD_PCSZ pszBomEnc; int nBomFlag; } BomTable[] =$/;"	m	struct:BomTableStruct	file:
+read_message	UserConn/Userconn.cpp	/^void CUserConn::read_message(int fd)$/;"	f	class:CUserConn
+recordid	Agent.h	/^		std::string recordid;$/;"	m	struct:CAgent::liPopdata
+recv_thread	socket/SocketManager  (复件).cpp	/^void* CSocketManager::recv_thread(void *par)$/;"	f	class:CSocketManager
+recv_thread	socket/SocketManager.cpp	/^void* CSocketManager::recv_thread(void *par)$/;"	f	class:CSocketManager
+request	socket/http.cpp	/^bool CHttp::request(const std::string &URLRequest, const std::string &time, std::string &result)$/;"	f	class:CHttp
+reset_agent	Agent.cpp	/^void CAgent::reset_agent()$/;"	f	class:CAgent
+reset_phone	Agent.cpp	/^void CAgent::reset_phone()$/;"	f	class:CAgent
+rs_	UserConn/Proactor.h	/^	ACE_Asynch_Read_Stream rs_;$/;"	m	class:Server
+run	CheckAgent.cpp	/^void CCheckAgent::run()$/;"	f	class:CCheckAgent
+s	AskProxyDlg.h	/^		int s;$/;"	m	struct:AgentMsg
+sAction	Agent.h	/^	std::string sAction;$/;"	m	class:CAgent
+sAction	UntiTool.h	/^	std::string sAction;$/;"	m	struct:CActionID
+sActionID	Agent.h	/^	std::string sActionID;$/;"	m	class:CAgent
+sActiveCalls	AskMsg/QueueEvt.h	/^	std::string sActiveCalls;$/;"	m	class:CQueueEvt
+sActiveCalls	AskMsg/QueueEvt.h	/^	std::string sActiveCalls;$/;"	m	struct:__anon6
+sAgentStatus	Agent.h	/^	std::string sAgentStatus;$/;"	m	class:CAgent
+sAni	Agent.h	/^	std::string sAni;	$/;"	m	struct:ChanS
+sAni	Agent.h	/^	std::string sAni;$/;"	m	class:CAgent
+sAni	QueueStatic.h	/^	std::string sAni;$/;"	m	class:CQueueCallInfo
+sCallDirect	Agent.h	/^	std::string sCallDirect;$/;"	m	class:CAgent
+sCallType	QueueStatic.h	/^	std::string sCallType;$/;"	m	class:CQueueCallInfo
+sChan	Agent.h	/^	std::string sChan;$/;"	m	class:CAgent
+sChan	Phone.h	/^    std::string sChan;	$/;"	m	class:CPhone
+sCompleteCalls	AskMsg/QueueEvt.h	/^	std::string sCompleteCalls;$/;"	m	class:CQueueEvt
+sCompleteCalls	AskMsg/QueueEvt.h	/^	std::string sCompleteCalls;$/;"	m	struct:__anon6
+sConsultNo	Agent.h	/^	std::string sConsultNo;$/;"	m	class:CAgent
+sContext	Agent.h	/^	std::string sContext;$/;"	m	class:CAgent
+sDiscardCalls	AskMsg/QueueEvt.h	/^	std::string sDiscardCalls;$/;"	m	class:CQueueEvt
+sDiscardCalls	AskMsg/QueueEvt.h	/^	std::string sDiscardCalls;$/;"	m	struct:__anon6
+sDnis	Agent.h	/^	std::string sDnis;$/;"	m	class:CAgent
+sDnis	Agent.h	/^	std::string sDnis;$/;"	m	struct:ChanS
+sHangupReason	Agent.h	/^	std::string sHangupReason;$/;"	m	class:CAgent
+sHoldID	Agent.h	/^	std::string sHoldID;$/;"	m	class:CAgent
+sHoldID	Agent.h	/^	std::string sHoldID;$/;"	m	struct:ChanS
+sHoldS	Agent.h	/^	ChanS sHoldS;\/\/sHoldID的结构体类型$/;"	m	class:CAgent
+sHoldStation	Agent.h	/^	std::string sHoldStation;\/\/和HOLDID相关的号码$/;"	m	class:CAgent
+sHoldupCallNo	Agent.h	/^	std::string sHoldupCallNo;$/;"	m	class:CAgent
+sJoinTime	QueueStatic.h	/^	std::string sJoinTime;$/;"	m	class:CQueueCallInfo
+sLeaveTime	QueueStatic.h	/^	std::string sLeaveTime;$/;"	m	class:CQueueCallInfo
+sMointorNo	Agent.h	/^	std::string sMointorNo;$/;"	m	class:CAgent
+sMsg	AskProxyDlg.h	/^        std::string sMsg;$/;"	m	struct:AgentMsg
+sObserverNo	Agent.h	/^	std::string sObserverNo;$/;"	m	class:CAgent
+sOtherID	Agent.h	/^	std::string sOtherID;$/;"	m	class:CAgent
+sOtherIDStation	Agent.h	/^	std::string sOtherIDStation;\/\/和otherID 相关的号码$/;"	m	class:CAgent
+sOtherNO	Agent.h	/^	std::string sOtherNO;$/;"	m	class:CAgent
+sPwd	Agent.h	/^	std::string sPwd;$/;"	m	class:CAgent
+sQueue	AskMsg/QueueEvt.h	/^	std::string sQueue;$/;"	m	class:CQueueEvt
+sQueueMember	MsgQueue.h	/^	std::string sQueueMember;$/;"	m	struct:WS_Q
+sQueueName	Agent.h	/^	std::string sQueueName;\/\/技能组列表$/;"	m	class:CAgent
+sQueueName	QueueStatic.h	/^	std::string sQueueName;$/;"	m	class:CQueueCallInfo
+sReasonCode	Agent.h	/^	std::string sReasonCode;$/;"	m	class:CAgent
+sSelfChanID	Agent.h	/^	std::string sSelfChanID;$/;"	m	class:CAgent
+sSendResult_Data	Agent.h	/^	std::string sSendResult_Data; \/\/SendResult最新发出的信息$/;"	m	class:CAgent
+sSipInterface	Agent.h	/^	std::string sSipInterface;$/;"	m	class:CAgent
+sStation	Agent.h	/^	std::string sStation;$/;"	m	class:CAgent
+sStation	QueueStatic.h	/^	std::string sStation;$/;"	m	class:CQueueCallInfo
+sStation	UntiTool.h	/^	std::string sStation;$/;"	m	struct:CActionID
+sTeantId	QueueStatic.h	/^	std::string sTeantId;$/;"	m	class:CQueueCallInfo
+sTeantid	Agent.h	/^	std::string sTeantid;\/\/租户ID$/;"	m	class:CAgent
+sTimeout	Agent.h	/^	std::string sTimeout;$/;"	m	class:CAgent
+sTimeout	Phone.h	/^    std::string sTimeout;$/;"	m	class:CPhone
+sTransNo	Agent.h	/^	std::string sTransNo;$/;"	m	class:CAgent
+sUCID	Agent.h	/^	std::string sUCID; \/\/标识一路通话$/;"	m	class:CAgent
+sUcid	QueueStatic.h	/^	std::string sUcid;$/;"	m	class:CQueueCallInfo
+sUnique	Agent.h	/^	std::string sUnique;\/\/$/;"	m	class:CAgent
+sUserData	Agent.h	/^	std::string sUserData;$/;"	m	class:CAgent
+sValName	UntiTool.h	/^	std::string sValName;$/;"	m	struct:CActionID
+sWaitCalls	AskMsg/QueueEvt.h	/^	std::string sWaitCalls;$/;"	m	class:CQueueEvt
+sWaitCalls	AskMsg/QueueEvt.h	/^	std::string sWaitCalls;$/;"	m	struct:__anon6
+sWorkNo	Agent.h	/^	std::string sWorkNo;$/;"	m	class:CAgent
+sWorkNo	QueueStatic.h	/^	std::string sWorkNo;$/;"	m	class:CQueueCallInfo
+saccessNumber	QueueStatic.h	/^	std::string saccessNumber;$/;"	m	class:CQueueCallInfo
+sagentAvailableCount	AskMsg/QueueEvt.h	/^	std::string sagentAvailableCount;$/;"	m	class:CQueueEvt
+savePopData	Agent.cpp	/^void CAgent::savePopData()$/;"	f	class:CAgent
+schMSG	StdString.h	743;"	d
+schSTR	StdString.h	741;"	d
+schSTR2	StdString.h	742;"	d
+sem_	UserConn/MyTask.h	/^	ACE_Thread_Semaphore sem_;$/;"	m	class:MyTask
+send_to_softphone	UserConn/Proactor.cpp	/^void Server::send_to_softphone(const std::string &msg)$/;"	f	class:Server
+send_to_softphone	UserConn/Userconn.cpp	/^void CUserConn::send_to_softphone(int fd, const std::string &msg)$/;"	f	class:CUserConn
+setSkillState	Agent.cpp	/^void  CAgent::setSkillState(const std::string &queue, const std::string &val)$/;"	f	class:CAgent
+setnonblocking	UserConn/Userconn.cpp	/^bool CUserConn::setnonblocking(int sock)$/;"	f	class:CUserConn
+sock	Agent.h	/^	int sock;$/;"	m	class:CAgent
+sock_recv	socket/SocketManager  (复件).cpp	/^CSocketManager::_recvType CSocketManager::sock_recv()$/;"	f	class:CSocketManager
+sock_recv	socket/SocketManager.cpp	/^CSocketManager::_recvType CSocketManager::sock_recv()$/;"	f	class:CSocketManager
+spausedMembers	AskMsg/QueueEvt.h	/^	std::string spausedMembers;$/;"	m	class:CQueueEvt
+ssadd	StdString.h	/^inline void	ssadd(std::string& sDst, PCSTR pA)$/;"	f
+ssadd	StdString.h	/^inline void	ssadd(std::string& sDst, PCWSTR pW)$/;"	f
+ssadd	StdString.h	/^inline void	ssadd(std::string& sDst, const std::string& sSrc)$/;"	f
+ssadd	StdString.h	/^inline void	ssadd(std::string& sDst, const std::wstring& sSrc)$/;"	f
+ssadd	StdString.h	/^inline void	ssadd(std::wstring& sDst, PCSTR pA)$/;"	f
+ssadd	StdString.h	/^inline void	ssadd(std::wstring& sDst, PCWSTR pW)$/;"	f
+ssadd	StdString.h	/^inline void	ssadd(std::wstring& sDst, const std::string& sSrc)$/;"	f
+ssadd	StdString.h	/^inline void	ssadd(std::wstring& sDst, const std::wstring& sSrc)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::string& sDst, PCSTR pA)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::string& sDst, PCWSTR pW)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::string& sDst, const std::string& sSrc)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::string& sDst, const std::wstring& sSrc)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::wstring& sDst, PCSTR pA)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::wstring& sDst, PCWSTR pW)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::wstring& sDst, const std::string& sSrc)$/;"	f
+ssasn	StdString.h	/^inline void	ssasn(std::wstring& sDst, const std::wstring& sSrc)$/;"	f
+ssasn	StdString.h	/^inline void ssasn(std::string& sDst, const int nNull)$/;"	f
+ssasn	StdString.h	/^inline void ssasn(std::wstring& sDst, const int nNull)$/;"	f
+sscmp	StdString.h	/^inline int sscmp(const CT* pA1, const CT* pA2)$/;"	f
+sscoll	StdString.h	/^inline int sscoll(const CT* sz1, int nLen1, const CT* sz2, int nLen2)$/;"	f
+sscpy	StdString.h	/^	inline int sscpy(CT1* pDst, const _bstr_t& bs)$/;"	f
+sscpy	StdString.h	/^	inline int sscpy(CT1* pDst, const _bstr_t& bs, int nMax)$/;"	f
+sscpy	StdString.h	/^inline int sscpy(CT1* pDst, const CT2* pSrc)$/;"	f
+sscpy	StdString.h	/^inline int sscpy(CT1* pDst, const CT2* pSrc, int nMax)$/;"	f
+sscpy	StdString.h	/^inline int sscpy(CT1* pDst, const CT2* pSrc, int nMax, int nLen)$/;"	f
+sscpy	StdString.h	/^inline int sscpy(CT1* pDst, const std::basic_string<CT2>& sSrc)$/;"	f
+sscpy	StdString.h	/^inline int sscpy(CT1* pDst, const std::basic_string<CT2>& sSrc, int nMax)$/;"	f
+sscpycvt	StdString.h	/^inline int sscpycvt(CT1* pDst, const CT2* pSrc, int nMax)$/;"	f
+sscpycvt	StdString.h	/^inline int sscpycvt(PSTR pDst, PCSTR pSrc, int nMax)$/;"	f
+sscpycvt	StdString.h	/^inline int sscpycvt(PWSTR pDst, PCSTR pSrc, int nMax)$/;"	f
+sscpycvt	StdString.h	/^inline int sscpycvt(PWSTR pDst, PCWSTR pSrc, int nMax)$/;"	f
+ssfmtmsg	StdString.h	/^	inline DWORD ssfmtmsg(DWORD dwFlags, LPCVOID pSrc, DWORD dwMsgId,$/;"	f
+ssicmp	StdString.h	/^inline int ssicmp(const CT* pA1, const CT* pA2)$/;"	f
+ssicoll	StdString.h	/^inline int ssicoll(const CT* sz1, int nLen1, const CT* sz2, int nLen2)$/;"	f
+ssipSkillName	AskProxyDlg.h	/^    std::string ssipSkillName;\/\/技能组ID$/;"	m	struct:PBXInfo
+ssisspace	StdString.h	/^		inline bool ssisspace (CT t)$/;"	f
+sslen	StdString.h	/^inline SS_NOTHROW int sslen(const std::string& s)$/;"	f
+sslen	StdString.h	/^inline SS_NOTHROW int sslen(const std::wstring& s)$/;"	f
+sslen	StdString.h	/^template<typename CT> inline int sslen(const CT* pT)$/;"	f
+ssload	StdString.h	/^	inline int ssload(HMODULE hInst, UINT uId, PSTR pBuf, int nMax)$/;"	f
+ssload	StdString.h	/^	inline int ssload(HMODULE hInst, UINT uId, PWSTR pBuf, int nMax)$/;"	f
+sslwr	StdString.h	/^inline void sslwr(CT* pT, size_t nLen, const std::locale& loc=std::locale())$/;"	f
+sstolower	StdString.h	/^	inline CT sstolower(const CT& t, const std::locale& loc = std::locale())$/;"	f
+sstolower	StdString.h	/^	inline char sstolower(char ch)		{ return (char)::tolower(ch); }$/;"	f
+sstolower	StdString.h	/^	inline wchar_t sstolower(wchar_t ch){ return (wchar_t)::tolower(ch); }$/;"	f
+sstoupper	StdString.h	/^	inline CT sstoupper(const CT& t, const std::locale& loc = std::locale())$/;"	f
+sstoupper	StdString.h	/^	inline char sstoupper(char ch)		{ return (char)::toupper(ch); }$/;"	f
+sstoupper	StdString.h	/^	inline wchar_t sstoupper(wchar_t ch){ return (wchar_t)::towupper(ch); }$/;"	f
+ssupr	StdString.h	/^inline void ssupr(CT* pT, size_t nLen, const std::locale& loc=std::locale())$/;"	f
+ssvsprintf	StdString.h	/^	inline int ssvsprintf(PSTR pA, size_t nCount, PCSTR pFmtA, va_list vl)$/;"	f
+ssvsprintf	StdString.h	/^	inline int ssvsprintf(PWSTR pW, size_t nCount, PCWSTR pFmtW, va_list vl)$/;"	f
+start	UserConn/MyTask.cpp	/^int MyTask::start (int num_threads)$/;"	f	class:MyTask
+start_write	UserConn/Proactor.cpp	/^void Server::start_write(ACE_Message_Block* mb)$/;"	f	class:Server
+status	Phone.h	/^    std::string status;$/;"	m	class:CPhone
+stenantId	AskProxyDlg.h	/^    std::string stenantId;\/\/租户ID$/;"	m	struct:PBXInfo
+stop	UserConn/MyTask.cpp	/^int MyTask::stop ()$/;"	f	class:MyTask
+strAgentNo	AskMsg/askmsgdef.h	/^	CString strAgentNo;$/;"	m	struct:AgentInfo
+strChannel	AskMsg/askmsgdef.h	/^	std::string strChannel;$/;"	m	struct:AgentInfo
+strMeta	AskMsg/XmlMarkup.cpp	/^	MCD_STR strMeta;$/;"	m	struct:NodePos	file:
+strName	AskMsg/XmlMarkup.cpp	/^	MCD_STR strName;$/;"	m	struct:SavedPos	file:
+strStation	AskMsg/askmsgdef.h	/^	std::string strStation;$/;"	m	struct:AgentInfo
+strTagName	AskMsg/XmlMarkup.cpp	/^	MCD_STR strTagName;$/;"	m	struct:TagPos	file:
+strUniqueObjectID_1	AskMsg/askmsgdef.h	/^	std::string strUniqueObjectID_1;$/;"	m	struct:AgentInfo
+strUniqueObjectID_2	AskMsg/askmsgdef.h	/^	std::string strUniqueObjectID_2;$/;"	m	struct:AgentInfo
+strUniqueObjectID_3	AskMsg/askmsgdef.h	/^	std::string strUniqueObjectID_3;$/;"	m	struct:AgentInfo
+svc	UserConn/MyTask.cpp	/^int MyTask::svc (void)$/;"	f	class:MyTask
+szANI	Agent.h	/^  std::string szANI;$/;"	m	class:CONN_CHAN
+szDNIS	Agent.h	/^  std::string szDNIS;$/;"	m	class:CONN_CHAN
+szDirection	Agent.h	/^  std::string szDirection;$/;"	m	class:CONN_CHAN
+szEndTime	Agent.h	/^  std::string szEndTime;$/;"	m	class:CONN_CHAN
+szOhterID	Agent.h	/^  std::string szOhterID;\/\/对方的ChannelID;$/;"	m	class:CONN_CHAN
+szStartTime	Agent.h	/^  std::string szStartTime;$/;"	m	class:CONN_CHAN
+szState	Agent.h	/^  std::string szState;$/;"	m	class:CONN_CHAN
+szUCID	Agent.h	/^  std::string szUCID;\/\/对方号码$/;"	m	class:CONN_CHAN
+tstring	StdString.h	/^	typedef std::basic_string<TCHAR> tstring;$/;"	t
+ucid	Agent.h	/^		std::string ucid;$/;"	m	struct:CAgent::liPopdata
+ucid	Phone.h	/^    std::string ucid;$/;"	m	class:CPhone
+unlock	Agent.cpp	/^void CAgent::unlock()$/;"	f	class:CAgent
+voicefile	Phone.h	/^    std::string voicefile;$/;"	m	class:CPhone
+write_message	UserConn/Userconn.cpp	/^bool CUserConn::write_message(int fd, const char *buffer, ssize_t len)$/;"	f	class:CUserConn
+wsGetStringType	StdString.h	/^	inline bool wsGetStringType(LCID lc, DWORD dwT, PCSTR pS, int nSize, $/;"	f
+wsGetStringType	StdString.h	/^	inline bool wsGetStringType(LCID lc, DWORD dwT, PCWSTR pS, int nSize, $/;"	f
+ws_	UserConn/Proactor.h	/^	ACE_Asynch_Write_Stream ws_;$/;"	m	class:Server
+x_ATTRIBQUOTE	AskMsg/XmlMarkup.cpp	43;"	d	file:
+x_AddElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_AddElem( MCD_PCSZ pName, MCD_PCSZ pValue, int nFlags )$/;"	f	class:CMarkup
+x_AddElem	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_AddElem( MCD_PCSZ pName, int nValue, int nFlags )$/;"	f	class:CMarkup
+x_AddNode	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_AddNode( int nNodeType, MCD_PCSZ pText, int nNodeFlags )$/;"	f	class:CMarkup
+x_AddResult	AskMsg/XmlMarkup.cpp	/^void x_AddResult( MCD_STR& strResult, MCD_CSTR pszID, MCD_CSTR pszVal = NULL, int nResultCode = 0, int n = -1, int n2 = -1 )$/;"	f
+x_AddSubDoc	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_AddSubDoc( MCD_PCSZ pSubDoc, int nFlags )$/;"	f	class:CMarkup
+x_Adjust	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_Adjust( int iPos, int nShift, bool bAfterPos \/*=false*\/ )$/;"	f	class:CMarkup
+x_AdjustForNode	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_AdjustForNode( int iPosParent, int iPos, int nShift )$/;"	f	class:CMarkup
+x_AllocElemPos	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_AllocElemPos( int nNewSize \/*=0*\/ )$/;"	f	class:CMarkup
+x_CheckSavedPos	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_CheckSavedPos()$/;"	f	class:CMarkup
+x_CreateNode	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_CreateNode( MCD_STR& strNode, int nNodeType, MCD_PCSZ pText )$/;"	f	class:CMarkup
+x_DocChange	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_DocChange( int nLeft, int nReplace, const MCD_STR& strInsert )$/;"	f	class:CMarkup
+x_EOL	AskMsg/XmlMarkup.cpp	41;"	d	file:
+x_EOLLEN	AskMsg/XmlMarkup.cpp	42;"	d	file:
+x_EncodeCDATASection	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::x_EncodeCDATASection( MCD_PCSZ szData )$/;"	f	class:CMarkup
+x_EndianSwapRequired	AskMsg/XmlMarkup.cpp	/^bool x_EndianSwapRequired( int nDocFlags )$/;"	f
+x_EndianSwapUTF16	AskMsg/XmlMarkup.cpp	/^void x_EndianSwapUTF16( unsigned short* pBuffer, int nCharLen )$/;"	f
+x_Find	GeneralUtils.cpp	/^UINT CGeneralUtils::x_Find(const std::string &szInput, const std::string &szSpeciStr, int startafter)$/;"	f	class:CGeneralUtils
+x_FindElem	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_FindElem(int iPosParent, int iPos, PathPos& path) const$/;"	f	class:CMarkup
+x_GetAttrib	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::x_GetAttrib( int iPos, MCD_PCSZ pAttrib ) const$/;"	f	class:CMarkup
+x_GetData	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::x_GetData( int iPos )$/;"	f	class:CMarkup
+x_GetElemContent	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::x_GetElemContent( int iPos ) const$/;"	f	class:CMarkup
+x_GetEncodingCodePage	AskMsg/XmlMarkup.cpp	/^int x_GetEncodingCodePage( MCD_CSTR pszEncoding )$/;"	f
+x_GetFreePos	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_GetFreePos()$/;"	f	class:CMarkup
+x_GetParent	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_GetParent( int i )$/;"	f	class:CMarkup
+x_GetPath	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::x_GetPath( int iPos ) const$/;"	f	class:CMarkup
+x_GetSubDoc	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::x_GetSubDoc( int iPos )$/;"	f	class:CMarkup
+x_GetTagName	AskMsg/XmlMarkup.cpp	/^MCD_STR CMarkup::x_GetTagName( int iPos ) const$/;"	f	class:CMarkup
+x_Hash	AskMsg/XmlMarkup.cpp	/^int x_Hash( MCD_PCSZ p, int nSize )$/;"	f
+x_InitMarkup	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_InitMarkup()$/;"	f	class:CMarkup
+x_InsertNew	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_InsertNew( int iPosParent, int& iPosRel, NodePos& node )$/;"	f	class:CMarkup
+x_IntToStr	AskMsg/XmlMarkup.cpp	/^MCD_STR x_IntToStr( int n )$/;"	f
+x_LinkElem	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_LinkElem( int iPosParent, int iPosBefore, int iPos )$/;"	f	class:CMarkup
+x_NoDefaultChar	AskMsg/XmlMarkup.cpp	/^bool x_NoDefaultChar( int nCP )$/;"	f
+x_ParseDoc	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_ParseDoc()$/;"	f	class:CMarkup
+x_ParseElem	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_ParseElem( int iPosParent, TokenPos& token )$/;"	f	class:CMarkup
+x_ReleasePos	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_ReleasePos( int iPos )$/;"	f	class:CMarkup
+x_ReleaseSubDoc	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_ReleaseSubDoc( int iPos )$/;"	f	class:CMarkup
+x_RemoveElem	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_RemoveElem( int iPos )$/;"	f	class:CMarkup
+x_RemoveNode	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_RemoveNode( int iPosParent, int& iPos, int& nNodeType, int& nNodeOffset, int& nNodeLength )$/;"	f	class:CMarkup
+x_SetAttrib	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_SetAttrib( int iPos, MCD_PCSZ pAttrib, MCD_PCSZ pValue, int nFlags \/*=0*\/ )$/;"	f	class:CMarkup
+x_SetAttrib	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_SetAttrib( int iPos, MCD_PCSZ pAttrib, int nValue, int nFlags \/*=0*\/ )$/;"	f	class:CMarkup
+x_SetData	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_SetData( int iPos, MCD_PCSZ szData, int nFlags )$/;"	f	class:CMarkup
+x_SetData	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_SetData( int iPos, int nValue )$/;"	f	class:CMarkup
+x_SetDebugState	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_SetDebugState()$/;"	f	class:CMarkup
+x_SetElemContent	AskMsg/XmlMarkup.cpp	/^bool CMarkup::x_SetElemContent( MCD_PCSZ szContent )$/;"	f	class:CMarkup
+x_SetPos	AskMsg/XmlMarkup.cpp	/^void CMarkup::x_SetPos( int iPosParent, int iPos, int iPosChild )$/;"	f	class:CMarkup
+x_StrInsertReplace	AskMsg/XmlMarkup.cpp	/^void x_StrInsertReplace( MCD_STR& str, int nLeft, int nReplace, const MCD_STR& strInsert )$/;"	f
+x_UnlinkElem	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_UnlinkElem( int iPos )$/;"	f	class:CMarkup
+x_UnlinkPrevElem	AskMsg/XmlMarkup.cpp	/^int CMarkup::x_UnlinkPrevElem( int iPosParent, int iPosBefore, int iPos )$/;"	f	class:CMarkup
+~CAgent	Agent.cpp	/^CAgent::~CAgent()$/;"	f	class:CAgent
+~CAgentOp	AgentOp.cpp	/^CAgentOp::~CAgentOp()$/;"	f	class:CAgentOp
+~CAgentStateMsg	AskMsg/AgentStateMsg.cpp	/^CAgentStateMsg::~CAgentStateMsg()$/;"	f	class:CAgentStateMsg
+~CBusyEvt	AskMsg/BusyEvt.cpp	/^CBusyEvt::~CBusyEvt()$/;"	f	class:CBusyEvt
+~CChannelStateMsg	AskMsg/ChannelStateMsg.cpp	/^CChannelStateMsg::~CChannelStateMsg()$/;"	f	class:CChannelStateMsg
+~CCheckAgent	CheckAgent.cpp	/^CCheckAgent::~CCheckAgent()$/;"	f	class:CCheckAgent
+~CCompletePort	CompletePort.cpp	/^CCompletePort::~CCompletePort()$/;"	f	class:CCompletePort
+~CConfEvt	AskMsg/ConfEvt.cpp	/^CConfEvt::~CConfEvt()$/;"	f	class:CConfEvt
+~CConsultCancelEvt	AskMsg/ConsultCancelEvt.cpp	/^CConsultCancelEvt::~CConsultCancelEvt()$/;"	f	class:CConsultCancelEvt
+~CConsultEvt	AskMsg/ConsultEvt.cpp	/^CConsultEvt::~CConsultEvt()$/;"	f	class:CConsultEvt
+~CConsultTransEvt	AskMsg/ConsultTransEvt.cpp	/^CConsultTransEvt::~CConsultTransEvt()$/;"	f	class:CConsultTransEvt
+~CEnforceLogOutEvt	AskMsg/EnforceLogOutEvt.cpp	/^CEnforceLogOutEvt::~CEnforceLogOutEvt()$/;"	f	class:CEnforceLogOutEvt
+~CEstablishEvt	AskMsg/EstablishEvt.cpp	/^CEstablishEvt::~CEstablishEvt()$/;"	f	class:CEstablishEvt
+~CGenCMD	GenCMD.cpp	/^CGenCMD::~CGenCMD()$/;"	f	class:CGenCMD
+~CGeneralUtils	GeneralUtils.cpp	/^CGeneralUtils::~CGeneralUtils()$/;"	f	class:CGeneralUtils
+~CGetPopDataEvt	AskMsg/GetPopDataEvt.cpp	/^CGetPopDataEvt::~CGetPopDataEvt()$/;"	f	class:CGetPopDataEvt
+~CHandSoftPhoneThread	HandSoftPhoneThread.cpp	/^CHandSoftPhoneThread::~CHandSoftPhoneThread()$/;"	f	class:CHandSoftPhoneThread
+~CHandleAskPBX	HandleAskPBX  (2013-5-7).cpp	/^CHandleAskPBX::~CHandleAskPBX()$/;"	f	class:CHandleAskPBX
+~CHandleAskPBX	HandleAskPBX.cpp	/^CHandleAskPBX::~CHandleAskPBX()$/;"	f	class:CHandleAskPBX
+~CHandleWS	HandleWS.cpp	/^CHandleWS::~CHandleWS()$/;"	f	class:CHandleWS
+~CHandleWebResponse	HandleWebResponse.cpp	/^CHandleWebResponse::~CHandleWebResponse()$/;"	f	class:CHandleWebResponse
+~CHangupEvt	AskMsg/HangupEvt.cpp	/^CHangupEvt::~CHangupEvt()$/;"	f	class:CHangupEvt
+~CHeadMsg	AskMsg/HeadMsg.cpp	/^CHeadMsg::~CHeadMsg()$/;"	f	class:CHeadMsg
+~CHoldEvt	AskMsg/HoldEvt.cpp	/^CHoldEvt::~CHoldEvt()$/;"	f	class:CHoldEvt
+~CHoldupCallEvt	AskMsg/HoldupCallEvt.cpp	/^CHoldupCallEvt::~CHoldupCallEvt()$/;"	f	class:CHoldupCallEvt
+~CIdleEvt	AskMsg/IdleEvt.cpp	/^CIdleEvt::~CIdleEvt()$/;"	f	class:CIdleEvt
+~CLoginEvt	AskMsg/LoginEvt.cpp	/^CLoginEvt::~CLoginEvt()$/;"	f	class:CLoginEvt
+~CLogoutEvt	AskMsg/LogoutEvt.cpp	/^CLogoutEvt::~CLogoutEvt()$/;"	f	class:CLogoutEvt
+~CMakeCallEvt	AskMsg/MakeCallEvt.cpp	/^CMakeCallEvt::~CMakeCallEvt()$/;"	f	class:CMakeCallEvt
+~CMarkup	AskMsg/XmlMarkup.cpp	/^CMarkup::~CMarkup()$/;"	f	class:CMarkup
+~CMonitorEvt	AskMsg/MonitorEvt.cpp	/^CMonitorEvt::~CMonitorEvt()$/;"	f	class:CMonitorEvt
+~CMsgQueue	MsgQueue.cpp	/^CMsgQueue::~CMsgQueue()$/;"	f	class:CMsgQueue
+~CObserverEvt	AskMsg/ObserverEvt.cpp	/^CObserverEvt::~CObserverEvt()$/;"	f	class:CObserverEvt
+~CPhone	Phone.cpp	/^CPhone::~CPhone()$/;"	f	class:CPhone
+~CQueueEvt	AskMsg/QueueEvt.cpp	/^CQueueEvt::~CQueueEvt()$/;"	f	class:CQueueEvt
+~CRecordEvt	AskMsg/RecordEvt.cpp	/^CRecordEvt::~CRecordEvt()$/;"	f	class:CRecordEvt
+~CRegAskMsg	AskMsg/RegAskMsg.cpp	/^CRegAskMsg::~CRegAskMsg()$/;"	f	class:CRegAskMsg
+~CResponseMsg	ResponseMsg.cpp	/^CResponseMsg::~CResponseMsg()$/;"	f	class:CResponseMsg
+~CRingEvt	AskMsg/RingEvt.cpp	/^CRingEvt::~CRingEvt()$/;"	f	class:CRingEvt
+~CSendDtmfEvt	AskMsg/SendDtmfEvt.cpp	/^CSendDtmfEvt::~CSendDtmfEvt()$/;"	f	class:CSendDtmfEvt
+~CSettingData	SettingData.cpp	/^CSettingData::~CSettingData()$/;"	f	class:CSettingData
+~CSingleTransEvt	AskMsg/SingleTransEvt.cpp	/^CSingleTransEvt::~CSingleTransEvt()$/;"	f	class:CSingleTransEvt
+~CSocketManager	socket/SocketManager  (复件).cpp	/^CSocketManager::~CSocketManager()$/;"	f	class:CSocketManager
+~CSocketManager	socket/SocketManager.cpp	/^CSocketManager::~CSocketManager()$/;"	f	class:CSocketManager
+~CSoftPhoneMsg	SoftPhoneMsg.cpp	/^CSoftPhoneMsg::~CSoftPhoneMsg()$/;"	f	class:CSoftPhoneMsg
+~CUnHoldEvt	AskMsg/UnHoldEvt.cpp	/^CUnHoldEvt::~CUnHoldEvt()$/;"	f	class:CUnHoldEvt
+~CUntiTool	UntiTool.cpp	/^CUntiTool::~CUntiTool()$/;"	f	class:CUntiTool
+~CWrapupEvt	AskMsg/WrapupEvt.cpp	/^CWrapupEvt::~CWrapupEvt()$/;"	f	class:CWrapupEvt
+~ElemPosTree	AskMsg/XmlMarkup.cpp	/^	~ElemPosTree() { Release(); };$/;"	f	struct:ElemPosTree
+~ElemStack	AskMsg/XmlMarkup.cpp	/^	~ElemStack() { if (pL) delete [] pL; };$/;"	f	struct:ElemStack
+~MulAcceptor	UserConn/MulAcceptor.cpp	/^MulAcceptor::~MulAcceptor()$/;"	f	class:MulAcceptor
+~MyTask	UserConn/MyTask.cpp	/^MyTask::~MyTask()$/;"	f	class:MyTask
+~SavedPosMap	AskMsg/XmlMarkup.cpp	/^	~SavedPosMap() { if (pTable) { for (int n=0;n<nMapSize;++n) if (pTable[n]) delete[] pTable[n]; delete[] pTable; } };$/;"	f	struct:SavedPosMap
+~SavedPosMapArray	AskMsg/XmlMarkup.cpp	/^	~SavedPosMapArray() { ReleaseMaps(); };$/;"	f	struct:SavedPosMapArray
+~Server	UserConn/Proactor.cpp	/^Server::~Server()$/;"	f	class:Server

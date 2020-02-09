@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<askproxy>
+  <pbx pbxip="192.168.0.8"  pbxusr="asterisk"  pbxpwd="asterisk"  pbxport="5038" />
+  <proxy port="6001" listen="201" />
+  <inpbx inpbxip="10.201.16.7" />
+  <loginformweb loginurl="http://192.168.20.78:8080/service/ivr/fieldModel/util/getIsLoginedAgentFromWeb?ip=192.168.30.89" />
+  <support_version>2.0.0.1</support_version>
+  <pbx_no>
+  	<ID no="2001" type="ext" />
+  	<ID no="2002" type="ext" />
+  	<ID no="2003" type="ext" />
+  	<ID no="3001" type="queue" />
+  	<ID no="3002" type="queue" />
+  	<ID no="3003" type="queue" />
+  </pbx_no>
+</askproxy>

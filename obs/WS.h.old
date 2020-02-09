@@ -1,0 +1,45 @@
+#ifndef WS_H
+#define WS_H
+
+#include <map>
+#include "socket/http.h"
+#include "AskProxy.h"
+
+class CAskProxyDlg;
+
+class CWS
+{
+public:
+
+	CWS(CAskProxyDlg* pDlg);
+	virtual ~CWS();
+	CAskProxyDlg* m_pDlg;
+
+	BOOL SendRequestSipExtInfo(const std::string &sMsg, std::string& sTeantId); //请求分机的租户信息
+
+
+	BOOL SendRequestAgentInfo(const std::string &sMsg, std::string& sSkill, std::string& sTeantId);  //请求队列和租户
+	BOOL SendRequestAgentPwd(const std::string &sMsg, std::string& pwd, std::string &tenantId, std::map<std::string, std::string> &mpSkillAndPenalty);//请求租户id、技能组号、惩罚度 modif by jyf
+
+
+	BOOL SendRequestAgentStationInfo(const std::string &sMsg);//请求验证座席的登录分机
+	BOOL SendRequestTeantIdCallerInfo(const std::string &sMsg, std::string& sConfigCaller, std::string& sConfigpstnAgentPrefix);//获取分机=%s登录租户的平台呼座席使用的主叫号码
+
+
+
+    //根据负载PBX的IP获取该负载上所有的租户和技能组信息
+	//http://10.11.196.39:8080/platform/service/sip/util/getMachineSkill?ip=10.11.196.36
+	BOOL SendRequestPBXInfo(const std::string &sMsg);
+
+	/*
+	获取分机类型
+	sip/util/getSysNumType?num=<号码>
+	<data>
+	<type>号码类型</type>        //sip，skill，agent 其他为pstn类型，且仅允许sip和pstn号码登录
+	<tenantId>租户ID</tenantId>
+	</data>
+	*/
+	BOOL SendRequestStationType(const std::string &sMsg, std::string& sStationType);
+};
+
+#endif

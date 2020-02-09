@@ -1,0 +1,127 @@
+#include <iostream>
+#include <string>
+#include "logManager.h"
+//
+#include "log.h"
+#include "obsCfg.h"
+#include "Userconn.h"
+#include "HandleUserMsgThread.h"
+#include "SocketManager.h"
+#include "RegAskMsg.h"
+#include "HandleAskPBX.h"
+#include "Daemon.h"
+
+static volatile bool serviceStop = false;
+void StopHandler()
+{
+	serviceStop = true;
+}
+
+void MainThread()
+{
+	// Avoid program exit on broken pipe
+	ACE_OS::signal (SIGPIPE, (ACE_SignalHandler) SIG_IGN);
+
+	//first : init log Manager
+	CLogManager* pLogManager = CLogManager::Instance();
+	pLogManager->Initialize();
+	pLogManager->m_ctiLog.Log("obs start");
+	pLogManager->m_astLog.Log("ast log start");
+	pLogManager->m_rootLog.Log("main log start");
+
+	//second : init config
+	COBSCfg* pCfg = COBSCfg::Instance();
+	pCfg->Initialize();
+	
+	//third : init client conn
+	pLogManager->m_rootLog.Log("start UserConn Thread");
+	CUserConn* pUserConn = CUserConn::Instance();
+	pUserConn->init(6001);
+	
+	//four
+	CHandleUserMsgThread* pHandleUserMsg = CHandleUserMsgThread::Instance();
+	pHandleUserMsg->Initialize();
+
+	//five
+	CHandleAskPBX* pHandleAskPBX = CHandleAskPBX::Instance();
+	pHandleAskPBX->StartHandleAskPBX();
+	//pHandleAskPBX->Instance();
+
+	//six
+	CSocketManager* pSocketManager = CSocketManager::Instance();
+	pSocketManager->Initialize();
+	bool bConn = pSocketManager->ConnectTo(std::string("127.0.0.1"),std::string("5038"),SOCK_STREAM);
+	if(bConn)
+	{
+		pLogManager->m_rootLog.Log("connet to ast succ");
+        bool bWatch = pSocketManager->WatchComm();
+        if(bWatch)
+        {
+            pLogManager->m_rootLog.Log("listen asterisk succ111");
+        }
+    }
+    else
+    {
+        pLogManager->m_rootLog.Log("Cann't connect to asterisk");
+	}	
+	//senven
+	CRegAskMsg reg;
+	std::string s = reg.RegEnCode();
+
+	pSocketManager->WriteComm(s, s.length());
+
+	
+	while(!Daemon::Singleton()->IsStopping())
+	{
+		ACE_OS::sleep(1);
+	}
+	
+		
+	reg.UnRegEnCode();
+	
+	std::cout<<"app exit"<<std::endl;
+}
+
+
+
+
+int main(int argc,char** argv)
+{
+	char serviceName[]="xjobs";
+
+
+
+
+	Daemon::Initialize(serviceName, MainThread, StopHandler);
+	CStdString argument = argv[1];
+
+
+	if (argc>1)
+	{
+		if (argument.CompareNoCase("debug") == 0)
+		{
+			MainThread();
+		}
+		else if (argument.CompareNoCase("install") == 0)
+		{
+			Daemon::Singleton()->Install();
+		}
+		else if  (argument.CompareNoCase("uninstall") == 0)
+		{
+			Daemon::Singleton()->Uninstall();
+		}
+		else
+		{
+			std::cout<<"argument error"<<std::endl;
+		}
+	}
+	else
+	{
+		// No arguments, launch the daemon
+		printf("Starting xjobs daemon ... (type 'xjobs debug' if you prefer running attached to tty)\n");
+		Daemon::Singleton()->Start();		
+	}
+	return 0;
+}
+
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<askproxy>
+  <pbx pbxip="127.0.0.1"  pbxusr="asterisk"  pbxpwd="asterisk"  pbxport="5038" />
+  <proxy port="6001" listen="201" />
+  <inpbx inpbxip="192.168.20.93" />
+  <loginformweb loginurl="http://192.168.20.78:8080/service/ivr/fieldModel/util/getIsLoginedAgentFromWeb?ip=192.168.30.89" />
+  <support_version>2.0.0.1</support_version>
+</askproxy>

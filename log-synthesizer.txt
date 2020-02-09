@@ -1,0 +1,24 @@
+2018-11-05 10:43:01 AliSpeech_C++SDK(INFO)[139855224870656]: getStartCommand:247 StartCommand: {"context":{"sdk":{"language":"C++","name":"nls-sdk-linux","version":"2.3.7"}},"header":{"appkey":"LymvIJx0i4JzpVh7","message_id":"4bab07ad150048268ff6595409643ae0","name":"StartSynthesis","namespace":"SpeechSynthesizer","task_id":"7e88b6421a844410bd56e85765ff065c"},"payload":{"format":"wav","method":0,"pitch_rate":0,"sample_rate":8000,"speech_rate":0,"text":"您好，龙华区留仙大道1号充电桩故障","voice":"xiaoyun","volume":50}}
+
+2018-11-05 10:43:01 AliSpeech_C++SDK(INFO)[139855224870656]: start:136 StartCommand sent to server.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 4.
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:309 Begin HandlerFrame status: 4
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: convertResult:51 Response: {"header":{"namespace":"SpeechSynthesizer","name":"SynthesisCompleted","status":20000000,"message_id":"92f0f9d985094428a94bba9c8a1990e2","task_id":"7e88b6421a844410bd56e85765ff065c","status_text":"Gateway:SUCCESS:Success."}}
+2018-11-05 10:43:02 AliSpeech_C++SDK(INFO)[139854537029376]: handlerFrame:390 End HandlerFrame statis: 5.

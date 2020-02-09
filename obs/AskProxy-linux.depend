@@ -1,0 +1,630 @@
+# depslib dependency file v1.0
+1374114955 source:/home/a/work/AskProxy-linux-http/Agent.cpp
+	"Agent.h"
+	"AskProxyDlg.h"
+	"UntiTool.h"
+	"GenCMD.h"
+	"./logclass/log.h"
+
+1390364134 /home/a/work/AskProxy-linux-http/Agent.h
+	<iostream>
+	<string>
+	<list>
+	<map>
+	<ace/Date_Time.h>
+	<ace/Thread_Mutex.h>
+	"owntype.h"
+
+1364367803 /home/a/work/AskProxy-linux-http/owntype.h
+
+1383548140 /home/a/work/AskProxy-linux-http/AskProxyDlg.h
+	<iostream>
+	<string>
+	<list>
+	<map>
+	<log4cxx/logger.h>
+	<log4cxx/logstring.h>
+	<log4cxx/propertyconfigurator.h>
+	"logclass/log.h"
+	"HandleAskPBX.h"
+	"socket/SocketManager.h"
+	"Agent.h"
+	"SettingData.h"
+	"AskMsg/RegAskMsg.h"
+	"MsgQueue.h"
+	"HandleWebResponse.h"
+	"HandleWS.h"
+	"CompletePort.h"
+	"HandSoftPhoneThread.h"
+	"CheckAgent.h"
+
+1370240299 /home/a/work/AskProxy-linux-http/logclass/log.h
+	<log4cxx/logger.h>
+	<log4cxx/logstring.h>
+	<log4cxx/propertyconfigurator.h>
+	<iostream>
+	<string>
+
+1376381962 /home/a/work/AskProxy-linux-http/HandleAskPBX.h
+	<iostream>
+	<string>
+	<list>
+	<cstring>
+	<ace/Thread_Semaphore.h>
+	<ace/Thread.h>
+	<ace/Thread_Manager.h>
+	"AskMsg/QueueEvt.h"
+	"GeneralUtils.h"
+	"owntype.h"
+
+1363744538 /home/a/work/AskProxy-linux-http/AskMsg/QueueEvt.h
+	<string>
+	"../owntype.h"
+
+1369014141 /home/a/work/AskProxy-linux-http/GeneralUtils.h
+	<iostream>
+	<vector>
+	<string>
+	<cstring>
+	<algorithm>
+	<stdio.h>
+	<stdlib.h>
+	"owntype.h"
+
+1370587743 /home/a/work/AskProxy-linux-http/socket/SocketManager.h
+	<ace/SOCK_Stream.h>
+	<ace/SOCK_Dgram.h>
+	<ace/SOCK_Connector.h>
+	<ace/Reactor.h>
+	<ace/INET_Addr.h>
+	<ace/Thread_Mutex.h>
+	<ace/Thread_Semaphore.h>
+	<iostream>
+	<string>
+	<list>
+	"../owntype.h"
+
+1376375077 /home/a/work/AskProxy-linux-http/SettingData.h
+	<iostream>
+	<string>
+
+1378451227 /home/a/work/AskProxy-linux-http/AskMsg/RegAskMsg.h
+	<string>
+	"../owntype.h"
+
+1363923022 /home/a/work/AskProxy-linux-http/MsgQueue.h
+	<string>
+	<list>
+	<ace/Thread_Mutex.h>
+	<ace/Date_Time.h>
+	"AskProxy.h"
+
+1370571922 /home/a/work/AskProxy-linux-http/AskProxy.h
+
+1363922658 /home/a/work/AskProxy-linux-http/HandleWebResponse.h
+	"logclass/log.h"
+	<string>
+	<ace/Thread_Semaphore.h>
+	<ace/Thread_Manager.h>
+	"owntype.h"
+
+1363931869 /home/a/work/AskProxy-linux-http/HandleWS.h
+	<ace/Thread_Manager.h>
+	"AskProxy.h"
+
+1374114678 /home/a/work/AskProxy-linux-http/CompletePort.h
+	"logclass/log.h"
+	"UserConn/Userconn.h"
+	<ace/Thread_Manager.h>
+
+1373852112 /home/a/work/AskProxy-linux-http/UserConn/Userconn.h
+	<sys/socket.h>
+	<sys/epoll.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<fcntl.h>
+	<unistd.h>
+	<string.h>
+	<errno.h>
+	<pthread.h>
+	<string>
+	<sys/signal.h>
+	<iostream>
+
+1378456418 /home/a/work/AskProxy-linux-http/HandSoftPhoneThread.h
+	"owntype.h"
+	<ace/Thread_Manager.h>
+	<ace/Thread_Semaphore.h>
+	<string>
+
+1366191928 /home/a/work/AskProxy-linux-http/CheckAgent.h
+	<ace/Thread_Manager.h>
+	<ace/Thread_Semaphore.h>
+	"logclass/log.h"
+	"owntype.h"
+
+1372228046 /home/a/work/AskProxy-linux-http/UntiTool.h
+	<iostream>
+	<string>
+	<vector>
+	<ace/Date_Time.h>
+	"owntype.h"
+
+1363073028 /home/a/work/AskProxy-linux-http/GenCMD.h
+	<iostream>
+	<string>
+	"socket/SocketManager.h"
+
+1370572098 source:/home/a/work/AskProxy-linux-http/AgentOp.cpp
+	"AgentOp.h"
+	"AskProxy.h"
+	"AgentOp.h"
+	"AskProxyDlg.h"
+
+1363759216 /home/a/work/AskProxy-linux-http/AgentOp.h
+	<string>
+	"owntype.h"
+	"Agent.h"
+
+1372669676 source:/home/a/work/AskProxy-linux-http/AskMsg/AgentStateMsg.cpp
+	"AgentStateMsg.h"
+	"XmlMarkup.h"
+
+1364376971 /home/a/work/AskProxy-linux-http/AskMsg/AgentStateMsg.h
+	<string>
+	"../owntype.h"
+
+1362991228 /home/a/work/AskProxy-linux-http/AskMsg/XmlMarkup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
+1372669978 source:/home/a/work/AskProxy-linux-http/AskMsg/BusyEvt.cpp
+	"BusyEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1372670092 /home/a/work/AskProxy-linux-http/AskMsg/BusyEvt.h
+	<string>
+	"../owntype.h"
+
+1364377115 source:/home/a/work/AskProxy-linux-http/AskMsg/ChannelStateMsg.cpp
+	"ChannelStateMsg.h"
+	"./XmlMarkup.h"
+
+1363744506 /home/a/work/AskProxy-linux-http/AskMsg/ChannelStateMsg.h
+	<string>
+	"../owntype.h"
+
+1372670419 source:/home/a/work/AskProxy-linux-http/AskMsg/ConfEvt.cpp
+	"ConfEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1372670255 /home/a/work/AskProxy-linux-http/AskMsg/ConfEvt.h
+	<string>
+	"../owntype.h"
+
+1363744741 source:/home/a/work/AskProxy-linux-http/AskMsg/ConsultCancelEvt.cpp
+	"ConsultCancelEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+
+1363744522 /home/a/work/AskProxy-linux-http/AskMsg/ConsultCancelEvt.h
+	<string>
+	"../owntype.h"
+
+1364545504 source:/home/a/work/AskProxy-linux-http/AskMsg/ConsultEvt.cpp
+	"ConsultEvt.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"XmlMarkup.h"
+
+1363744528 /home/a/work/AskProxy-linux-http/AskMsg/ConsultEvt.h
+	<string>
+	"../owntype.h"
+
+1363745175 source:/home/a/work/AskProxy-linux-http/AskMsg/ConsultTransEvt.cpp
+	"ConsultTransEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+
+1363745115 /home/a/work/AskProxy-linux-http/AskMsg/ConsultTransEvt.h
+	<string>
+	"../owntype.h"
+
+1363745404 source:/home/a/work/AskProxy-linux-http/AskMsg/EnforceLogOutEvt.cpp
+	"EnforceLogOutEvt.h"
+	"XmlMarkup.h"
+	"../GeneralUtils.h"
+
+1363745367 /home/a/work/AskProxy-linux-http/AskMsg/EnforceLogOutEvt.h
+	<string>
+	"../owntype.h"
+
+1372670947 source:/home/a/work/AskProxy-linux-http/AskMsg/EstablishEvt.cpp
+	"EstablishEvt.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+	"XmlMarkup.h"
+
+1372670769 /home/a/work/AskProxy-linux-http/AskMsg/EstablishEvt.h
+	<string>
+	"../owntype.h"
+
+1372671369 source:/home/a/work/AskProxy-linux-http/AskMsg/GetPopDataEvt.cpp
+	"GetPopDataEvt.h"
+	"XmlMarkup.h"
+
+1372671080 /home/a/work/AskProxy-linux-http/AskMsg/GetPopDataEvt.h
+	<string>
+	"../owntype.h"
+
+1379819491 source:/home/a/work/AskProxy-linux-http/AskMsg/HangupEvt.cpp
+	"HangupEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1379819734 /home/a/work/AskProxy-linux-http/AskMsg/HangupEvt.h
+	<string>
+	"../owntype.h"
+
+1363746587 source:/home/a/work/AskProxy-linux-http/AskMsg/HeadMsg.cpp
+	"HeadMsg.h"
+	"XmlMarkup.h"
+
+1363746411 /home/a/work/AskProxy-linux-http/AskMsg/HeadMsg.h
+	<string>
+	"../owntype.h"
+
+1372671853 source:/home/a/work/AskProxy-linux-http/AskMsg/HoldEvt.cpp
+	"HoldEvt.h"
+	"../GeneralUtils.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+
+1372671939 /home/a/work/AskProxy-linux-http/AskMsg/HoldEvt.h
+	<string>
+	"../owntype.h"
+
+1364546416 source:/home/a/work/AskProxy-linux-http/AskMsg/HoldupCallEvt.cpp
+	"HoldupCallEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../logclass/log.h"
+	"../UntiTool.h"
+
+1364546434 /home/a/work/AskProxy-linux-http/AskMsg/HoldupCallEvt.h
+	<string>
+	"../owntype.h"
+
+1372672183 source:/home/a/work/AskProxy-linux-http/AskMsg/IdleEvt.cpp
+	"IdleEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1372672109 /home/a/work/AskProxy-linux-http/AskMsg/IdleEvt.h
+	<string>
+	"../owntype.h"
+	"../Agent.h"
+
+1381386173 source:/home/a/work/AskProxy-linux-http/AskMsg/LoginEvt.cpp
+	"LoginEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1381386110 /home/a/work/AskProxy-linux-http/AskMsg/LoginEvt.h
+	<string>
+	"../owntype.h"
+	"../Agent.h"
+
+1372672613 source:/home/a/work/AskProxy-linux-http/AskMsg/LogoutEvt.cpp
+	"LogoutEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1372672537 /home/a/work/AskProxy-linux-http/AskMsg/LogoutEvt.h
+	<string>
+	"../owntype.h"
+
+1372672880 source:/home/a/work/AskProxy-linux-http/AskMsg/MakeCallEvt.cpp
+	"MakeCallEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../logclass/log.h"
+
+1372672714 /home/a/work/AskProxy-linux-http/AskMsg/MakeCallEvt.h
+	<string>
+	"../owntype.h"
+
+1372728076 source:/home/a/work/AskProxy-linux-http/AskMsg/MonitorEvt.cpp
+	"MonitorEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../logclass/log.h"
+	"../UntiTool.h"
+
+1372727902 /home/a/work/AskProxy-linux-http/AskMsg/MonitorEvt.h
+	<string>
+	"../owntype.h"
+
+1372728270 source:/home/a/work/AskProxy-linux-http/AskMsg/ObserverEvt.cpp
+	"ObserverEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../logclass/log.h"
+	"../UntiTool.h"
+
+1372728157 /home/a/work/AskProxy-linux-http/AskMsg/ObserverEvt.h
+	<string>
+	"../owntype.h"
+
+1363686508 source:/home/a/work/AskProxy-linux-http/AskMsg/QueueEvt.cpp
+	"QueueEvt.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1381300133 source:/home/a/work/AskProxy-linux-http/AskMsg/RecordEvt.cpp
+	"RecordEvt.h"
+	<string.h>
+
+1381299993 /home/a/work/AskProxy-linux-http/AskMsg/RecordEvt.h
+	<string>
+	"../owntype.h"
+
+1378451233 source:/home/a/work/AskProxy-linux-http/AskMsg/RegAskMsg.cpp
+	"RegAskMsg.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+	"../AskProxyDlg.h"
+	"../socket/http.h"
+	<ace/Thread_Manager.h>
+
+1365671099 /home/a/work/AskProxy-linux-http/socket/http.h
+	<ace/SOCK_Stream.h>
+	<ace/SOCK_Connector.h>
+	<ace/INET_Addr.h>
+	<ace/Time_Value.h>
+	<iostream>
+	<string>
+	<stdio.h>
+
+1372728972 source:/home/a/work/AskProxy-linux-http/AskMsg/RingEvt.cpp
+	"RingEvt.h"
+	"../GeneralUtils.h"
+	"./XmlMarkup.h"
+
+1372728790 /home/a/work/AskProxy-linux-http/AskMsg/RingEvt.h
+	<string>
+	"../owntype.h"
+
+1364546793 source:/home/a/work/AskProxy-linux-http/AskMsg/SendDtmfEvt.cpp
+	"XmlMarkup.h"
+	"SendDtmfEvt.h"
+
+1364546808 /home/a/work/AskProxy-linux-http/AskMsg/SendDtmfEvt.h
+	<string>
+	"../owntype.h"
+
+1363749946 source:/home/a/work/AskProxy-linux-http/AskMsg/SingleTransEvt.cpp
+	"SingleTransEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+
+1363749889 /home/a/work/AskProxy-linux-http/AskMsg/SingleTransEvt.h
+	<string>
+	"../owntype.h"
+
+1363749968 source:/home/a/work/AskProxy-linux-http/AskMsg/UnHoldEvt.cpp
+	"UnHoldEvt.h"
+	"XmlMarkup.h"
+	"../GenCMD.h"
+	"../GeneralUtils.h"
+
+1363749907 /home/a/work/AskProxy-linux-http/AskMsg/UnHoldEvt.h
+	<string>
+	"../owntype.h"
+
+1372729371 source:/home/a/work/AskProxy-linux-http/AskMsg/WrapupEvt.cpp
+	"WrapupEvt.h"
+	"XmlMarkup.h"
+	"../GeneralUtils.h"
+	"../UntiTool.h"
+
+1372729248 /home/a/work/AskProxy-linux-http/AskMsg/WrapupEvt.h
+	<string>
+	"../owntype.h"
+
+1362991304 source:/home/a/work/AskProxy-linux-http/AskMsg/XmlMarkup.cpp
+	<stdio.h>
+	"XmlMarkup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1370572042 source:/home/a/work/AskProxy-linux-http/AskProxy.cpp
+	"AskProxy.h"
+	"AskProxyDlg.h"
+
+1389077270 source:/home/a/work/AskProxy-linux-http/AskProxyDlg.cpp
+	"AskProxyDlg.h"
+	"AskMsg/XmlMarkup.h"
+	"WS.h"
+
+1363923047 /home/a/work/AskProxy-linux-http/WS.h
+	<map>
+	"socket/http.h"
+	"AskProxy.h"
+
+1376383996 source:/home/a/work/AskProxy-linux-http/CheckAgent.cpp
+	"CheckAgent.h"
+	"AskProxyDlg.h"
+	"UntiTool.h"
+
+1374114703 source:/home/a/work/AskProxy-linux-http/CompletePort.cpp
+	"CompletePort.h"
+	"AskProxyDlg.h"
+
+1364807980 source:/home/a/work/AskProxy-linux-http/GenCMD.cpp
+	"GenCMD.h"
+	"AskProxyDlg.h"
+	<stdlib.h>
+	<stdio.h>
+	"UntiTool.h"
+
+1369015256 source:/home/a/work/AskProxy-linux-http/GeneralUtils.cpp
+	"GeneralUtils.h"
+
+1390367107 source:/home/a/work/AskProxy-linux-http/HandSoftPhoneThread.cpp
+	"HandSoftPhoneThread.h"
+	"./logclass/log.h"
+	"AskProxyDlg.h"
+	"askproxydef.h"
+	"Agent.h"
+	"WS.h"
+	"./AskMsg/XmlMarkup.h"
+	"UntiTool.h"
+	"./AskMsg/EnforceLogOutEvt.h"
+	"./GenCMD.h"
+	"AgentOp.h"
+	"ResponseMsg.h"
+
+1364347377 /home/a/work/AskProxy-linux-http/askproxydef.h
+	"./AskMsg/HeadMsg.h"
+	"./AskMsg/AgentStateMsg.h"
+	"./AskMsg/ChannelStateMsg.h"
+	"./AskMsg/EstablishEvt.h"
+	"./AskMsg/RingEvt.h"
+	"./AskMsg/LoginEvt.h"
+	"./AskMsg/LogoutEvt.h"
+	"./AskMsg/IdleEvt.h"
+	"./AskMsg/BusyEvt.h"
+	"./AskMsg/WrapupEvt.h"
+	"./AskMsg/MakeCallEvt.h"
+	"./AskMsg/HangupEvt.h"
+	"./AskMsg/HoldEvt.h"
+	"./AskMsg/UnHoldEvt.h"
+	"./AskMsg/SingleTransEvt.h"
+	"./AskMsg/ConsultEvt.h"
+	"./AskMsg/ConsultCancelEvt.h"
+	"./AskMsg/ConsultTransEvt.h"
+	"./AskMsg/ConfEvt.h"
+	"./AskMsg/MonitorEvt.h"
+	"./AskMsg/ObserverEvt.h"
+	"./AskMsg/HoldupCallEvt.h"
+	"./AskMsg/EstablishEvt.h"
+	"./AskMsg/QueueEvt.h"
+	"./AskMsg/RecordEvt.h"
+	"./AskMsg/SendDtmfEvt.h"
+	"./AskMsg/GetPopDataEvt.h"
+
+1376362518 /home/a/work/AskProxy-linux-http/ResponseMsg.h
+	<string>
+
+1390457918 source:/home/a/work/AskProxy-linux-http/HandleAskPBX.cpp
+	"HandleAskPBX.h"
+	"AskProxyDlg.h"
+	"UntiTool.h"
+	"askproxydef.h"
+	"AgentOp.h"
+	"QueueStatic.h"
+	"./ResponseMsg.h"
+
+1367903954 /home/a/work/AskProxy-linux-http/QueueStatic.h
+	<string>
+
+1383548366 source:/home/a/work/AskProxy-linux-http/HandleWS.cpp
+	"HandleWS.h"
+	"AskProxyDlg.h"
+	"AskMsg/QueueEvt.h"
+	"UntiTool.h"
+
+1363928890 source:/home/a/work/AskProxy-linux-http/HandleWebResponse.cpp
+	"HandleWebResponse.h"
+	"AskProxyDlg.h"
+	"./AskMsg/XmlMarkup.h"
+	"./logclass/log.h"
+	"UntiTool.h"
+
+1364871577 source:/home/a/work/AskProxy-linux-http/MsgQueue.cpp
+	"MsgQueue.h"
+
+1390364077 source:/home/a/work/AskProxy-linux-http/ResponseMsg.cpp
+	"ResponseMsg.h"
+	"GenCMD.h"
+	"GeneralUtils.h"
+	"logclass/log.h"
+
+1376375073 source:/home/a/work/AskProxy-linux-http/SettingData.cpp
+	"SettingData.h"
+	"AskMsg/XmlMarkup.h"
+	"owntype.h"
+
+1364544934 source:/home/a/work/AskProxy-linux-http/SoftPhoneMsg.cpp
+	"SoftPhoneMsg.h"
+	"./AskMsg/XmlMarkup.h"
+
+1363764836 /home/a/work/AskProxy-linux-http/SoftPhoneMsg.h
+	<string>
+	"owntype.h"
+
+1372240533 source:/home/a/work/AskProxy-linux-http/UntiTool.cpp
+	"UntiTool.h"
+	<uuid/uuid.h>
+
+1379830602 source:/home/a/work/AskProxy-linux-http/UserConn/Userconn.cpp
+	<iconv.h>
+	"../AskProxyDlg.h"
+	"Userconn.h"
+
+1364545119 source:/home/a/work/AskProxy-linux-http/WS.cpp
+	"WS.h"
+	"./AskMsg/XmlMarkup.h"
+	"./logclass/log.h"
+	"UntiTool.h"
+	"AskProxyDlg.h"
+
+1375344834 source:/home/a/work/AskProxy-linux-http/logclass/log.cpp
+	"log.h"
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+
+1372150547 source:/home/a/work/AskProxy-linux-http/main.cpp
+	<iostream>
+	<ace/Log_Msg.h>
+	<unistd.h>
+	"AskProxyDlg.h"
+
+1372385126 source:/home/a/work/AskProxy-linux-http/socket/SocketManager.cpp
+	"SocketManager.h"
+	"../AskProxyDlg.h"
+
+1376469313 source:/home/a/work/AskProxy-linux-http/socket/http.cpp
+	"http.h"
+	<stdio.h>
+	"../AskProxy.h"
+	"../AskProxyDlg.h"
+

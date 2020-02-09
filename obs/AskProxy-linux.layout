@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="Agent.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="12126" topLine="531" />
+	</File>
+	<File name="Agent.h" open="0" top="0" tabpos="6">
+		<Cursor position="5263" topLine="201" />
+	</File>
+	<File name="AgentOp.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="375" topLine="0" />
+	</File>
+	<File name="AgentOp.h" open="0" top="0" tabpos="0">
+		<Cursor position="160" topLine="0" />
+	</File>
+	<File name="AskMsg/AgentStateMsg.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="264" topLine="22" />
+	</File>
+	<File name="AskMsg/AgentStateMsg.h" open="0" top="0" tabpos="2">
+		<Cursor position="490" topLine="2" />
+	</File>
+	<File name="AskMsg/BusyEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1885" topLine="58" />
+	</File>
+	<File name="AskMsg/BusyEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="632" topLine="10" />
+	</File>
+	<File name="AskMsg/ChannelStateMsg.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="707" topLine="40" />
+	</File>
+	<File name="AskMsg/ChannelStateMsg.h" open="0" top="0" tabpos="0">
+		<Cursor position="233" topLine="0" />
+	</File>
+	<File name="AskMsg/ConfEvt.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="2961" topLine="123" />
+	</File>
+	<File name="AskMsg/ConfEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="442" topLine="13" />
+	</File>
+	<File name="AskMsg/ConsultCancelEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="251" topLine="25" />
+	</File>
+	<File name="AskMsg/ConsultCancelEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="237" topLine="1" />
+	</File>
+	<File name="AskMsg/ConsultEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="213" topLine="0" />
+	</File>
+	<File name="AskMsg/ConsultTransEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="426" topLine="0" />
+	</File>
+	<File name="AskMsg/EnforceLogOutEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="146" topLine="35" />
+	</File>
+	<File name="AskMsg/EnforceLogOutEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="376" topLine="4" />
+	</File>
+	<File name="AskMsg/EstablishEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="594" topLine="12" />
+	</File>
+	<File name="AskMsg/EstablishEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="646" topLine="9" />
+	</File>
+	<File name="AskMsg/GetPopDataEvt.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1463" topLine="46" />
+	</File>
+	<File name="AskMsg/GetPopDataEvt.h" open="0" top="0" tabpos="6">
+		<Cursor position="226" topLine="9" />
+	</File>
+	<File name="AskMsg/HangupEvt.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="1213" topLine="40" />
+	</File>
+	<File name="AskMsg/HangupEvt.h" open="0" top="0" tabpos="3">
+		<Cursor position="167" topLine="0" />
+	</File>
+	<File name="AskMsg/HeadMsg.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="526" topLine="27" />
+	</File>
+	<File name="AskMsg/HeadMsg.h" open="0" top="0" tabpos="0">
+		<Cursor position="474" topLine="0" />
+	</File>
+	<File name="AskMsg/HoldEvt.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="2739" topLine="104" />
+	</File>
+	<File name="AskMsg/HoldEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="433" topLine="0" />
+	</File>
+	<File name="AskMsg/HoldupCallEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="224" topLine="0" />
+	</File>
+	<File name="AskMsg/IdleEvt.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="1112" topLine="36" />
+	</File>
+	<File name="AskMsg/IdleEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="772" topLine="0" />
+	</File>
+	<File name="AskMsg/LoginEvt.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="2161" topLine="101" />
+	</File>
+	<File name="AskMsg/LoginEvt.h" open="0" top="0" tabpos="6">
+		<Cursor position="914" topLine="9" />
+	</File>
+	<File name="AskMsg/LogoutEvt.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="2421" topLine="94" />
+	</File>
+	<File name="AskMsg/LogoutEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="679" topLine="0" />
+	</File>
+	<File name="AskMsg/MakeCallEvt.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1782" topLine="67" />
+	</File>
+	<File name="AskMsg/MakeCallEvt.h" open="0" top="0" tabpos="2">
+		<Cursor position="505" topLine="0" />
+	</File>
+	<File name="AskMsg/MonitorEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2419" topLine="86" />
+	</File>
+	<File name="AskMsg/MonitorEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="494" topLine="0" />
+	</File>
+	<File name="AskMsg/ObserverEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2289" topLine="69" />
+	</File>
+	<File name="AskMsg/ObserverEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="502" topLine="0" />
+	</File>
+	<File name="AskMsg/QueueEvt.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="603" topLine="20" />
+	</File>
+	<File name="AskMsg/QueueEvt.h" open="0" top="0" tabpos="2">
+		<Cursor position="295" topLine="0" />
+	</File>
+	<File name="AskMsg/RecordEvt.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="454" topLine="6" />
+	</File>
+	<File name="AskMsg/RecordEvt.h" open="0" top="0" tabpos="3">
+		<Cursor position="415" topLine="0" />
+	</File>
+	<File name="AskMsg/RegAskMsg.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="1201" topLine="49" />
+	</File>
+	<File name="AskMsg/RegAskMsg.h" open="0" top="0" tabpos="0">
+		<Cursor position="327" topLine="0" />
+	</File>
+	<File name="AskMsg/RingEvt.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="1513" topLine="66" />
+	</File>
+	<File name="AskMsg/RingEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="761" topLine="9" />
+	</File>
+	<File name="AskMsg/SendDtmfEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="440" topLine="0" />
+	</File>
+	<File name="AskMsg/SingleTransEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="823" topLine="8" />
+	</File>
+	<File name="AskMsg/SingleTransEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="447" topLine="0" />
+	</File>
+	<File name="AskMsg/UnHoldEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="406" topLine="0" />
+	</File>
+	<File name="AskMsg/WrapupEvt.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1979" topLine="55" />
+	</File>
+	<File name="AskMsg/WrapupEvt.h" open="0" top="0" tabpos="0">
+		<Cursor position="649" topLine="0" />
+	</File>
+	<File name="AskMsg/XmlMarkup.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="43672" topLine="1245" />
+	</File>
+	<File name="AskMsg/XmlMarkup.h" open="0" top="0" tabpos="7">
+		<Cursor position="7101" topLine="192" />
+	</File>
+	<File name="AskMsg/askmsgdef.h" open="0" top="0" tabpos="0">
+		<Cursor position="306" topLine="0" />
+	</File>
+	<File name="AskProxy.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="135" topLine="0" />
+	</File>
+	<File name="AskProxy.h" open="0" top="0" tabpos="0">
+		<Cursor position="61" topLine="0" />
+	</File>
+	<File name="AskProxyDlg.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="4174" topLine="169" />
+	</File>
+	<File name="AskProxyDlg.h" open="0" top="0" tabpos="6">
+		<Cursor position="3541" topLine="107" />
+	</File>
+	<File name="CheckAgent.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="4400" topLine="81" />
+	</File>
+	<File name="CheckAgent.h" open="0" top="0" tabpos="13">
+		<Cursor position="177" topLine="0" />
+	</File>
+	<File name="CompletePort.cpp" open="0" top="0" tabpos="11">
+		<Cursor position="1267" topLine="30" />
+	</File>
+	<File name="CompletePort.h" open="0" top="0" tabpos="12">
+		<Cursor position="335" topLine="0" />
+	</File>
+	<File name="GenCMD.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1671" topLine="9" />
+	</File>
+	<File name="GenCMD.h" open="0" top="0" tabpos="17">
+		<Cursor position="492" topLine="0" />
+	</File>
+	<File name="GeneralUtils.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="3320" topLine="216" />
+	</File>
+	<File name="GeneralUtils.h" open="0" top="0" tabpos="2">
+		<Cursor position="764" topLine="0" />
+	</File>
+	<File name="HandSoftPhoneThread.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="46759" topLine="1280" />
+	</File>
+	<File name="HandSoftPhoneThread.h" open="0" top="0" tabpos="3">
+		<Cursor position="573" topLine="15" />
+	</File>
+	<File name="HandleAskPBX.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="87620" topLine="2527" />
+	</File>
+	<File name="HandleAskPBX.h" open="0" top="0" tabpos="6">
+		<Cursor position="1945" topLine="55" />
+	</File>
+	<File name="HandleWS.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="762" topLine="25" />
+	</File>
+	<File name="HandleWS.h" open="0" top="0" tabpos="13">
+		<Cursor position="305" topLine="0" />
+	</File>
+	<File name="HandleWebResponse.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="2828" topLine="81" />
+	</File>
+	<File name="HandleWebResponse.h" open="0" top="0" tabpos="14">
+		<Cursor position="815" topLine="0" />
+	</File>
+	<File name="MsgQueue.cpp" open="0" top="0" tabpos="11">
+		<Cursor position="180" topLine="0" />
+	</File>
+	<File name="MsgQueue.h" open="0" top="0" tabpos="4">
+		<Cursor position="265" topLine="7" />
+	</File>
+	<File name="QueueStatic.h" open="0" top="0" tabpos="0">
+		<Cursor position="107" topLine="0" />
+	</File>
+	<File name="ResponseMsg.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="5203" topLine="189" />
+	</File>
+	<File name="ResponseMsg.h" open="0" top="0" tabpos="5">
+		<Cursor position="404" topLine="0" />
+	</File>
+	<File name="SettingData.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="168" topLine="42" />
+	</File>
+	<File name="SettingData.h" open="0" top="0" tabpos="0">
+		<Cursor position="1210" topLine="12" />
+	</File>
+	<File name="SoftPhoneMsg.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="829" topLine="43" />
+	</File>
+	<File name="SoftPhoneMsg.h" open="0" top="0" tabpos="0">
+		<Cursor position="547" topLine="0" />
+	</File>
+	<File name="UntiTool.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="4133" topLine="181" />
+	</File>
+	<File name="UntiTool.h" open="0" top="0" tabpos="5">
+		<Cursor position="121" topLine="0" />
+	</File>
+	<File name="UserConn/Userconn.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="1238" topLine="157" />
+	</File>
+	<File name="UserConn/Userconn.h" open="0" top="0" tabpos="7">
+		<Cursor position="39" topLine="0" />
+	</File>
+	<File name="WS.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="6689" topLine="307" />
+	</File>
+	<File name="WS.h" open="0" top="0" tabpos="0">
+		<Cursor position="1112" topLine="3" />
+	</File>
+	<File name="logclass/log.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="15" />
+	</File>
+	<File name="logclass/log.h" open="0" top="0" tabpos="0">
+		<Cursor position="179" topLine="0" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="90" topLine="0" />
+	</File>
+	<File name="owntype.h" open="0" top="0" tabpos="0">
+		<Cursor position="69" topLine="0" />
+	</File>
+	<File name="socket/SocketManager.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="537" topLine="48" />
+	</File>
+	<File name="socket/SocketManager.h" open="0" top="0" tabpos="9">
+		<Cursor position="189" topLine="7" />
+	</File>
+	<File name="socket/http.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="2005" topLine="37" />
+	</File>
+	<File name="socket/http.h" open="0" top="0" tabpos="8">
+		<Cursor position="247" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

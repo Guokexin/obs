@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<WS_ROOT>
+<WSOVERTIME value="5000" />
+<QUEUETIME value="30" />
+<WSAgentInfo Conn="http://192.168.20.91:8080/platform/service/config/agentSipSkill/util/getAgentSipSkill?" />
+<WSSipExtInfo Conn="http://192.168.20.91:8080/platform/service/sip/util/getSipExtInfo?" />
+<WSIsStationLoginInfo Conn="http://192.168.20.91:8080/platform/service/sip/util/checkAgentLogin?" />
+<WSdialAgentCallerNumberInfo Conn="http://192.168.20.91:8080/platform/service/sip/util/getTenantInfo?" />
+<WSGetStationType Conn="http://192.168.20.91:8080/platform/service/sip/util/getSysNumType?"/>
+<WSPBXInfo Conn="http://192.168.20.91:8080/platform/service/sip/util/getMachineSkill?" />
+<WSPBXAgentPwd Conn="http://192.168.20.91:8080/platform/service/config/agent/util/getAgentInfo?" />
+<ResportServer IP="127.0.0.1"  Port="6002" />
+<WS>
+	<AgentStatus        para="agentId=[agentId]&extension=[extension]&skill=[skill]&startTime=[startTime]&endTime=[endTime]&statusCode=[statusCode]&statusName=[statusName]&statusReason=[statusReason]&tenantId=[tenantId]" />
+	<cdr                para="agentId=[agentId]&extension=[extension]&skill=[skill]&callType=[callType]&caller=[caller]&called=[called]&ringTime=[ringTime]&startTime=[startTime]&endTime=[endTime]&ucid=[ucid]&callReason=[callReason]&callEndReason=[callEndReason]&tenantId=[tenantId]" />
+	<skillRecord        para="tenantId=[tenantId]&skill=[skill]&callType=[callType]&caller=[caller]&inQueueTime=[inQueueTime]&outQueueTime=[outQueueTime]&queueResult=[queueResult]&agentExtension=[agentExtension]&agentNo=[agentNo]&ucid=[ucid]&accessNumber=[accessNumber]" />
+	<skillSnap          para="createTime=[createTime]&tenantId=[tenantId]&skill=[skill]&waitingCalls=[waitingCalls]&agentActiveCount=[agentActiveCount]&agentCallCount=[agentCallCount]&discardPhoneCount=[discardPhoneCount]&agentAvailableCount=[agentAvailableCount]&pausedMembers=[pausedMembers]" />
+	<AgentActualTimeStatus        para="termiantype=[termiantype]&agentId=[agentId]&extension=[extension]&skill=[skill]&startTime=[startTime]&statusCode=[statusCode]&statusName=[statusName]&statusReason=[statusReason]&tenantId=[tenantId]" />
+</WS>
+</WS_ROOT>
+
+
+

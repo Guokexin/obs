@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AskProxy-linux" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AskProxy-linux" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./bin/Debug/" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="/usr/local/log4cxx/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lACE -llog4cxx -luuid -O0" />
+					<Add directory="/usr/local/log4cxx/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AskProxy-linux" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./bin/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-g" />
+					<Add directory="/usr/local/log4cxx/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lACE -llog4cxx" />
+					<Add directory="/usr/local/log4cxx/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Agent.cpp" />
+		<Unit filename="Agent.h" />
+		<Unit filename="AgentOp.cpp" />
+		<Unit filename="AgentOp.h" />
+		<Unit filename="AskMsg/AgentStateMsg.cpp" />
+		<Unit filename="AskMsg/AgentStateMsg.h" />
+		<Unit filename="AskMsg/BusyEvt.cpp" />
+		<Unit filename="AskMsg/BusyEvt.h" />
+		<Unit filename="AskMsg/ChannelStateMsg.cpp" />
+		<Unit filename="AskMsg/ChannelStateMsg.h" />
+		<Unit filename="AskMsg/ConfEvt.cpp" />
+		<Unit filename="AskMsg/ConfEvt.h" />
+		<Unit filename="AskMsg/ConsultCancelEvt.cpp" />
+		<Unit filename="AskMsg/ConsultCancelEvt.h" />
+		<Unit filename="AskMsg/ConsultEvt.cpp" />
+		<Unit filename="AskMsg/ConsultEvt.h" />
+		<Unit filename="AskMsg/ConsultTransEvt.cpp" />
+		<Unit filename="AskMsg/ConsultTransEvt.h" />
+		<Unit filename="AskMsg/EnforceLogOutEvt.cpp" />
+		<Unit filename="AskMsg/EnforceLogOutEvt.h" />
+		<Unit filename="AskMsg/EstablishEvt.cpp" />
+		<Unit filename="AskMsg/EstablishEvt.h" />
+		<Unit filename="AskMsg/GetPopDataEvt.cpp" />
+		<Unit filename="AskMsg/GetPopDataEvt.h" />
+		<Unit filename="AskMsg/HangupEvt.cpp" />
+		<Unit filename="AskMsg/HangupEvt.h" />
+		<Unit filename="AskMsg/HeadMsg.cpp" />
+		<Unit filename="AskMsg/HeadMsg.h" />
+		<Unit filename="AskMsg/HoldEvt.cpp" />
+		<Unit filename="AskMsg/HoldEvt.h" />
+		<Unit filename="AskMsg/HoldupCallEvt.cpp" />
+		<Unit filename="AskMsg/HoldupCallEvt.h" />
+		<Unit filename="AskMsg/IdleEvt.cpp" />
+		<Unit filename="AskMsg/IdleEvt.h" />
+		<Unit filename="AskMsg/LoginEvt.cpp" />
+		<Unit filename="AskMsg/LoginEvt.h" />
+		<Unit filename="AskMsg/LogoutEvt.cpp" />
+		<Unit filename="AskMsg/LogoutEvt.h" />
+		<Unit filename="AskMsg/MakeCallEvt.cpp" />
+		<Unit filename="AskMsg/MakeCallEvt.h" />
+		<Unit filename="AskMsg/MonitorEvt.cpp" />
+		<Unit filename="AskMsg/MonitorEvt.h" />
+		<Unit filename="AskMsg/ObserverEvt.cpp" />
+		<Unit filename="AskMsg/ObserverEvt.h" />
+		<Unit filename="AskMsg/QueueEvt.cpp" />
+		<Unit filename="AskMsg/QueueEvt.h" />
+		<Unit filename="AskMsg/RecordEvt.cpp" />
+		<Unit filename="AskMsg/RecordEvt.h" />
+		<Unit filename="AskMsg/RegAskMsg.cpp" />
+		<Unit filename="AskMsg/RegAskMsg.h" />
+		<Unit filename="AskMsg/RingEvt.cpp" />
+		<Unit filename="AskMsg/RingEvt.h" />
+		<Unit filename="AskMsg/SendDtmfEvt.cpp" />
+		<Unit filename="AskMsg/SendDtmfEvt.h" />
+		<Unit filename="AskMsg/SingleTransEvt.cpp" />
+		<Unit filename="AskMsg/SingleTransEvt.h" />
+		<Unit filename="AskMsg/UnHoldEvt.cpp" />
+		<Unit filename="AskMsg/UnHoldEvt.h" />
+		<Unit filename="AskMsg/WrapupEvt.cpp" />
+		<Unit filename="AskMsg/WrapupEvt.h" />
+		<Unit filename="AskMsg/XmlMarkup.cpp" />
+		<Unit filename="AskMsg/XmlMarkup.h" />
+		<Unit filename="AskMsg/askmsgdef.h" />
+		<Unit filename="AskProxy.cpp" />
+		<Unit filename="AskProxy.h" />
+		<Unit filename="AskProxyDlg.cpp" />
+		<Unit filename="AskProxyDlg.h" />
+		<Unit filename="CheckAgent.cpp" />
+		<Unit filename="CheckAgent.h" />
+		<Unit filename="CompletePort.cpp" />
+		<Unit filename="CompletePort.h" />
+		<Unit filename="GenCMD.cpp" />
+		<Unit filename="GenCMD.h" />
+		<Unit filename="GeneralUtils.cpp" />
+		<Unit filename="GeneralUtils.h" />
+		<Unit filename="HandSoftPhoneThread.cpp" />
+		<Unit filename="HandSoftPhoneThread.h" />
+		<Unit filename="HandleAskPBX.cpp" />
+		<Unit filename="HandleAskPBX.h" />
+		<Unit filename="HandleWS.cpp" />
+		<Unit filename="HandleWS.h" />
+		<Unit filename="HandleWebResponse.cpp" />
+		<Unit filename="HandleWebResponse.h" />
+		<Unit filename="MsgQueue.cpp" />
+		<Unit filename="MsgQueue.h" />
+		<Unit filename="QueueStatic.h" />
+		<Unit filename="ResponseMsg.cpp" />
+		<Unit filename="ResponseMsg.h" />
+		<Unit filename="SettingData.cpp" />
+		<Unit filename="SettingData.h" />
+		<Unit filename="SoftPhoneMsg.cpp" />
+		<Unit filename="SoftPhoneMsg.h" />
+		<Unit filename="UntiTool.cpp" />
+		<Unit filename="UntiTool.h" />
+		<Unit filename="UserConn/Userconn.cpp" />
+		<Unit filename="UserConn/Userconn.h" />
+		<Unit filename="WS.cpp" />
+		<Unit filename="WS.h" />
+		<Unit filename="askproxydef.h" />
+		<Unit filename="logclass/log.cpp" />
+		<Unit filename="logclass/log.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="owntype.h" />
+		<Unit filename="socket/SocketManager.cpp" />
+		<Unit filename="socket/SocketManager.h" />
+		<Unit filename="socket/http.cpp" />
+		<Unit filename="socket/http.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

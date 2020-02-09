@@ -1,0 +1,17 @@
+.PHONY:clean
+CC=g++
+OUTDIR=./output
+CFLAGS=-Wall -g
+BINDIR=./install/bin
+BIN=$(BINDIR)/xjobs
+SRC=$(wildcard *.cpp)
+OBJS=$(patsubst %.cpp,${OUTDIR}/%.o,$(SRC))
+all:$(OUTDIR) $(BIN)
+$(OUTDIR):
+	echo "xxxxxxxxxxxxxx"
+$(BIN):$(OBJS)
+	${CC} ${CFLAGS} $^ -o $@  -llog4cxx -lpthread -luuid -lACE
+${OUTDIR}/%.o:%.cpp
+	$(CC) ${CFLAGS} -c $< -o $@
+clean:
+	rm  -rf $(OBJS) $(BIN)
